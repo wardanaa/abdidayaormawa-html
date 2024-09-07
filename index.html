@@ -26,7 +26,7 @@
     }
   </style>
 </head>
-<body style="background-color: #fafbfd;">
+<body>
     <!-- header navbar tag -->
     <header>
         <nav id="navbar" class="fixed top-0 left-0 w-full bg-transparent text-white shadow-lg z-50 navbar">
@@ -35,19 +35,28 @@
                     <!-- Logo di sebelah kiri -->
                     <div class="flex justify-start space-x-6">
                         <a href="">
+                            <img src="img/tutWuriHandayani.png" alt="Logo" class="w-12 h-12">
+                        </a>
+                        <a href="">
                             <img src="img/Logo-Unud.png" alt="Logo" class="w-12 h-12">
                         </a>
                         <a href="">
-                            <img src="img/Untitled-1-scaled.png" alt="Logo" class="w-12 h-12">
+                            <img src="img/blu.png" alt="Logo" class="w-12 h-12">
+                        </a>
+                        <a href="">
+                            <img src="img/abdidaya.png" alt="Logo" class="w-12 h-12">
                         </a>
                     </div>
         
                     <!-- Link navigasi di sebelah kanan -->
                     <div class="flex space-x-6 my-auto">
-                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium hover:text-violet-700 hover:underline decoration-violet-700">Home</a>
-                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium hover:text-violet-700 hover:underline decoration-violet-700">About</a>
-                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium hover:text-violet-700 hover:underline decoration-violet-700">Services</a>
-                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium hover:text-violet-700 hover:underline decoration-violet-700">Contact</a>
+                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium hover:text-violet-700 hover:underline decoration-violet-700">Beranda</a>
+                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium hover:text-violet-700 hover:underline decoration-violet-700">Timeline</a>
+                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium hover:text-violet-700 hover:underline decoration-violet-700">Tentang Unud</a>
+                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium hover:text-violet-700 hover:underline decoration-violet-700">Denah</a>
+                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium hover:text-violet-700 hover:underline decoration-violet-700">Data Team</a>
+                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium hover:text-violet-700 hover:underline decoration-violet-700">Tour</a>
+                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium hover:text-violet-700 hover:underline decoration-violet-700">Login</a>
                     </div>
                 </div>
             </div>
@@ -56,33 +65,94 @@
     </header>
 
     <!-- Homepage -->
-    <section id="homepage" class="relative w-screen h-screen bg-blue-500 bg-cover bg-center mb-12" style="background-image: url('img/hero.png'); background-size: cover; background-attachment: fixed;">
+    <section id="homepage" class="relative w-screen h-screen bg-blue-500 bg-cover bg-center" style="background-image: url('img/hero.png'); background-size: cover; background-attachment: fixed;">
         <!-- class untuk overlay -->
         <div class="absolute inset-0 bg-black opacity-50 h-screen"></div>
     
         <!-- Content Homepage -->
-        <div class="content">
-            <!-- Konten homepage -->
+        <div class="content relative z-10 flex justify-center items-center h-screen">
+            <div class="grid grid-cols-12 w-full max-w-6xl mx-auto pb-10">
+                <!-- Kolom 1: Gambar -->
+                <div class="col-span-3 flex justify-center items-end h-screen">
+                    <img src="img/maskot perempuan.png" alt="Gambar" class="w-auto h-auto">
+                </div>
+                <!-- Kolom 2: Ucapan Selamat Datang -->
+                <div class="col-span-6 flex flex-col justify-center items-center text-white pb-3">
+                    <h3 class="text-xl font-medium mb-2">Selamat Datang</h3>
+                    <h1 class="font-bold text-4xl mb-4">Peserta Abdidaya Ormawa 2024</h1>
+                    <h2 class="text-xl font-normal">Unggul, Mandiri, dan Berbudaya</h2>
+                </div>
+                <!-- Kolom 3: Gambar yang Sama -->
+                <div class="col-span-3 flex justify-center items-end h-full">
+                    <img src="img/Maskot laki-laki.png" alt="Gambar" class="w-auto h-auto max-w-full max-h-full">
+                </div>
+            </div>
         </div>
     </section>
     
 
     <!-- About -->
-    <section id="about" class="w-screen h-screen padding-section mb-12">
+    <section id="about" class="w-screen h-screen padding-section mb-12 bg-[#878787] p-5">
       <!-- <div class="container"> -->
-        <!-- Tittle about -->
-        <div id="about-tittle"  class="section-tittle text-center mt-16 mb-12">
-            <h1 class="font-bold text-4xl bg-gradient-to-r from-lime-500 to-amber-500  text-transparent mb-2 bg-clip-text">Tentang Abdidaya Ormawa 2024</h1>
-        </div>
 
         <!-- Content about -->
-        <div class="content bg-custom-white rounded-md shadow-lg">
+        <div class="content bg-custom-white rounded-md shadow-lg p-6 h-full">
+            <div id="about-tittle"  class="section-tittle text-center mb-12">
+                <h1 class="font-bold text-4xl text-[#0C356A] relative inline-block">
+                    Tentang Abdidaya Ormawa 2024
+                    <span class="absolute left-1/2 bottom-[-15px] w-[80%] h-[5px] bg-[#F8C035] transform -translate-x-1/2"></span>
+                </h1>
+            </div>
+            <div class="content-detail">
+                <div class="flex flex-wrap">
+                    <!-- Kolom 1: col-6 di layar besar, col-12 di layar kecil -->
+                    <div class="w-full sm:w-full md:w-1/2 lg:w-1/2 px-4 flex justify-center">
+                        <img src="img/abdidaya.jpg" alt="" class="w-[400px] h-auto object-contain">
+                    </div>
+                    <!-- Kolom 2: col-6 di layar besar, col-12 di layar kecil -->
+                    <div class="w-full sm:w-full md:w-1/2 lg:w-1/2 px-4">
+                        <!-- Konten Kolom 2 -->
+                        <h3 class="font-semibold text-2xl mb-4 lg:text-3xl lg:pt-7 uppercase text-slate-700 relative inline-block">
+                            Abdidaya
+                            <span class="absolute left-0 bottom-[-10px] w-[70%] h-[3px] bg-[#F8C035]"></span>
+                        </h3>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+                    </div>
+                </div>
+                <div class="flex flex-wrap">
+                    <!-- Kolom 1: col-6 di layar besar, col-12 di layar kecil -->
+                    <div class="w-full sm:w-full md:w-1/2 lg:w-1/2 px-4">
+                        <!-- Konten Kolom 1 -->
+                        <h3 class="font-semibold text-2xl mb-4 lg:text-3xl lg:pt-7 uppercase text-slate-700 relative inline-block">
+                            Latar Belakang
+                            <span class="absolute left-0 bottom-[-10px] w-[70%] h-[3px] bg-[#F8C035]"></span>
+                        </h3>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature.</p>
+                    </div>
+                
+                    <!-- Kolom 2: col-6 di layar besar, col-12 di layar kecil -->
+                    <div class="w-full sm:w-full md:w-1/2 lg:w-1/2 px-4">
+                        <!-- Konten Kolom 2 -->
+                        <h3 class="font-semibold text-2xl mb-4 lg:text-3xl lg:pt-7 uppercase text-slate-700 relative inline-block">
+                            TUJUAN
+                            <span class="absolute left-0 bottom-[-10px] w-[70%] h-[3px] bg-[#F8C035]"></span>
+                        </h3>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="content bg-custom-white rounded-md shadow-lg p-6">
+            <div id="about-tittle"  class="section-tittle text-center mb-12">
+                <h1 class="font-bold text-4xl text-[#0C356A] relative inline-block">
+                    Tentang Abdidaya Ormawa 2024
+                    <span class="absolute left-1/2 bottom-[-15px] w-[80%] h-[5px] bg-[#F8C035] transform -translate-x-1/2"></span>
+                </h1>
+            </div>
             <div class="flex flex-wrap">
                 <div class="w-full px-4 mb-10 lg:w-1/2">
-                    <img src="img/Untitled-1-scaled.png" alt="">
-                    <!-- <h3 class="font-semibold  mb-4 lg:text-3xl lg:pt-7 underline underline-offset-8 text-slate-700">Abdidaya</h3>
-                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature.</p> -->
-                    
+                    <img src="img/abdidaya.png" alt="" class="">
                 </div>
                 <div class="w-full px-4 mb-10 lg:w-1/2">
                     <h3 class="font-semibold text-2xl mb-4 lg:text-3xl lg:pt-7 uppercase underline underline-offset-8 text-slate-700">Tujuan</h3>
@@ -91,7 +161,7 @@
                     <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature.</p>
                 </div>   
             </div>
-        </div>           
+        </div>            -->
       <!-- </div> -->
     </section>
 
