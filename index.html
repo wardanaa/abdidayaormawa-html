@@ -1,63 +1,84 @@
 <!doctype html>
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    #navbar{
-    background-image: url('img/nav-bg.png'); /* Tambahkan gambar background */
-    background-size: cover; /* Gambar akan menyesuaikan ukuran navigasi */
-    background-position: center; /* Posisikan gambar di tengah */
-    background-repeat: no-repeat; /* Tidak mengulangi gambar */
-    background-blend-mode: overlay; /* Membuat gambar menyatu dengan warna latar */
-    background-color: rgba(24, 40, 92, 0.8); /* Kombinasi warna background untuk efek perpaduan */
-    transition: background-color 0.3s ease;
-    }
-    #navbar a {
-    position: relative;
-    text-decoration: none;
-    color: white; 
-    padding: 10px;
-    transition: color 0.3s ease; 
-    }
-
-    #navbar a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    left: 0;
-    bottom: 0;
-    background-color: #F8C035; 
-    transition: width 0.3s ease; 
-    }
-
-    #navbar a:hover {
-    color: yellow; 
-    }
-
-    #navbar a:hover::after {
-    width: 100%; 
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            max-width: 100%;
+        }
 
 
-    .custom-white {
-      color: #ffffff;
-    }
-    .bg-custom-white {
-      background-color: #ffffff;
-    }
+        #navbar {
+            background-image: url('img/nav-bg.png');
+            /* Tambahkan gambar background */
+            background-size: cover;
+            /* Gambar akan menyesuaikan ukuran navigasi */
+            background-position: center;
+            /* Posisikan gambar di tengah */
+            background-repeat: no-repeat;
+            /* Tidak mengulangi gambar */
+            background-blend-mode: overlay;
+            /* Membuat gambar menyatu dengan warna latar */
+            background-color: rgba(24, 40, 92, 0.8);
+            /* Kombinasi warna background untuk efek perpaduan */
+            transition: background-color 0.3s ease;
+        }
 
-    .bg-purple-footer{
-        color: #423c86;
-    }
-    .padding-section{
-        padding-left: 10rem;
-        padding-right: 10rem;
-    }
-  </style>
+        #navbar a {
+            position: relative;
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            transition: color 0.3s ease;
+        }
+
+        #navbar a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            left: 0;
+            bottom: 0;
+            background-color: #F8C035;
+            transition: width 0.3s ease;
+        }
+
+        #navbar a:hover {
+            color: yellow;
+        }
+
+        #navbar a:hover::after {
+            width: 100%;
+        }
+
+
+        .custom-white {
+            color: #ffffff;
+        }
+
+        .bg-custom-white {
+            background-color: #ffffff;
+        }
+
+        .bg-purple-footer {
+            color: #423c86;
+        }
+
+        .padding-section {
+            padding-left: 10rem;
+            padding-right: 10rem;
+        }
+
+        .timeline-bg {
+            background-image: url('img/BG.png');
+            /* Tambahkan gambar background */
+        }
+    </style>
 </head>
+
 <body>
     <!-- header navbar tag -->
     <header>
@@ -79,28 +100,38 @@
                             <img src="img/abdidaya.png" alt="Logo" class="w-12 h-12">
                         </a>
                     </div>
-        
+
                     <!-- Link navigasi di sebelah kanan -->
                     <div class="flex space-x-6 my-auto">
-                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium hover:text-violet-700 hover:underline decoration-violet-700">Beranda</a>
-                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium hover:text-violet-700 hover:underline decoration-violet-700">Timeline</a>
-                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium hover:text-violet-700 hover:underline decoration-violet-700">Tentang Unud</a>
-                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium hover:text-violet-700 hover:underline decoration-violet-700">Denah</a>
-                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium hover:text-violet-700 hover:underline decoration-violet-700">Data Team</a>
-                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium hover:text-violet-700 hover:underline decoration-violet-700">Tour</a>
-                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium hover:text-violet-700 hover:underline decoration-violet-700">Login</a>
+                        <a href="#"
+                            class="px-3 py-2 rounded-md text-sm font-medium hover:text-violet-700 hover:underline decoration-violet-700">Beranda</a>
+                        <a href="#"
+                            class="px-3 py-2 rounded-md text-sm font-medium hover:text-violet-700 hover:underline decoration-violet-700">Timeline</a>
+                        <a href="#"
+                            class="px-3 py-2 rounded-md text-sm font-medium hover:text-violet-700 hover:underline decoration-violet-700">Tentang
+                            Unud</a>
+                        <a href="#"
+                            class="px-3 py-2 rounded-md text-sm font-medium hover:text-violet-700 hover:underline decoration-violet-700">Denah</a>
+                        <a href="#"
+                            class="px-3 py-2 rounded-md text-sm font-medium hover:text-violet-700 hover:underline decoration-violet-700">Data
+                            Team</a>
+                        <a href="#"
+                            class="px-3 py-2 rounded-md text-sm font-medium hover:text-violet-700 hover:underline decoration-violet-700">Tour</a>
+                        <a href="#"
+                            class="px-3 py-2 rounded-md text-sm font-medium hover:text-violet-700 hover:underline decoration-violet-700">Login</a>
                     </div>
                 </div>
             </div>
         </nav>
-        
+
     </header>
 
     <!-- Homepage Awal-->
-    <section id="homepage" class="relative w-screen h-screen bg-blue-500 bg-cover bg-center" style="background-image: url('img/hero.png'); background-size: cover; background-attachment: fixed;">
+    <section id="homepage" class="relative w-screen h-screen bg-blue-500 bg-cover bg-center"
+        style="background-image: url('img/hero.png'); background-size: cover; background-attachment: fixed;">
         <!-- class untuk overlay -->
         <div class="absolute inset-0 bg-black opacity-50 h-screen"></div>
-    
+
         <!-- Content Homepage -->
         <div class="content relative z-10 flex justify-center items-center h-screen">
             <div class="grid grid-cols-12 w-full max-w-6xl mx-auto pb-10">
@@ -122,295 +153,342 @@
         </div>
     </section>
     <!-- Homepage Akhir -->
-    
 
-    <!-- About Awal-->
-    <section id="about" class="w-screen padding-section bg-[#878787] p-5">
-      <!-- <div class="container"> -->
 
-        <!-- Content about -->
+    <!-- About Awal -->
+    <section id="about" class="w-screen padding-section bg-[#F2EDED] p-5">
         <div class="content bg-custom-white rounded-md shadow-lg p-6 h-full">
-            <div id="about-tittle"  class="section-tittle text-center mb-12">
-                <h1 class="font-bold text-4xl text-[#0C356A] relative inline-block">
-                    Tentang Abdidaya Ormawa 2024
-                    <span class="absolute left-1/2 bottom-[-15px] w-[80%] h-[5px] bg-[#F8C035] transform -translate-x-1/2"></span>
+            <div id="about-tittle" class="section-tittle text-center mb-12 my-20">
+                <h1 class="font-bold text-4xl text-[#0C356A] relative inline-block">ABDIDAYA
+                    <span
+                        class="absolute left-1/2 bottom-[-15px] w-[80%] h-[5px] bg-[#F8C035] transform -translate-x-1/2">
+                    </span>
                 </h1>
             </div>
             <div class="content-detail">
-                <div class="flex flex-wrap">
-                    <!-- Kolom 1: col-6 di layar besar, col-12 di layar kecil -->
-                    <div class="w-full sm:w-full md:w-1/2 lg:w-1/2 px-4 flex justify-center">
-                        <img src="img/abdidaya.jpg" alt="" class="w-[400px] h-auto object-contain">
+                <div class="flex justify-center">
+                    <div class="basis-1/2">Abdidaya adalah program apresiasi dari Kemdikbudristek yang menghargai
+                        kontribusi organisasi kemahasiswaan, dosen, dan mitra desa dalam pemberdayaan masyarakat.</div>
+                </div>
+
+                <div class="flex justify-center">
+                    <div class="w-1/2 text-center mt-14">
+                        <h1 class="font-bold text-4xl text-[#0C356A] relative inline-block">Arti
+                            <span
+                                class="absolute left-1/2 bottom-[-15px] w-[80%] h-[5px] bg-[#F8C035] transform -translate-x-1/2">
+                            </span>
+                        </h1>
+                        <div class="info text-justify my-5 ms-6 me-20">
+                            Abdidaya berasal dari kata "Abdi" (mengabdi) dan "Daya" (kekuatan), menekankan kolaborasi,
+                            inovasi, serta kontribusi
+                            nyata dalam membangun desa.
+                        </div>
                     </div>
-                    <!-- Kolom 2: col-6 di layar besar, col-12 di layar kecil -->
-                    <div class="w-full sm:w-full md:w-1/2 lg:w-1/2 px-4">
-                        <!-- Konten Kolom 2 -->
-                        <h3 class="font-semibold text-2xl mb-4 lg:text-3xl lg:pt-7 uppercase text-slate-700 relative inline-block">
-                            Abdidaya
-                            <span class="absolute left-0 bottom-[-10px] w-[70%] h-[3px] bg-[#F8C035]"></span>
-                        </h3>
-                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+                    <div class="w-1/2 text-center mt-14">
+                        <h1 class="font-bold text-4xl text-[#0C356A] relative inline-block">Tujuan
+                            <span
+                                class="absolute left-1/2 bottom-[-15px] w-[80%] h-[5px] bg-[#F8C035] transform -translate-x-1/2">
+                            </span>
+                        </h1>
+                        <div class="info text-justify my-5 ms-20 me-6">
+                            Abdidaya bertujuan untuk menilai dampak program pengabdian, membangun desa binaan
+                            berkelanjutan,
+                            dan mendorong inovasi
+                            sosial.
+                        </div>
                     </div>
                 </div>
-                <div class="flex flex-wrap">
-                    <!-- Kolom 1: col-6 di layar besar, col-12 di layar kecil -->
-                    <div class="w-full sm:w-full md:w-1/2 lg:w-1/2 px-4">
-                        <!-- Konten Kolom 1 -->
-                        <h3 class="font-semibold text-2xl mb-4 lg:text-3xl lg:pt-7 uppercase text-slate-700 relative inline-block">
-                            Latar Belakang
-                            <span class="absolute left-0 bottom-[-10px] w-[70%] h-[3px] bg-[#F8C035]"></span>
-                        </h3>
-                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature.</p>
+
+                <div class="flex justify-center">
+                    <div class="basis-1/2 ">
+                        <div class="w-full sm:w-full md:w-1/2 lg:w-1/2 px-4 mx-auto">
+                            <img src="img/abdidaya.jpg" alt="" class="w-[400px] h-auto object-contain">
+                        </div>
                     </div>
-                
-                    <!-- Kolom 2: col-6 di layar besar, col-12 di layar kecil -->
-                    <div class="w-full sm:w-full md:w-1/2 lg:w-1/2 px-4">
-                        <!-- Konten Kolom 2 -->
-                        <h3 class="font-semibold text-2xl mb-4 lg:text-3xl lg:pt-7 uppercase text-slate-700 relative inline-block">
-                            TUJUAN
-                            <span class="absolute left-0 bottom-[-10px] w-[70%] h-[3px] bg-[#F8C035]"></span>
-                        </h3>
-                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature.</p>
-                    </div>
+                </div>
+                <div class="flex justify-center my-8">
+                    <a href="#"
+                        class="bg-[#0C356A] text-white font-bold py-2 px-4 rounded-xl w-[312px] text-center text-2xl mx-auto">Baca
+                        Selengkapnya</a>
                 </div>
             </div>
+
+
+
         </div>
+
+        </div>
+        </div>
+
+
     </section>
-    <!-- About Akhir -->
+
 
     <!-- Time Line Abdidaya -->
-        <section id="timeline" class="w-screen padding-section bg-[#878787] p-5">
-            <div class="content bg-[#18285C] rounded-md shadow-lg p-6 h-full">
-                <h2>TIMELINE</h2>
-                <h3>ABDIDAYA 2024</h3>
-                
-                <div class="grid grid-cols-12 items-center">
+    <section id="timeline" class="w-screen padding-section bg-[#F2EDED] p-5">
+        <div class="content timeline-bg rounded-md shadow-lg p-6 h-full">
+            <div id="about-tittle" class="section-tittle text-center mt-2 ">
+                <h2 class="font-bold text-4xl text-[#FFFFFF] relative inline-block">TIMELINE
+                </h2>
+            </div>
 
-                    <div class="col-span-2"></div>
-                    <div class="col-span-3"></div>
+            <div id="about-tittle" class="section-tittle text-center mb-12 mt-2 ">
+                <h1 class="font-bold text-4xl text-[#F8C035] relative inline-block">ABDIDAYA 2024
+                    <span
+                        class="absolute left-1/2 bottom-[-15px] w-[80%] h-[5px] bg-[#FFF0CE] transform -translate-x-1/2">
+                    </span>
+                </h1>
+            </div>
 
-                    <div class="col-span-2">
-                       
-                                    
-                        
-                            <div class="flex flex-col items-center space-y-10">
-                                    <!-- timeline 1 -->
-                                    <div class="flex items-center justify-center mt-12">
-                                        <div class="w-32 h-32 bg-white text-center flex items-center justify-center rounded-full border-2 border-dashed border-blue-900">
-                                            <div class="text-black">
-                                                <div class="text-2xl font-bold">07</div>
-                                                <div class="text-sm">November</div>
-                                            </div>
-                                            <div class="absolute  transform  h-[4rem] w-0.5 bg-white mt-48"></div>
-                                        </div>
-                                    </div>
+            <div class="grid grid-cols-12 items-center">
+
+                <div class="col-span-2"></div>
+                <div class="col-span-3"></div>
+
+                <div class="col-span-2">
+
+
+
+                    <div class="flex flex-col items-center space-y-10">
+                        <!-- timeline 1 -->
+                        <div class="flex items-center justify-center mt-12">
+                            <div
+                                class="w-32 h-32 bg-white text-center flex items-center justify-center rounded-full border-2 border-dashed border-blue-900">
+                                <div class="text-black">
+                                    <div class="text-2xl font-bold">07</div>
+                                    <div class="text-sm">November</div>
+                                </div>
+                                <div class="absolute  transform  h-[4rem] w-0.5 bg-white mt-48"></div>
                             </div>
-                       
-                    </div>
-                    
-                    <div class="col-span-3">
-                    <div class="col-span-2"></div>
-
-
-                        <div class="bg-white rounded-lg border-2 border-dashed border-blue-900 p-3 h-[26] mt-12">
-                            <h4 class="text-lg text-center font-bold pb-2">Hari ke 1</h4>
-                            <p class="text-sm font-semibold">terdapat 5 kegiatan penting yang ada pada hari pertama yang dimulai dari pukul 8 pagi hingga pukul 9 malam waktu indonesia tengah</p>
                         </div>
                     </div>
+
                 </div>
 
-                <div class="grid grid-cols-12 items-center">
+                <div class="col-span-3">
                     <div class="col-span-2"></div>
-                    <div class="col-span-3">
-                        
-                        
-                        <div class="bg-white rounded-lg border-2 border-dashed border-blue-900 p-3 h-[26] mt-12">
-                            <h4 class="text-lg text-center font-bold pb-2">Hari ke 1</h4>
-                            <p class="text-sm font-semibold">terdapat 5 kegiatan penting yang ada pada hari pertama yang dimulai dari pukul 8 pagi hingga pukul 9 malam waktu indonesia tengah</p>
+
+
+                    <div class="bg-white rounded-lg border-2 border-dashed border-blue-900 p-3 h-[26] mt-12">
+                        <h4 class="text-lg text-center font-bold pb-2">Hari ke 1</h4>
+                        <p class="text-sm font-semibold">terdapat 5 kegiatan penting yang ada pada hari pertama yang
+                            dimulai dari pukul 8 pagi hingga pukul 9 malam waktu indonesia tengah</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-12 items-center">
+                <div class="col-span-2"></div>
+                <div class="col-span-3">
+
+
+                    <div class="bg-white rounded-lg border-2 border-dashed border-blue-900 p-3 h-[26] mt-12">
+                        <h4 class="text-lg text-center font-bold pb-2">Hari ke 1</h4>
+                        <p class="text-sm font-semibold">terdapat 5 kegiatan penting yang ada pada hari pertama yang
+                            dimulai dari pukul 8 pagi hingga pukul 9 malam waktu indonesia tengah</p>
+                    </div>
+                </div>
+
+
+                <div class="col-span-2">
+
+
+
+                    <div class="flex flex-col items-center space-y-10">
+                        <!-- timeline 1 -->
+                        <div class="flex items-center justify-center mt-12">
+                            <div
+                                class="w-32 h-32 bg-white text-center flex items-center justify-center rounded-full border-2 border-dashed border-blue-900">
+                                <div class="text-black">
+                                    <div class="text-2xl font-bold">07</div>
+                                    <div class="text-sm">November</div>
+                                </div>
+                                <div class="absolute  transform  h-[4rem] w-0.5 bg-white mt-48"></div>
+                            </div>
                         </div>
                     </div>
-                    
 
-                    <div class="col-span-2">
-                       
-
-                        
-                            <div class="flex flex-col items-center space-y-10">
-                                    <!-- timeline 1 -->
-                                    <div class="flex items-center justify-center mt-12">
-                                        <div class="w-32 h-32 bg-white text-center flex items-center justify-center rounded-full border-2 border-dashed border-blue-900">
-                                            <div class="text-black">
-                                                <div class="text-2xl font-bold">07</div>
-                                                <div class="text-sm">November</div>
-                                            </div>
-                                            <div class="absolute  transform  h-[4rem] w-0.5 bg-white mt-48"></div>
-                                        </div>
-                                    </div>
-                            </div>
-                       
-                    </div>
-                    <div class="col-span-2"></div>
-                    <div class="col-span-3"></div>
-                    
                 </div>
-
-                <div class="grid grid-cols-12 items-center">
-
-                    <div class="col-span-2"></div>
-                    <div class="col-span-3"></div>
-
-                    <div class="col-span-2">
-                       
-                                    
-                        
-                            <div class="flex flex-col items-center space-y-10">
-                                    <!-- timeline 1 -->
-                                    <div class="flex items-center justify-center mt-12">
-                                        <div class="w-32 h-32 bg-white text-center flex items-center justify-center rounded-full border-2 border-dashed border-blue-900">
-                                            <div class="text-black">
-                                                <div class="text-2xl font-bold">07</div>
-                                                <div class="text-sm">November</div>
-                                            </div>
-                                            <div class="absolute  transform  h-[4rem] w-0.5 bg-white mt-48"></div>
-                                        </div>
-                                    </div>
-                            </div>
-                       
-                    </div>
-                    
-                    <div class="col-span-3">
-                    <div class="col-span-2"></div>
-
-
-                        <div class="bg-white rounded-lg border-2 border-dashed border-blue-900 p-3 h-[26] mt-12">
-                            <h4 class="text-lg text-center font-bold pb-2">Hari ke 1</h4>
-                            <p class="text-sm font-semibold">terdapat 5 kegiatan penting yang ada pada hari pertama yang dimulai dari pukul 8 pagi hingga pukul 9 malam waktu indonesia tengah</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="grid grid-cols-12 items-center">
-                    <div class="col-span-2"></div>
-                    <div class="col-span-3">
-                        
-                        
-                        <div class="bg-white rounded-lg border-2 border-dashed border-blue-900 p-3 h-[26] mt-12">
-                            <h4 class="text-lg text-center font-bold pb-2">Hari ke 1</h4>
-                            <p class="text-sm font-semibold">terdapat 5 kegiatan penting yang ada pada hari pertama yang dimulai dari pukul 8 pagi hingga pukul 9 malam waktu indonesia tengah</p>
-                        </div>
-                    </div>
-                    
-
-                    <div class="col-span-2">
-                       
-
-                        
-                            <div class="flex flex-col items-center space-y-10">
-                                    <!-- timeline 1 -->
-                                    <div class="flex items-center justify-center mt-12">
-                                        <div class="w-32 h-32 bg-white text-center flex items-center justify-center rounded-full border-2 border-dashed border-blue-900">
-                                            <div class="text-black">
-                                                <div class="text-2xl font-bold">07</div>
-                                                <div class="text-sm">November</div>
-                                            </div>
-                                           
-                                        </div>
-                                    </div>
-                            </div>
-                       
-                    </div>
-                    <div class="col-span-2"></div>
-                    <div class="col-span-3"></div>
-                    
-                </div>
-                
-                <div class="flex justify-center mt-[5rem] mb-12">
-                    <a href="#" class="bg-[#F8C035] text-white font-bold py-2 px-4 rounded-xl w-[312px] text-center text-2xl">Baca Selengkapnya</a>
-                </div>
-
+                <div class="col-span-2"></div>
+                <div class="col-span-3"></div>
 
             </div>
-        </section>
+
+            <div class="grid grid-cols-12 items-center">
+
+                <div class="col-span-2"></div>
+                <div class="col-span-3"></div>
+
+                <div class="col-span-2">
+
+
+
+                    <div class="flex flex-col items-center space-y-10">
+                        <!-- timeline 1 -->
+                        <div class="flex items-center justify-center mt-12">
+                            <div
+                                class="w-32 h-32 bg-white text-center flex items-center justify-center rounded-full border-2 border-dashed border-blue-900">
+                                <div class="text-black">
+                                    <div class="text-2xl font-bold">07</div>
+                                    <div class="text-sm">November</div>
+                                </div>
+                                <div class="absolute  transform  h-[4rem] w-0.5 bg-white mt-48"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-span-3">
+                    <div class="col-span-2"></div>
+
+
+                    <div class="bg-white rounded-lg border-2 border-dashed border-blue-900 p-3 h-[26] mt-12">
+                        <h4 class="text-lg text-center font-bold pb-2">Hari ke 1</h4>
+                        <p class="text-sm font-semibold">terdapat 5 kegiatan penting yang ada pada hari pertama yang
+                            dimulai dari pukul 8 pagi hingga pukul 9 malam waktu indonesia tengah</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-12 items-center">
+                <div class="col-span-2"></div>
+                <div class="col-span-3">
+
+
+                    <div class="bg-white rounded-lg border-2 border-dashed border-blue-900 p-3 h-[26] mt-12">
+                        <h4 class="text-lg text-center font-bold pb-2">Hari ke 1</h4>
+                        <p class="text-sm font-semibold">terdapat 5 kegiatan penting yang ada pada hari pertama yang
+                            dimulai dari pukul 8 pagi hingga pukul 9 malam waktu indonesia tengah</p>
+                    </div>
+                </div>
+
+
+                <div class="col-span-2">
+
+
+
+                    <div class="flex flex-col items-center space-y-10">
+                        <!-- timeline 1 -->
+                        <div class="flex items-center justify-center mt-12">
+                            <div
+                                class="w-32 h-32 bg-white text-center flex items-center justify-center rounded-full border-2 border-dashed border-blue-900">
+                                <div class="text-black">
+                                    <div class="text-2xl font-bold">07</div>
+                                    <div class="text-sm">November</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-span-2"></div>
+                <div class="col-span-3"></div>
+
+            </div>
+
+            <div class="flex justify-center mt-[5rem] mb-12">
+                <a href="#" class="bg-[#F8C035] text-black  py-2 px-4 rounded-xl w-[312px] text-center text-2xl">Baca
+                    Selengkapnya</a>
+            </div>
+
+
+        </div>
+    </section>
     <!-- Time Line Abdidaya -->
 
 
     <!-- Maskot Abdidaya Awal-->
-    <section id="maskot" class="w-screen padding-section bg-[#878787] p-5">
-          <div class="content bg-custom-white rounded-md shadow-lg p-6 h-full">
-              <div id="about-tittle"  class="section-tittle text-center">
-                  <h1 class="font-bold text-4xl text-[#0C356A] relative inline-block">
-                      Maskot
-                      <span class="absolute left-1/2 bottom-[-15px] w-[80%] h-[5px] bg-[#F8C035] transform -translate-x-1/2"></span>
-                  </h1> 
-              </div>
+    <section id="maskot" class="w-screen padding-section bg-[#F2EDED] p-5">
+        <div class="content bg-custom-white rounded-md shadow-lg p-6 h-full">
+            <div id="about-tittle" class="section-tittle text-center">
+                <h1 class="font-bold text-4xl text-[#0C356A] relative inline-block">
+                    MASKOT
+                    <span
+                        class="absolute left-1/2 bottom-[-15px] w-[80%] h-[5px] bg-[#F8C035] transform -translate-x-1/2"></span>
+                </h1>
+            </div>
 
-              <div class="grid grid-cols-12 items-center">
-               
+            <div class="grid grid-cols-12 items-center">
+
                 <div class="col-span-3">
                     <img src="img/maskot perempuan.png" alt="Gambar">
                 </div>
                 <div class="col-span-6">
-                    <h3 class="text-3xl mb-2 font-bold">MASKOT ABDIDAYA ORMAWA 2024</h3>
-                    <h3 class="text-3xl mb-2 font-bold text-[#F8C035]">KIJANG  KENCANA</h3>
-                    <p class="font-semibold">Maskot Abdidaya 2024 adalah “KIJANG KENCANA” yaitu seekor menjangan jantan berwarna emas dengan sepasang tanduk menawan. Kijang merupakan hewan yang sangat elegan dan dengan kecerdikannya mampu mengatasi berbagai permasalahan dengan kemurnian hati. Warna emas melambangkan kebahagiaan, optimisme, kecerdasan, kesetiaan, kearifan, kebijaksanaan, dan energi. Melalui maskot kijang kencana, bagaimana mahasiswa melalui PPK-ORMAWA dapat melakukan pengabdian yang tulus dalam membantu menyelesaikan permasalahan yang ada untuk kesejahteraan masyarakat melalui peningkatan kapasitas diri secara elegan dan penuh semangat.</p>
+                    <h3 class="text-3xl mb-2 font-bold ">MASKOT ABDIDAYA ORMAWA 2024</h3>
+                    <h3 class="text-3xl mb-2 font-bold text-[#F8C035]">KIJANG KENCANA</h3>
+                    <p class="font-semibold">Maskot Abdidaya 2024 adalah “KIJANG KENCANA” yaitu seekor menjangan jantan
+                        berwarna emas dengan sepasang tanduk menawan. Kijang merupakan hewan yang sangat elegan dan
+                        dengan kecerdikannya mampu mengatasi berbagai permasalahan dengan kemurnian hati. Warna emas
+                        melambangkan kebahagiaan, optimisme, kecerdasan, kesetiaan, kearifan, kebijaksanaan, dan energi.
+                        Melalui maskot kijang kencana, bagaimana mahasiswa melalui PPK-ORMAWA dapat melakukan pengabdian
+                        yang tulus dalam membantu menyelesaikan permasalahan yang ada untuk kesejahteraan masyarakat
+                        melalui peningkatan kapasitas diri secara elegan dan penuh semangat.</p>
                 </div>
-                
-                
+
+
                 <div class="col-span-3">
                     <img src="img/Maskot laki-laki.png" alt="Gambar">
                 </div>
-              </div>    
-          </div>
-      </section>
+            </div>
+        </div>
+    </section>
     <!-- Maskot Abdidaya Akhir -->
 
     <!-- Tentang Udayana Awal -->
-        <section class="container mx-auto py-10">
-            <h1 class="text-center text-3xl font-bold mb-8">Universitas Udayana</h1>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 px-32">
-                <!-- Card 1 -->
-                <div class="bg-blue-900 text-white p-6 rounded-lg shadow-lg text-center max-w-md mx-auto">
-                    <h2 class="font-semibold text-2xl mb-2">Universitas<br>di Bali</h2>
-                    <p>Kampus UNUD di Bukit Jimbaran terletak di kawasan wisata yang dekat dengan Kuta dan Nusa Dua, menawarkan akses mudah ke berbagai fasilitas dan atraksi wisata di Bali.</p>
-                </div>
-                
-                <!-- Card 2 -->
-                <div class="bg-blue-900 text-white p-6 rounded-lg shadow-lg text-center max-w-md mx-auto">
-                    <h2 class="font-bold text-lg mb-2">Lokasi Kampus yang Strategis</h2>
-                    <p>Universitas Udayana (UNUD) adalah universitas negeri terbesar di Bali dengan akreditasi "Unggul" dan dua kampus di Denpasar dan Bukit Jimbaran.</p>
-                </div>
-            
-                <!-- Card 3 -->
-                <div class="bg-blue-900 text-white p-6 rounded-lg shadow-lg max-w-md mx-auto">
-                    <h2 class="font-bold text-lg mb-2">Implementasi MBKM</h2>
-                    <p>Sejak 2020, UNUD telah mengimplementasikan kebijakan Merdeka Belajar Kampus Merdeka (MBKM), memperkaya pengalaman belajar mahasiswa melalui program di luar kampus.</p>
-                </div>
-                
-                <!-- Card 4 -->
-                <div class="bg-blue-900 text-white p-6 rounded-lg shadow-lg max-w-md mx-auto">
-                    <h2 class="font-bold text-lg mb-2">Program Bakti Desa</h2>
-                    <p>UNUD berkomitmen dalam pengabdian masyarakat melalui program "Bakti Desa," yang bertujuan menggali potensi desa dan mengatasi permasalahan untuk pengembangan desa.</p>
-                </div>
-            
-                <!-- Card 5 -->
-                <div class="bg-blue-900 text-white p-6 rounded-lg shadow-lg max-w-md mx-auto">
-                    <h2 class="font-bold text-lg mb-2">Pengalaman Event Besar</h2>
-                    <p>UNUD memiliki pengalaman luas dalam menyelenggarakan acara nasional dan internasional, seperti PIMNAS, NUDC, dan turnamen kriket internasional.</p>
-                </div>
-                
-                <!-- Card 6 -->
-                <div class="bg-blue-900 text-white p-6 rounded-lg shadow-lg max-w-md mx-auto">
-                    <h2 class="font-bold text-lg mb-2">Aksesibilitas Mudah</h2>
-                    <p>Lokasi strategis di Bali dengan akses transportasi yang mudah dari seluruh Indonesia menjadikan UNUD pilihan ideal sebagai tuan rumah Abtidaya Ormawa 2024.</p>
-                </div>
+    <section class="container mx-auto py-10">
+        <h1 class="text-center text-3xl font-bold mb-8">Universitas Udayana</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 px-32">
+            <!-- Card 1 -->
+            <div class="bg-blue-900 text-white p-6 rounded-lg shadow-lg text-center max-w-md mx-auto">
+                <h2 class="font-semibold text-2xl mb-2">Universitas<br>di Bali</h2>
+                <p>Kampus UNUD di Bukit Jimbaran terletak di kawasan wisata yang dekat dengan Kuta dan Nusa Dua,
+                    menawarkan akses mudah ke berbagai fasilitas dan atraksi wisata di Bali.</p>
             </div>
-            
-    
-            <!-- Button -->
-            <div class="flex justify-center mt-8">
-                <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg">Selengkapnya</a>
+
+            <!-- Card 2 -->
+            <div class="bg-blue-900 text-white p-6 rounded-lg shadow-lg text-center max-w-md mx-auto">
+                <h2 class="font-bold text-lg mb-2">Lokasi Kampus yang Strategis</h2>
+                <p>Universitas Udayana (UNUD) adalah universitas negeri terbesar di Bali dengan akreditasi "Unggul" dan
+                    dua kampus di Denpasar dan Bukit Jimbaran.</p>
             </div>
-        </section>
+
+            <!-- Card 3 -->
+            <div class="bg-blue-900 text-white p-6 rounded-lg shadow-lg max-w-md mx-auto">
+                <h2 class="font-bold text-lg mb-2">Implementasi MBKM</h2>
+                <p>Sejak 2020, UNUD telah mengimplementasikan kebijakan Merdeka Belajar Kampus Merdeka (MBKM),
+                    memperkaya pengalaman belajar mahasiswa melalui program di luar kampus.</p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-blue-900 text-white p-6 rounded-lg shadow-lg max-w-md mx-auto">
+                <h2 class="font-bold text-lg mb-2">Program Bakti Desa</h2>
+                <p>UNUD berkomitmen dalam pengabdian masyarakat melalui program "Bakti Desa," yang bertujuan menggali
+                    potensi desa dan mengatasi permasalahan untuk pengembangan desa.</p>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="bg-blue-900 text-white p-6 rounded-lg shadow-lg max-w-md mx-auto">
+                <h2 class="font-bold text-lg mb-2">Pengalaman Event Besar</h2>
+                <p>UNUD memiliki pengalaman luas dalam menyelenggarakan acara nasional dan internasional, seperti
+                    PIMNAS, NUDC, dan turnamen kriket internasional.</p>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="bg-blue-900 text-white p-6 rounded-lg shadow-lg max-w-md mx-auto">
+                <h2 class="font-bold text-lg mb-2">Aksesibilitas Mudah</h2>
+                <p>Lokasi strategis di Bali dengan akses transportasi yang mudah dari seluruh Indonesia menjadikan UNUD
+                    pilihan ideal sebagai tuan rumah Abtidaya Ormawa 2024.</p>
+            </div>
+        </div>
+
+
+        <!-- Button -->
+        <div class="flex justify-center mt-8">
+            <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg">Selengkapnya</a>
+        </div>
+    </section>
     <!-- Tentaang Udayana Akhir -->
 
 
@@ -419,11 +497,11 @@
 
     <!-- Paket Tour -->
     <section id="timeline" class="w-screen h-screen padding-section">
-            <div class="content bg-custom-white rounded-md shadow-lg">
-                <div class="flex flex-wrap">
-                    
-                </div>
+        <div class="content bg-custom-white rounded-md shadow-lg">
+            <div class="flex flex-wrap">
+
             </div>
+        </div>
     </section>
     <!--Paket Tour  -->
 
@@ -442,8 +520,8 @@
                     <h5 class="text-gray-400">Abdidaya Ormawa 2024</h5>
                 </div>
                 <div class="footer-nav">
-                     <h4 class="text-2xl font-semibold text-white mb-5">Informasi Pilihan</h4>
-                     <ul class="text-gray-400">
+                    <h4 class="text-2xl font-semibold text-white mb-5">Informasi Pilihan</h4>
+                    <ul class="text-gray-400">
                         <li>Sistem Informasi Terintegrasi (IMISSU)</li>
                         <li>Info Tender</li>
                         <li>SPI (Satuan Pengawasan Intern)</li>
@@ -452,26 +530,26 @@
                         <li>LPPM</li>
                         <li>LPSE</li>
                         <li>Vokasi UNUD</li>
-                     </ul> 
+                    </ul>
                 </div>
                 <div class="footer-nav">
                     <h4 class="text-2xl font-semibold text-white mb-5">Informasi Pilihan</h4>
-                     <ul class="text-gray-400">
+                    <ul class="text-gray-400">
                         <li>e-Office</li>
                         <li>Daftar Putar Udayana</li>
                         <li>e-PUPNAS</li>
                         <li>LPPM</li>
                         <li>Knowledge Center</li>
                         <li>Kalender Akademik</li>
-                     </ul> 
+                    </ul>
                 </div>
                 <div class="footer-nav">
                     <h4 class="text-2xl font-semibold text-white mb-5">Informasi Eksternal</h4>
-                     <ul class="text-gray-400">
+                    <ul class="text-gray-400">
                         <li>Program Kampus Merdeka</li>
                         <li>FAQ Kampus Merdeka</li>
                         <li>PDDIKTI</li>
-                     </ul> 
+                    </ul>
                 </div>
             </div>
         </section>
@@ -479,7 +557,7 @@
 
     <script>
         // JavaScript untuk mendeteksi scroll dan mengubah background navbar
-        window.addEventListener('scroll', function() {
+        window.addEventListener('scroll', function () {
             const navbar = document.getElementById('navbar');
             if (window.scrollY > 50) { // Jika pengguna scroll lebih dari 50px
                 navbar.style.backgroundColor = '#18285C';
@@ -494,6 +572,6 @@
         });
     </script>
 
-</section>
-</html>
+    </section>
 
+</html>
