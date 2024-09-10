@@ -2,51 +2,14 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            max-width: 100%;
+        }
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="https://cdn.tailwindcss.com"></script>
-<style>
-    * {
-        max-width: 100%;
-    }
-    
-    #navbar a {
-    position: relative;
-    text-decoration: none;
-    color: white; 
-    padding: 10px;
-    transition: color 0.3s ease; 
-    }
-
-    #nav a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    left: 0;
-    bottom: 0;
-    background-color: #F8C035; 
-    transition: width 0.3s ease; 
-    }
-
-    #nav a:hover {
-    color: yellow; 
-    }
-
-    #navbar a:hover::after {
-    width: 100%; 
-    }
-
-    #content-bg{
-    background-image: url('img/cont-bg.png'); /* Tambahkan gambar background */
-    background-size: cover; /* Gambar akan menyesuaikan ukuran navigasi */
-    background-position: center; /* Posisikan gambar di tengah */
-    background-repeat: no-repeat; /* Tidak mengulangi gambar */
-    background-blend-mode: overlay; /* Membuat gambar menyatu dengan warna latar */
-    background-color: rgb(255, 169, 10); /* Kombinasi warna background untuk efek perpaduan */
-    transition: background-color 0.3s ease;
-    }
 
         #navbar {
             background-image: url('img/nav-bg.png');
@@ -146,14 +109,23 @@
                     </div>
 
                     <!-- Link navigasi di sebelah kanan -->
-                    <div class="flex space-x-6 my-auto" id="nav">
-                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium hover:text-violet-700 hover:underline decoration-violet-700">Beranda</a>
-                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium hover:text-violet-700 hover:underline decoration-violet-700">Timeline</a>
-                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium hover:text-violet-700 hover:underline decoration-violet-700">Tentang Unud</a>
-                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium hover:text-violet-700 hover:underline decoration-violet-700">Denah</a>
-                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium hover:text-violet-700 hover:underline decoration-violet-700">Data Team</a>
-                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium hover:text-violet-700 hover:underline decoration-violet-700">Tour</a>
-                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium hover:text-violet-700 hover:underline decoration-violet-700">Login</a>
+                    <div class="flex space-x-6 my-auto">
+                        <a href="#"
+                            class="px-3 py-2 rounded-md text-sm font-medium hover:text-violet-700 hover:underline decoration-violet-700">Beranda</a>
+                        <a href="#"
+                            class="px-3 py-2 rounded-md text-sm font-medium hover:text-violet-700 hover:underline decoration-violet-700">Timeline</a>
+                        <a href="#"
+                            class="px-3 py-2 rounded-md text-sm font-medium hover:text-violet-700 hover:underline decoration-violet-700">Tentang
+                            Unud</a>
+                        <a href="#"
+                            class="px-3 py-2 rounded-md text-sm font-medium hover:text-violet-700 hover:underline decoration-violet-700">Denah</a>
+                        <a href="#"
+                            class="px-3 py-2 rounded-md text-sm font-medium hover:text-violet-700 hover:underline decoration-violet-700">Data
+                            Team</a>
+                        <a href="#"
+                            class="px-3 py-2 rounded-md text-sm font-medium hover:text-violet-700 hover:underline decoration-violet-700">Tour</a>
+                        <a href="#"
+                            class="px-3 py-2 rounded-md text-sm font-medium hover:text-violet-700 hover:underline decoration-violet-700">Login</a>
                     </div>
                 </div>
             </div>
@@ -246,7 +218,6 @@
                     </div>
                 </div>
             </div>
-
         </section>
         <!-- About Akhir -->
 
@@ -419,6 +390,8 @@
                         class="bg-[#F8C035] text-black  py-2 px-4 rounded-xl w-[312px] text-center text-2xl">Baca
                         Selengkapnya</a>
                 </div>
+
+
             </div>
         </section>
         <!-- Time Line Abdidaya -->
@@ -434,6 +407,7 @@
                 </div>
 
                 <div class="grid grid-cols-12 items-center">
+
                     <div class="col-span-3">
                         <img src="img/maskot perempuan.png" alt="Gambar">
                     </div>
@@ -446,6 +420,8 @@
                                 Selengkapnya</a>
                         </div>
                     </div>
+
+
                     <div class="col-span-3">
                         <img src="img/Maskot laki-laki.png" alt="Gambar">
                     </div>
@@ -527,73 +503,14 @@
         <!-- Paket Tour -->
         <section id="timeline" class="mx-10 py-5">
             <div class="content bg-custom-white rounded-md shadow-lg p-6 h-full">
-
                 <div class="flex flex-wrap">
 
                 </div>
             </div>
         </section>
-    </div>
+    
     <!--Paket Tour  -->
 
-    <!--Awal Denah -->
-    <section id="Denah" class="w-screen padding-section bg-[#878787] p-5">
-        <div class="content bg-custom-white rounded-md shadow-lg p-6 h-full">
-            <div id="about-tittle"  class="section-tittle text-center mb-12">
-                <h1 class="font-bold text-4xl text-[#0C356A] relative inline-block">
-                    Denah Kegiatan
-                    <span class="absolute left-1/2 bottom-[-15px] w-[80%] h-[5px] bg-[#F8C035] transform -translate-x-1/2"></span>
-                </h1> 
-            </div>
-            <!-- Menggunakan Flexbox untuk memastikan gambar di tengah -->
-            <div class="flex justify-center">
-                <img src="img/Denah.png" alt="" class="text-center">
-            </div>
-            <!-- <div class="grid grid-cols-12 items-center gap-1">
-                <div class="col-span-4">
-                    <ol type="1">
-                        <li>Coffee</li>
-                        <li>Tea</li>
-                        <li>Milk</li>
-                      </ol>
-                </div>
-
-                <div class="col-span-4">
-                    <ol type="1">
-                        <li>Coffee</li>
-                        <li>Tea</li>
-                        <li>Milk</li>
-                      </ol>
-                </div>
-
-                <div class="col-span-4">
-                    <ol type="1">
-                        <li>Coffee</li>
-                        <li>Tea</li>
-                        <li>Milk</li>
-                      </ol>
-                </div>
-            </div> -->
-        </div>
-    </section> 
-    <!-- Akhir Denah -->
-
-    <!-- Awal Logo -->
-    <section id="Denah" class="w-screen padding-section bg-[#F2EDED] p-5">
-        <div class="content  p-6 h-full">
-            <h2>ABDIDAYA ORMAWA 2024</h2>
-            <h3>Diselenggarakan oleh : </h3> 
-            <div class="grid grid-cols-12 items-center">
-                <div class="col-span-4"></div>
-                <div class="col-span-4">
-                    
-                </div>
-                <div class="col-span-4"></div>
-            </div>
-        </div>
-    </section>
-    <!-- Akhir Logo -->
-        
 
     <!-- Footer -->
     <footer>
