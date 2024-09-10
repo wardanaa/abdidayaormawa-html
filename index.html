@@ -5,15 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    #navbar{
-    background-image: url('img/nav-bg.png'); /* Tambahkan gambar background */
-    background-size: cover; /* Gambar akan menyesuaikan ukuran navigasi */
-    background-position: center; /* Posisikan gambar di tengah */
-    background-repeat: no-repeat; /* Tidak mengulangi gambar */
-    background-blend-mode: overlay; /* Membuat gambar menyatu dengan warna latar */
-    background-color: rgba(24, 40, 92, 0.8); /* Kombinasi warna background untuk efek perpaduan */
-    transition: background-color 0.3s ease;
-    }
+    
     #navbar a {
     position: relative;
     text-decoration: none;
@@ -22,7 +14,7 @@
     transition: color 0.3s ease; 
     }
 
-    #navbar a::after {
+    #nav a::after {
     content: '';
     position: absolute;
     width: 0;
@@ -33,7 +25,7 @@
     transition: width 0.3s ease; 
     }
 
-    #navbar a:hover {
+    #nav a:hover {
     color: yellow; 
     }
 
@@ -41,6 +33,15 @@
     width: 100%; 
     }
 
+    #content-bg{
+    background-image: url('img/cont-bg.png'); /* Tambahkan gambar background */
+    background-size: cover; /* Gambar akan menyesuaikan ukuran navigasi */
+    background-position: center; /* Posisikan gambar di tengah */
+    background-repeat: no-repeat; /* Tidak mengulangi gambar */
+    background-blend-mode: overlay; /* Membuat gambar menyatu dengan warna latar */
+    background-color: rgb(255, 169, 10); /* Kombinasi warna background untuk efek perpaduan */
+    transition: background-color 0.3s ease;
+    }
 
     .custom-white {
       color: #ffffff;
@@ -81,7 +82,7 @@
                     </div>
         
                     <!-- Link navigasi di sebelah kanan -->
-                    <div class="flex space-x-6 my-auto">
+                    <div class="flex space-x-6 my-auto" id="nav">
                         <a href="#" class="px-3 py-2 rounded-md text-sm font-medium hover:text-violet-700 hover:underline decoration-violet-700">Beranda</a>
                         <a href="#" class="px-3 py-2 rounded-md text-sm font-medium hover:text-violet-700 hover:underline decoration-violet-700">Timeline</a>
                         <a href="#" class="px-3 py-2 rounded-md text-sm font-medium hover:text-violet-700 hover:underline decoration-violet-700">Tentang Unud</a>
@@ -181,8 +182,13 @@
     <!-- Time Line Abdidaya -->
         <section id="timeline" class="w-screen padding-section bg-[#878787] p-5">
             <div class="content bg-[#18285C] rounded-md shadow-lg p-6 h-full">
-                <h2>TIMELINE</h2>
-                <h3>ABDIDAYA 2024</h3>
+                <h2 class="text-center font-bold text-4xl text-[#fff] mb-5">TIMELINE</h2>
+                <div id="about-tittle"  class="section-tittle text-center mb-12">
+                    <h1 class="font-bold text-4xl text-[#F8C035] relative inline-block">
+                        Tentang Abdidaya Ormawa 2024
+                        <span class="absolute left-1/2 bottom-[-15px] w-[80%] h-[5px] bg-[#F8C035] transform -translate-x-1/2"></span>
+                    </h1>
+                </div>
                 
                 <div class="grid grid-cols-12 items-center">
 
@@ -350,9 +356,11 @@
                     <img src="img/maskot perempuan.png" alt="Gambar">
                 </div>
                 <div class="col-span-6">
-                    <h3 class="text-3xl mb-2 font-bold">MASKOT ABDIDAYA ORMAWA 2024</h3>
-                    <h3 class="text-3xl mb-2 font-bold text-[#F8C035]">KIJANG  KENCANA</h3>
-                    <p class="font-semibold">Maskot Abdidaya 2024 adalah “KIJANG KENCANA” yaitu seekor menjangan jantan berwarna emas dengan sepasang tanduk menawan. Kijang merupakan hewan yang sangat elegan dan dengan kecerdikannya mampu mengatasi berbagai permasalahan dengan kemurnian hati. Warna emas melambangkan kebahagiaan, optimisme, kecerdasan, kesetiaan, kearifan, kebijaksanaan, dan energi. Melalui maskot kijang kencana, bagaimana mahasiswa melalui PPK-ORMAWA dapat melakukan pengabdian yang tulus dalam membantu menyelesaikan permasalahan yang ada untuk kesejahteraan masyarakat melalui peningkatan kapasitas diri secara elegan dan penuh semangat.</p>
+                    <h3 class="text-4xl font-bold text-center">MASKOT ABDIDAYA ORMAWA 2024</h3>
+                    <h3 class="text-4xl font-bold text-[#F8C035] text-center">KIJANG  KENCANA</h3>
+                    <div class="flex justify-center mt-8">
+                        <a href="#" class=" bg-[#F8C035] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg">Selengkapnya</a>
+                    </div>
                 </div>
                 
                 
@@ -361,12 +369,18 @@
                 </div>
               </div>    
           </div>
-      </section>
+    </section>
     <!-- Maskot Abdidaya Akhir -->
 
     <!-- Tentang Udayana Awal -->
-        <section class="container mx-auto py-10">
-            <h1 class="text-center text-3xl font-bold mb-8">Universitas Udayana</h1>
+    <section class="w-screen padding-section bg-[#878787] p-5">
+        <div id="content-bg" class="content bg-custom-white rounded-md shadow-lg p-6 h-full]">
+            <div id="about-tittle"  class="section-tittle text-center mb-[7rem] mt-8">
+                <h1 class="font-bold text-4xl text-[#0C356A] relative inline-block">
+                    UNIVERSITAS UDAYANA
+                    <span class="absolute left-1/2 bottom-[-15px] w-[80%] h-[5px] bg-[#F8C035] transform -translate-x-1/2"></span>
+                </h1> 
+            </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 px-32">
                 <!-- Card 1 -->
                 <div class="bg-blue-900 text-white p-6 rounded-lg shadow-lg text-center max-w-md mx-auto">
@@ -376,32 +390,32 @@
                 
                 <!-- Card 2 -->
                 <div class="bg-blue-900 text-white p-6 rounded-lg shadow-lg text-center max-w-md mx-auto">
-                    <h2 class="font-bold text-lg mb-2">Lokasi Kampus yang Strategis</h2>
-                    <p>Universitas Udayana (UNUD) adalah universitas negeri terbesar di Bali dengan akreditasi "Unggul" dan dua kampus di Denpasar dan Bukit Jimbaran.</p>
+                    <h2 class="font-semibold text-2xl mb-2">Universitas<br>di Bali</h2>
+                    <p>Kampus UNUD di Bukit Jimbaran terletak di kawasan wisata yang dekat dengan Kuta dan Nusa Dua, menawarkan akses mudah ke berbagai fasilitas dan atraksi wisata di Bali.</p>
                 </div>
             
                 <!-- Card 3 -->
-                <div class="bg-blue-900 text-white p-6 rounded-lg shadow-lg max-w-md mx-auto">
-                    <h2 class="font-bold text-lg mb-2">Implementasi MBKM</h2>
-                    <p>Sejak 2020, UNUD telah mengimplementasikan kebijakan Merdeka Belajar Kampus Merdeka (MBKM), memperkaya pengalaman belajar mahasiswa melalui program di luar kampus.</p>
+                <div class="bg-blue-900 text-white p-6 rounded-lg shadow-lg text-center max-w-md mx-auto">
+                    <h2 class="font-semibold text-2xl mb-2">Universitas<br>di Bali</h2>
+                    <p>Kampus UNUD di Bukit Jimbaran terletak di kawasan wisata yang dekat dengan Kuta dan Nusa Dua, menawarkan akses mudah ke berbagai fasilitas dan atraksi wisata di Bali.</p>
                 </div>
                 
                 <!-- Card 4 -->
-                <div class="bg-blue-900 text-white p-6 rounded-lg shadow-lg max-w-md mx-auto">
-                    <h2 class="font-bold text-lg mb-2">Program Bakti Desa</h2>
-                    <p>UNUD berkomitmen dalam pengabdian masyarakat melalui program "Bakti Desa," yang bertujuan menggali potensi desa dan mengatasi permasalahan untuk pengembangan desa.</p>
+                <div class="bg-blue-900 text-white p-6 rounded-lg shadow-lg text-center max-w-md mx-auto">
+                    <h2 class="font-semibold text-2xl mb-2">Universitas<br>di Bali</h2>
+                    <p>Kampus UNUD di Bukit Jimbaran terletak di kawasan wisata yang dekat dengan Kuta dan Nusa Dua, menawarkan akses mudah ke berbagai fasilitas dan atraksi wisata di Bali.</p>
                 </div>
             
                 <!-- Card 5 -->
-                <div class="bg-blue-900 text-white p-6 rounded-lg shadow-lg max-w-md mx-auto">
-                    <h2 class="font-bold text-lg mb-2">Pengalaman Event Besar</h2>
-                    <p>UNUD memiliki pengalaman luas dalam menyelenggarakan acara nasional dan internasional, seperti PIMNAS, NUDC, dan turnamen kriket internasional.</p>
+                <div class="bg-blue-900 text-white p-6 rounded-lg shadow-lg text-center max-w-md mx-auto">
+                    <h2 class="font-semibold text-2xl mb-2">Universitas<br>di Bali</h2>
+                    <p>Kampus UNUD di Bukit Jimbaran terletak di kawasan wisata yang dekat dengan Kuta dan Nusa Dua, menawarkan akses mudah ke berbagai fasilitas dan atraksi wisata di Bali.</p>
                 </div>
                 
                 <!-- Card 6 -->
-                <div class="bg-blue-900 text-white p-6 rounded-lg shadow-lg max-w-md mx-auto">
-                    <h2 class="font-bold text-lg mb-2">Aksesibilitas Mudah</h2>
-                    <p>Lokasi strategis di Bali dengan akses transportasi yang mudah dari seluruh Indonesia menjadikan UNUD pilihan ideal sebagai tuan rumah Abtidaya Ormawa 2024.</p>
+                <div class="bg-blue-900 text-white p-6 rounded-lg shadow-lg text-center max-w-md mx-auto">
+                    <h2 class="font-semibold text-2xl mb-2">Universitas<br>di Bali</h2>
+                    <p>Kampus UNUD di Bukit Jimbaran terletak di kawasan wisata yang dekat dengan Kuta dan Nusa Dua, menawarkan akses mudah ke berbagai fasilitas dan atraksi wisata di Bali.</p>
                 </div>
             </div>
             
@@ -410,12 +424,10 @@
             <div class="flex justify-center mt-8">
                 <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg">Selengkapnya</a>
             </div>
-        </section>
+               
+        </div>
+    </section>
     <!-- Tentaang Udayana Akhir -->
-
-
-
-
 
     <!-- Paket Tour -->
     <section id="timeline" class="w-screen h-screen padding-section">
@@ -427,6 +439,64 @@
     </section>
     <!--Paket Tour  -->
 
+    <!--Awal Denah -->
+    <section id="Denah" class="w-screen padding-section bg-[#878787] p-5">
+        <div class="content bg-custom-white rounded-md shadow-lg p-6 h-full">
+            <div id="about-tittle"  class="section-tittle text-center mb-12">
+                <h1 class="font-bold text-4xl text-[#0C356A] relative inline-block">
+                    Denah Kegiatan
+                    <span class="absolute left-1/2 bottom-[-15px] w-[80%] h-[5px] bg-[#F8C035] transform -translate-x-1/2"></span>
+                </h1> 
+            </div>
+            <!-- Menggunakan Flexbox untuk memastikan gambar di tengah -->
+            <div class="flex justify-center">
+                <img src="img/Denah.png" alt="" class="text-center">
+            </div>
+            <!-- <div class="grid grid-cols-12 items-center gap-1">
+                <div class="col-span-4">
+                    <ol type="1">
+                        <li>Coffee</li>
+                        <li>Tea</li>
+                        <li>Milk</li>
+                      </ol>
+                </div>
+
+                <div class="col-span-4">
+                    <ol type="1">
+                        <li>Coffee</li>
+                        <li>Tea</li>
+                        <li>Milk</li>
+                      </ol>
+                </div>
+
+                <div class="col-span-4">
+                    <ol type="1">
+                        <li>Coffee</li>
+                        <li>Tea</li>
+                        <li>Milk</li>
+                      </ol>
+                </div>
+            </div> -->
+        </div>
+    </section> 
+    <!-- Akhir Denah -->
+
+    <!-- Awal Logo -->
+    <section id="Denah" class="w-screen padding-section bg-[#F2EDED] p-5">
+        <div class="content  p-6 h-full">
+            <h2>ABDIDAYA ORMAWA 2024</h2>
+            <h3>Diselenggarakan oleh : </h3> 
+            <div class="grid grid-cols-12 items-center">
+                <div class="col-span-4"></div>
+                <div class="col-span-4">
+                    
+                </div>
+                <div class="col-span-4"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Akhir Logo -->
+        
 
     <!-- Footer -->
     <footer>
