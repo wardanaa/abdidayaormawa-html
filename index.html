@@ -3,50 +3,56 @@
 
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="https://cdn.tailwindcss.com"></script>
-<style>
-    * {
-        max-width: 100%;
-    }
-    
-    #navbar a {
-    position: relative;
-    text-decoration: none;
-    color: white; 
-    padding: 10px;
-    transition: color 0.3s ease; 
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            max-width: 100%;
+        }
 
-    #nav a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    left: 0;
-    bottom: 0;
-    background-color: #F8C035; 
-    transition: width 0.3s ease; 
-    }
+        #navbar a {
+            position: relative;
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            transition: color 0.3s ease;
+        }
 
-    #nav a:hover {
-    color: yellow; 
-    }
+        #nav a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            left: 0;
+            bottom: 0;
+            background-color: #F8C035;
+            transition: width 0.3s ease;
+        }
 
-    #navbar a:hover::after {
-    width: 100%; 
-    }
+        #nav a:hover {
+            color: yellow;
+        }
 
-    #content-bg{
-    background-image: url('img/cont-bg.png'); /* Tambahkan gambar background */
-    background-size: cover; /* Gambar akan menyesuaikan ukuran navigasi */
-    background-position: center; /* Posisikan gambar di tengah */
-    background-repeat: no-repeat; /* Tidak mengulangi gambar */
-    background-blend-mode: overlay; /* Membuat gambar menyatu dengan warna latar */
-    background-color: rgb(255, 169, 10); /* Kombinasi warna background untuk efek perpaduan */
-    transition: background-color 0.3s ease;
-    }
+        #navbar a:hover::after {
+            width: 100%;
+        }
+
+        #content-bg {
+            background-image: url('img/cont-bg.png');
+            /* Tambahkan gambar background */
+            background-size: cover;
+            /* Gambar akan menyesuaikan ukuran navigasi */
+            background-position: center;
+            /* Posisikan gambar di tengah */
+            background-repeat: no-repeat;
+            /* Tidak mengulangi gambar */
+            background-blend-mode: overlay;
+            /* Membuat gambar menyatu dengan warna latar */
+            background-color: rgb(255, 169, 10);
+            /* Kombinasi warna background untuk efek perpaduan */
+            transition: background-color 0.3s ease;
+        }
 
         #navbar {
             background-image: url('img/nav-bg.png');
@@ -124,6 +130,13 @@
         .container-bg {
             background-image: url('img/BG.png');
         }
+
+        .tour-bg {
+            background-image: url('img/tour.png');
+            /* Tambahkan gambar background */
+            background-size: cover;
+            /* Gambar akan menyesuaikan ukuran navigasi */
+        }
     </style>
 </head>
 
@@ -151,13 +164,22 @@
 
                     <!-- Link navigasi di sebelah kanan -->
                     <div class="flex space-x-6 my-auto" id="nav">
-                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium hover:text-violet-700 hover:underline decoration-violet-700">Beranda</a>
-                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium hover:text-violet-700 hover:underline decoration-violet-700">Timeline</a>
-                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium hover:text-violet-700 hover:underline decoration-violet-700">Tentang Unud</a>
-                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium hover:text-violet-700 hover:underline decoration-violet-700">Denah</a>
-                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium hover:text-violet-700 hover:underline decoration-violet-700">Data Team</a>
-                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium hover:text-violet-700 hover:underline decoration-violet-700">Tour</a>
-                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium hover:text-violet-700 hover:underline decoration-violet-700">Login</a>
+                        <a href="#"
+                            class="px-3 py-2 rounded-md text-sm font-medium hover:text-violet-700 hover:underline decoration-violet-700">Beranda</a>
+                        <a href="#"
+                            class="px-3 py-2 rounded-md text-sm font-medium hover:text-violet-700 hover:underline decoration-violet-700">Timeline</a>
+                        <a href="#"
+                            class="px-3 py-2 rounded-md text-sm font-medium hover:text-violet-700 hover:underline decoration-violet-700">Tentang
+                            Unud</a>
+                        <a href="#"
+                            class="px-3 py-2 rounded-md text-sm font-medium hover:text-violet-700 hover:underline decoration-violet-700">Denah</a>
+                        <a href="#"
+                            class="px-3 py-2 rounded-md text-sm font-medium hover:text-violet-700 hover:underline decoration-violet-700">Data
+                            Team</a>
+                        <a href="#"
+                            class="px-3 py-2 rounded-md text-sm font-medium hover:text-violet-700 hover:underline decoration-violet-700">Tour</a>
+                        <a href="#"
+                            class="px-3 py-2 rounded-md text-sm font-medium hover:text-violet-700 hover:underline decoration-violet-700">Login</a>
                     </div>
                 </div>
             </div>
@@ -193,7 +215,7 @@
     </section>
     <!-- Homepage Akhir -->
 
-    <div class="container container-bg">
+    <div class="container bg-[#E8E8E8]">
 
         <!-- About Awal -->
         <section id="about" class="px-10 py-10">
@@ -245,7 +267,7 @@
                     </div>
                     <div class="flex justify-center my-8">
                         <a href="#"
-                            class="bg-[#0C356A] hover:bg-bg-[#0C356A] active:bg-[#0C356A] text-white py-4 px-4 rounded-xl text-center text-2xl mx-auto">Filosofi
+                            class="bg-[#0C356A] hover:bg-[#114c98] active:bg-[#071e3c] text-white py-4 px-4 rounded-full text-center text-2xl mx-auto">Filosofi
                             Logo</a>
                     </div>
                 </div>
@@ -420,8 +442,9 @@
 
                 <div class="flex justify-center mt-[5rem] mb-12">
                     <a href="#"
-                        class="bg-[#F8C035] text-black  py-2 px-4 rounded-xl w-[312px] text-center text-2xl">Baca
+                        class="bg-[#F8C035] hover:bg-[#facf66] active:bg-[#f2af08] text-black  py-4 px-4 rounded-full w-[312px] text-center text-2xl">Baca
                         Selengkapnya</a>
+
                 </div>
             </div>
         </section>
@@ -446,7 +469,7 @@
                         <h3 class="text-3xl mb-2 font-bold text-center text-[#F8C035]">KIJANG KENCANA</h3>
                         <div class="flex justify-center mt-[5rem] mb-12">
                             <a href="#"
-                                class="bg-[#F8C035] text-black  py-2 px-4 rounded-xl w-[312px] text-center text-2xl">Baca
+                                class="bg-[#F8C035] hover:bg-[#facf66] active:bg-[#f2af08] text-black  py-4 px-4 rounded-full w-[312px] text-center text-2xl">Baca
                                 Selengkapnya</a>
                         </div>
                     </div>
@@ -468,46 +491,47 @@
                 </h1>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
                     <!-- Card 1 -->
-                    <div class="bg-[#0C356A] text-white p-6 rounded-lg shadow-lg text-center ms-[46px] me-4 mb-10">
-                        <h2 class="font-bold text-4xl mb-4">Universitas Terbesar<br> di Bali</h2>
-                        <p>Universitas Udayana (UNUD) adalah universitas negeri terbesar di Bali yang berfokus pada
+                    <div class="bg-[#0C356A] text-white p-6 rounded-lg shadow-lg ms-[46px] me-4 mb-10">
+                        <h2 class="font-bold text-4xl mb-4 text-center">Universitas Terbesar<br> di Bali</h2>
+                        <p class="text-justify">Universitas Udayana (UNUD) adalah universitas negeri terbesar di Bali
+                            yang berfokus pada
                             pendidikan, penelitian, dan
                             pengabdian masyarakat.</p>
                     </div>
 
                     <!-- Card 2 -->
-                    <div class="bg-[#0C356A] text-white p-6 rounded-lg shadow-lg text-center me-[46px] ms-4 mb-10">
-                        <h2 class="font-bold text-4xl mb-4">Akreditasi dan Lokasi <br>Kampus</h2>
+                    <div class="bg-[#0C356A] text-white p-6 rounded-lg shadow-lg me-[46px] ms-4 mb-10">
+                        <h2 class="font-bold text-4xl mb-4 text-center">Akreditasi dan Lokasi <br>Kampus</h2>
                         <p>Universitas Udayana (UNUD) adalah universitas negeri terbesar di Bali yang berfokus pada
                             pendidikan, penelitian, dan
                             pengabdian masyarakat.</p>
                     </div>
-                    <!-- Card 1 -->
-                    <div class="bg-[#0C356A] text-white p-6 rounded-lg shadow-lg text-center ms-[46px] me-4 mb-10">
-                        <h2 class="font-bold text-4xl mb-4">Universitas Terbesar<br> di Bali</h2>
+                    <!-- Card 3 -->
+                    <div class="bg-[#0C356A] text-white p-6 rounded-lg shadow-lg ms-[46px] me-4 mb-10">
+                        <h2 class="font-bold text-4xl mb-4 text-center">Kontribusi dalam Pendidikan <br>Nasional</h2>
+                        <p>UNUD berperan aktif dalam mendukung misi pendidikan nasional melalui pengembangan tridarma
+                            perguruan tinggi: pendidikan,
+                            penelitian, dan pengabdian masyarakat.</p>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="bg-[#0C356A] text-white p-6 rounded-lg shadow-lg me-[46px] ms-4 mb-10">
+                        <h2 class="font-bold text-4xl mb-4 text-center">Adaptasi Terhadap Era <br>Digital</h2>
+                        <p>UNUD menerapkan transformasi digital dan kebijakan Merdeka Belajar Kampus Merdeka (MBKM)
+                            untuk mempersiapkan mahasiswa
+                            menghadapi era Industri 4.0.</p>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="bg-[#0C356A] text-white p-6 rounded-lg shadow-lg ms-[46px] me-4 mb-10">
+                        <h2 class="font-bold text-4xl mb-4 text-center">Universitas Terbesar<br> di Bali</h2>
                         <p>Universitas Udayana (UNUD) adalah universitas negeri terbesar di Bali yang berfokus pada
                             pendidikan, penelitian, dan
                             pengabdian masyarakat.</p>
                     </div>
 
-                    <!-- Card 2 -->
-                    <div class="bg-[#0C356A] text-white p-6 rounded-lg shadow-lg text-center me-[46px] ms-4 mb-10">
-                        <h2 class="font-bold text-4xl mb-4">Akreditasi dan Lokasi <br>Kampus</h2>
-                        <p>Universitas Udayana (UNUD) adalah universitas negeri terbesar di Bali yang berfokus pada
-                            pendidikan, penelitian, dan
-                            pengabdian masyarakat.</p>
-                    </div>
-                    <!-- Card 1 -->
-                    <div class="bg-[#0C356A] text-white p-6 rounded-lg shadow-lg text-center ms-[46px] me-4 mb-10">
-                        <h2 class="font-bold text-4xl mb-4">Universitas Terbesar<br> di Bali</h2>
-                        <p>Universitas Udayana (UNUD) adalah universitas negeri terbesar di Bali yang berfokus pada
-                            pendidikan, penelitian, dan
-                            pengabdian masyarakat.</p>
-                    </div>
-
-                    <!-- Card 2 -->
-                    <div class="bg-[#0C356A] text-white p-6 rounded-lg shadow-lg text-center me-[46px] ms-4 mb-10">
-                        <h2 class="font-bold text-4xl mb-4">Akreditasi dan Lokasi <br>Kampus</h2>
+                    <!-- Card 6 -->
+                    <div class="bg-[#0C356A] text-white p-6 rounded-lg shadow-lg me-[46px] ms-4 mb-10">
+                        <h2 class="font-bold text-4xl mb-4 text-center">Akreditasi dan Lokasi <br>Kampus</h2>
                         <p>Universitas Udayana (UNUD) adalah universitas negeri terbesar di Bali yang berfokus pada
                             pendidikan, penelitian, dan
                             pengabdian masyarakat.</p>
@@ -517,43 +541,69 @@
 
 
                 <!-- Button -->
-                <div class="flex justify-center mt-5">
+                <div class="flex justify-center p-10">
                     <a href="#"
-                        class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg">Selengkapnya</a>
+                        class="bg-[#0C356A] hover:bg-[#114c98] active:bg-[#071e3c] text-white py-4 px-4 rounded-full text-center text-2xl mx-auto">Selengkapnya</a>
                 </div>
             </div>
         </section>
         <!-- Tentaang Udayana Akhir -->
 
-
-
-
         <!-- Paket Tour -->
-        <section id="timeline" class="mx-10 py-5">
-            <div class="content bg-custom-white rounded-md shadow-lg p-6 h-full">
+        <section id="tour" class="px-10 py-10">
+            <div class="content tour-bg rounded-md shadow-lg p-6 h-full">
+                <div id="about-tittle" class="section-tittle text-center mb-10 mt-14">
+                    <div id="about-tittle" class="section-tittle text-center mt-2 ">
+                        <h2 class="font-bold text-4xl text-[#FFFFFF] inline-block">JELAJAHI
+                            KEINDAHAN BALI BERSAMA
+                        </h2>
+                    </div>
 
-                <div class="flex flex-wrap">
+                    <div id="about-tittle" class="section-tittle text-center mb-12 mt-2 ">
+                        <h1 class="font-bold text-4xl text-[#FFC436] inline-block flex flex-col items-center">
+                            UNIVERSITAS UDAYANA
+                            <span class="w-[20%] h-[5px] bg-[#F8C035] mt-2"></span>
+                        </h1>
+                    </div>
+                </div>
+                <div class="content-detail">
+                    <div class="flex justify-center text-white text-2xl font-semibold">
+                        <p class="w-4/5 text-justify font-light">
+                            Universitas Udayana akan menghadirkan paket tur untuk para peserta dan tamu undangan.
+                            Manfaatkan kesempatan ini
+                            untuk mengeksplorasi keindahan Bali, dari pesona alam hingga kekayaan budayanya. Kami
+                            menawarkan beberapa
+                            pilihan rute wisata yang dirancang khusus untuk memperkaya pengalaman Anda selama berada di
+                            Pulau Dewata.
+                        </p>
+                    </div>
 
+                    <div class="flex justify-center my-8">
+                        <a href="#"
+                            class="bg-[#0C356A] hover:bg-[#114c98] active:bg-[#071e3c] text-white py-4 px-4 rounded-full text-center text-2xl mx-auto">Selengkapnya</a>
+                    </div>
                 </div>
             </div>
-        </section>
-    </div>
-    <!--Paket Tour  -->
 
-    <!--Awal Denah -->
-    <section id="Denah" class="w-screen padding-section bg-[#878787] p-5">
-        <div class="content bg-custom-white rounded-md shadow-lg p-6 h-full">
-            <div id="about-tittle"  class="section-tittle text-center mb-12">
-                <h1 class="font-bold text-4xl text-[#0C356A] relative inline-block">
-                    Denah Kegiatan
-                    <span class="absolute left-1/2 bottom-[-15px] w-[80%] h-[5px] bg-[#F8C035] transform -translate-x-1/2"></span>
-                </h1> 
-            </div>
-            <!-- Menggunakan Flexbox untuk memastikan gambar di tengah -->
-            <div class="flex justify-center">
-                <img src="img/Denah.png" alt="" class="text-center">
-            </div>
-            <!-- <div class="grid grid-cols-12 items-center gap-1">
+        </section>
+
+        <!--Paket Tour  -->
+
+        <!--Awal Denah -->
+        <section id="Denah" class="px-10 py-5">
+            <div class="content bg-custom-white rounded-md shadow-lg p-6 h-full">
+                <div id="about-tittle" class="section-tittle text-center mb-12">
+                    <h1 class="font-bold text-4xl text-[#0C356A] relative inline-block">
+                        Denah Kegiatan
+                        <span
+                            class="absolute left-1/2 bottom-[-15px] w-[80%] h-[5px] bg-[#F8C035] transform -translate-x-1/2"></span>
+                    </h1>
+                </div>
+                <!-- Menggunakan Flexbox untuk memastikan gambar di tengah -->
+                <div class="flex justify-center">
+                    <img src="img/Denah.png" alt="" class="text-center">
+                </div>
+                <!-- <div class="grid grid-cols-12 items-center gap-1">
                 <div class="col-span-4">
                     <ol type="1">
                         <li>Coffee</li>
@@ -578,26 +628,28 @@
                       </ol>
                 </div>
             </div> -->
-        </div>
-    </section> 
-    <!-- Akhir Denah -->
+            </div>
+        </section>
+        <!-- Akhir Denah -->
+
+    </div>
 
     <!-- Awal Logo -->
     <section id="Denah" class="w-screen padding-section bg-[#F2EDED] p-5">
         <div class="content  p-6 h-full">
             <h2>ABDIDAYA ORMAWA 2024</h2>
-            <h3>Diselenggarakan oleh : </h3> 
+            <h3>Diselenggarakan oleh : </h3>
             <div class="grid grid-cols-12 items-center">
                 <div class="col-span-4"></div>
                 <div class="col-span-4">
-                    
+
                 </div>
                 <div class="col-span-4"></div>
             </div>
         </div>
     </section>
     <!-- Akhir Logo -->
-        
+
 
     <!-- Footer -->
     <footer>
