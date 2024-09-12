@@ -1,0 +1,14 @@
+name: Preview HTML
+
+on: [push]
+
+jobs:
+  previewHtml:
+    runs-on: ubuntu-latest
+    steps:
+    - name: HTML Preview
+      id: html_preview
+      uses: pavi2410/html-preview-action@v4
+      with:
+        html_file: 'index.html'
+        job_summary: true
