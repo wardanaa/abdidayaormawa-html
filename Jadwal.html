@@ -194,11 +194,91 @@
         }
 
 
-        .tour-bg {
-            background-image: url('img/tour.png');
-            /* Tambahkan gambar background */
-            background-size: cover;
-            /* Gambar akan menyesuaikan ukuran navigasi */
+
+        /* Mengatur kontainer agar tabel berada di tengah */
+        /* Mengatur kontainer agar tabel berada di tengah */
+        .table-detail {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Pengaturan tabel */
+        .table {
+            width: 80%;
+            background-color: #FFFFFF;
+            border-spacing: 0;
+            /* Menghindari border collapse agar tidak mengganggu radius */
+            border-collapse: separate;
+        }
+
+        /* Header tabel */
+        .table-header {
+            background-color: #0C356A;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        /* Mengatur radius di th pertama dan terakhir */
+        .table-header th {
+            padding: 10px;
+            font-size: 1.1rem;
+            border-right: 2px solid #ffffff;
+        }
+
+        .table-header .header-mid {
+            border-left: 2px solid #ffffff;
+            border-right: 2px solid #ffffff;
+        }
+
+        /* Sudut melengkung di th pertama */
+        .table-header th:first-child {
+            border-top-left-radius: 20px;
+        }
+
+        /* Sudut melengkung di th terakhir */
+        .table-header th:last-child {
+            border-top-right-radius: 20px;
+            border-left: 2px solid #ffffff;
+            border-right: none;
+        }
+
+        /* Body tabel */
+        .table-body td {
+            padding: 10px;
+            text-align: center;
+            border-top: 2px solid #0C356A;
+            border-bottom: 2px solid #0C356A;
+            border-left: 2px solid #0C356A;
+            border-right: 2px solid #0C356A;
+            font-size: 1rem;
+        }
+
+        /* Menjaga border tidak melampaui td pertama dan terakhir */
+        .table-body td:first-child {
+            border-left: 2px solid #0C356A;
+        }
+
+        .table-body td:last-child {
+            border-right: 2px solid #0C356A;
+        }
+
+        /* Baris terakhir dengan sudut melengkung */
+        .table-body tr:last-child td:first-child {
+            border-bottom-left-radius: 20px;
+        }
+
+        .table-body tr:last-child td:last-child {
+            border-bottom-right-radius: 20px;
+        }
+
+        /* Mengatur border sudut untuk td di baris terakhir */
+        .table-body .last {
+            background-color: #0C356A;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border: none;
         }
     </style>
 </head>
@@ -415,7 +495,7 @@
 
     <!-- About Awal -->
     <section id="roundown" class="px-10 py-10">
-        <div class="content bg-custom-white border border-[#F8C035] shadow-lg p-6 h-full">
+        <div class="content bg-custom-white border shadow-lg p-6 h-full">
             <div id="about-tittle" class="section-tittle text-center mb-10 mt-5">
                 <h1 class="font-bold text-4xl text-[#F8C035] inline-block flex flex-col items-center">ROUNDOWN
                 </h1>
@@ -424,47 +504,49 @@
                 </h1>
             </div>
 
-            <div class="tabel-detail">
-                <table class="border-separate  table-auto border  border-[#0C356A]">
-                    <thead class="bg-[#0C356A] text-[#FFFFFF] ">
+            <div class="table-detail">
+                <table class="table">
+                    <thead class="table-header">
                         <tr>
                             <th>Tempat</th>
-                            <th>Agenda</th>
+                            <th class="header-mid">Agenda</th>
                             <th>Waktu</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody class="table-body">
                         <tr>
-                            <td class="border  border-[#0C356A]">Gedung Widya Sabha</td>
-                            <td class="border  border-[#0C356A]">Registrasi On-Site</td>
-                            <td class="border  border-[#0C356A]">08.00 - 14.00</td>
-                        </tr>
-
-                        <tr>
-                            <td class="border  border-[#0C356A]">Gedung Widya Sabha</td>
-                            <td class="border  border-[#0C356A]">Layout Expo Poster dan Stand</td>
-                            <td class="border  border-[#0C356A]">14.00 - 21.00</td>
-                        </tr>
-
-                        <tr>
-                            <td class="border  border-[#0C356A]">Gedung Widya Sabha</td>
-                            <td class="border  border-[#0C356A]">Technical Meeting</td>
-                            <td class="border  border-[#0C356A]">15.00 - 17.00</td>
+                            <td>Gedung Widya Sabha</td>
+                            <td>Registrasi On-Site</td>
+                            <td>08.00 - 14.00</td>
                         </tr>
                         <tr>
-                            <td class="border  border-[#0C356A]">Gedung Widya Sabha</td>
-                            <td class="border  border-[#0C356A]">Konperensi Pers</td>
-                            <td class="border  border-[#0C356A]">17.00 - 18.00</td>
+                            <td>Gedung Widya Sabha</td>
+                            <td>Layout Expo Poster dan Stand</td>
+                            <td>14.00 - 21.00</td>
                         </tr>
                         <tr>
-                            <td class="border  border-[#0C356A]">Gedung Widya Sabha</td>
-                            <td class="border  border-[#0C356A]">Pembukaan</td>
-                            <td class="border  border-[#0C356A]">19.00 - 21.00</td>
+                            <td>Gedung Widya Sabha</td>
+                            <td>Technical Meeting</td>
+                            <td>15.00 - 17.00</td>
                         </tr>
-
+                        <tr>
+                            <td>Gedung Widya Sabha</td>
+                            <td>Konperensi Pers</td>
+                            <td>17.00 - 18.00</td>
+                        </tr>
+                        <tr>
+                            <td>Gedung Widya Sabha</td>
+                            <td>Pembukaan</td>
+                            <td>19.00 - 21.00</td>
+                        </tr>
+                        <tr>
+                            <td class="last" colspan="3"></td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
+
+
 
 
 
