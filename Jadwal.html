@@ -16,19 +16,21 @@
         }
 
 
-        #nav a::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            left: 0;
-            bottom: 0;
-            background-color: #F8C035;
-            transition: width 0.3s ease;
-        }
-
-        #nav a:hover {
-            color: yellow;
+        #Logo {
+            background-image: url('img/imageLogo.png');
+            background-size: cover;
+            /* Menyesuaikan gambar agar memenuhi seluruh section */
+            background-position: center;
+            /* Posisikan gambar di tengah */
+            background-repeat: no-repeat;
+            /* Hindari pengulangan gambar */
+            min-height: 60vh;
+            /* Tinggi minimal 100% dari viewport */
+            display: flex;
+            align-items: center;
+            /* Posisikan konten di tengah secara vertikal */
+            justify-content: center;
+            /* Posisikan konten di tengah secara horizontal */
         }
 
         #navbar a:hover::after {
@@ -155,6 +157,32 @@
             }
         }
 
+        #content-bg {
+            background-image: url('img/cont-bg.png');
+            /* Tambahkan gambar background */
+            background-size: cover;
+            /* Gambar akan menyesuaikan ukuran navigasi */
+            background-position: center;
+            /* Posisikan gambar di tengah */
+            background-repeat: no-repeat;
+            /* Tidak mengulangi gambar */
+            background-blend-mode: overlay;
+            /* Membuat gambar menyatu dengan warna latar */
+            background-color: rgb(255, 169, 10);
+            /* Kombinasi warna background untuk efek perpaduan */
+            transition: background-color 0.3s ease;
+        }
+
+
+        .custom-white {
+            color: #ffffff;
+        }
+
+        .bg-custom-white {
+            background-color: #ffffff;
+        }
+
+
         .bg-purple-footer {
             color: #423c86;
         }
@@ -176,22 +204,6 @@
             /* Tambahkan gambar background */
         }
 
-        #Logo {
-            background-image: url('img/imageLogo.png');
-            background-size: cover;
-            /* Menyesuaikan gambar agar memenuhi seluruh section */
-            background-position: center;
-            /* Posisikan gambar di tengah */
-            background-repeat: no-repeat;
-            /* Hindari pengulangan gambar */
-            min-height: 60vh;
-            /* Tinggi minimal 100% dari viewport */
-            display: flex;
-            align-items: center;
-            /* Posisikan konten di tengah secara vertikal */
-            justify-content: center;
-            /* Posisikan konten di tengah secara horizontal */
-        }
 
 
 
@@ -284,9 +296,9 @@
 </head>
 
 <body>
-    <!-- header navbar tag -->
     <header>
-        <nav id="navbar" class="fixed top-0 left-0 w-full bg-transparent text-white shadow-lg z-50">
+        <nav id="navbar"
+            class="fixed top-0 left-0 w-full bg-transparent text-white shadow-lg z-50 border-b-8 border-[#F8C035]">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between items-center h-20">
                     <!-- Logo di sebelah kiri -->
@@ -548,11 +560,61 @@
 
 
 
+            <div id="about-tittle" class="section-tittle text-center mb-10 mt-5">
+                <h1 class="font-bold text-4xl text-[#F8C035] inline-block flex flex-col items-center">ROUNDOWN
+                </h1>
+                <h1 class="font-bold text-4xl text-[#0C356A] inline-block flex flex-col items-center">07 November 2024
+                    <span class="w-[10%] h-[5px] bg-[#F8C035] mt-2"></span>
+                </h1>
+            </div>
 
+            <div class="table-detail">
+                <table class="table">
+                    <thead class="table-header">
+                        <tr>
+                            <th>Tempat</th>
+                            <th class="header-mid">Agenda</th>
+                            <th>Waktu</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-body">
+                        <tr>
+                            <td>Gedung Widya Sabha</td>
+                            <td>Registrasi On-Site</td>
+                            <td>08.00 - 14.00</td>
+                        </tr>
+                        <tr>
+                            <td>Gedung Widya Sabha</td>
+                            <td>Layout Expo Poster dan Stand</td>
+                            <td>14.00 - 21.00</td>
+                        </tr>
+                        <tr>
+                            <td>Gedung Widya Sabha</td>
+                            <td>Technical Meeting</td>
+                            <td>15.00 - 17.00</td>
+                        </tr>
+                        <tr>
+                            <td>Gedung Widya Sabha</td>
+                            <td>Konperensi Pers</td>
+                            <td>17.00 - 18.00</td>
+                        </tr>
+                        <tr>
+                            <td>Gedung Widya Sabha</td>
+                            <td>Pembukaan</td>
+                            <td>19.00 - 21.00</td>
+                        </tr>
+                        <tr>
+                            <td class="last" colspan="3"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
         </div>
     </section>
     <!-- About Akhir -->
+
+
 
     <!-- Awal Logo -->
     <section id="Logo">
