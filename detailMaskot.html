@@ -5,157 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        /* Global Style */
-        * {
-            max-width: 100%;
-            box-sizing: border-box;
-        }
-
-        body {
-            background-color: #000000;
-        }
-
-        /* Navbar Styles */
-        #navbar {
-            background-image: url('img/nav-bg.png');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-blend-mode: overlay;
-            background-color: rgba(24, 40, 92, 0.8);
-            transition: background-color 0.3s ease;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 50;
-        }
-
-        #navbar a {
-            position: relative;
-            text-decoration: none;
-            color: white;
-            padding: 10px;
-            transition: color 0.3s ease;
-        }
-
-        #navbar a::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            left: 0;
-            bottom: 0;
-            background-color: #F8C035;
-            transition: width 0.3s ease;
-        }
-
-        #navbar a:hover {
-            color: yellow;
-        }
-
-        #navbar a:hover::after {
-            width: 100%;
-        }
-
-        /* Header Logo */
-        .header-logo {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .header-logo img {
-            width: 3rem;
-            height: 3rem;
-        }
-
-        /* Navigation Links */
-        .nav-links {
-            display: flex;
-            gap: 1rem;
-        }
-
-        .nav-links a {
-            padding: 0.5rem 1rem;
-            font-size: 0.875rem;
-            border-radius: 0.375rem;
-        }
-
-        /* Responsive Styles */
-        @media (max-width: 768px) {
-            .header-logo img {
-                width: 2.5rem;
-                height: 2.5rem;
-            }
-
-            .nav-links {
-                display: none;
-            }
-
-            .nav-links.active {
-                margin-top: 18rem;
-                display: flex;
-                flex-direction: column;
-                gap: 0.5rem;
-            }
-
-            .menu-toggle {
-                display: flex;
-                flex-direction: column;
-                gap: 0.3rem;
-                cursor: pointer;
-            }
-
-            .menu-toggle div {
-                width: 1.5rem;
-                height: 0.2rem;
-                background-color: white;
-            }
-        }
-
-        /* Section Styles */
-        /* Section Styles */
-        #Logo {
-            background-image: url('img/imageLogo.png');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            min-height: 60vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .custom-white {
-            color: #ffffff;
-        }
-
-        .bg-custom-white {
-            background-color: #ffffff;
-        }
-
-        .bg-purple-footer {
-            color: #423c86;
-        }
-
-        .timeline-bg {
-            background-image: url('img/BG.png');
-            /* Tambahkan gambar background */
-        }
-
-        .udayana-bg {
-            background-image: url('img/BG.png');
-            background-blend-mode: overlay;
-            background-color: rgba(255, 180, 0, 0.7);
-            /* Tambahkan gambar background */
-        }
-
-        #hero-abdidaya {
-            background-image: url('img/herov2.png');
-        }
-    </style>
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>
@@ -182,11 +32,10 @@
 
                     <!-- Link navigasi di sebelah kanan -->
                     <div class="nav-links" id="nav">
-                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium">Beranda</a>
-                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium">Timeline</a>
-                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium">Tentang Unud</a>
-                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium">Denah</a>
-                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium">Data Team</a>
+                        <a href="./index.html#homepage" class="px-3 py-2 rounded-md text-sm font-medium">Beranda</a>
+                        <a href="./index.html#timeline" class="px-3 py-2 rounded-md text-sm font-medium">Timeline</a>
+                        <a href="./index.html#udayana" class="px-3 py-2 rounded-md text-sm font-medium">Tentang Unud</a>
+                        <a href="./index.html#denah" class="px-3 py-2 rounded-md text-sm font-medium">Denah</a>
                         <a href="#" class="px-3 py-2 rounded-md text-sm font-medium">Tour</a>
                         <a href="#" class="px-3 py-2 rounded-md text-sm font-medium">Login</a>
                     </div>
@@ -207,7 +56,7 @@
             class="relative z-10 flex flex-col md:flex-row justify-center items-center h-full px-4 md:px-8 mt-16 md:mt-0">
             <div class="grid grid-cols-1 md:grid-cols-12 w-full max-w-6xl mx-auto pb-10 gap-4">
                 <!-- Column 1: Image -->
-                <div class="md:col-span-3 flex justify-center items-end">
+                <div class="md:col-span-3 hidden md:block flex justify-center items-end">
                     <img src="img/maskot perempuan.png" alt="Gambar" class="w-48 md:w-auto h-auto">
                 </div>
                 <!-- Column 2: Welcome Message -->
@@ -219,6 +68,7 @@
                 </div>
                 <!-- Column 3: Image -->
                 <div class="md:col-span-3 flex justify-center items-end">
+                    <img src="img/maskot perempuan.png" alt="Gambar" class="w-48 md:hidden h-auto">
                     <img src="img/Maskot laki-laki.png" alt="Gambar" class="w-48 md:w-auto h-auto">
                 </div>
             </div>
@@ -227,7 +77,7 @@
 
 
     <section id="maskot" class="px-4 py-6 md:px-10 md:py-10">
-        <div class="content bg-custom-white rounded-md shadow-lg p-4 md:p-6">
+        <div class="content bg-[#FFFFFF] rounded-md shadow-lg p-4 md:p-6">
             <div id="about-tittle" class="section-tittle text-center mb-6">
                 <h1 class="font-bold text-2xl md:text-4xl text-[#0C356A] flex flex-col items-center">
                     FILOSOFI LOGO
@@ -309,9 +159,9 @@
 
     <!-- Maskot Abdidaya Awal -->
     <section id="hero-abdidaya" class="px-4 py-6 md:px-10 md:py-10 bg-[#0C356A]">
-        <div class="content shadow-lg p-6 mx-auto max-w-screen-lg">
+        <div class="content p-6 mx-auto max-w-screen-lg">
             <div class="text-center">
-                <img src="img/abdidaya.jpg" alt="Gambar" class="w-full h-auto max-w-md mx-auto my-10">
+                <img src="img/abdidaya.png" alt="Gambar" class="w-full h-auto max-w-md mx-auto my-10">
                 <h1 class="text-2xl md:text-4xl lg:text-5xl mt-5 font-bold text-[#FFFFFF]">ABDIDAYA ORMAWA 2024</h1>
                 <h3 class="text-xl md:text-2xl lg:text-3xl mt-2 mb-16 font-bold text-[#F8C035]">UNIVERSITAS UDAYANA</h3>
             </div>
@@ -358,7 +208,7 @@
                         </div>
                     </div>
                     <div class="flex-1 grid place-items-center relative p-6 md:p-14">
-                        <img src="img/abdidaya.jpg" alt="" class="max-w-full h-auto object-cover">
+                        <img src="img/abdidaya.png" alt="" class="max-w-full h-auto object-cover">
                     </div>
                     <div class="flex-1 flex flex-col mb-6 md:mb-0">
                         <div class="mt-6 md:mt-12">

@@ -121,3 +121,162 @@ body {
         background-color: white;
     }
 }
+
+#homepage {
+    background-image: url('../img/hero.png');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.timeline-bg {
+    background-image: url('../img/BG.png');
+    /* Tambahkan gambar background */
+}
+
+.udayana-bg {
+    background-image: url('../img/BG.png');
+    background-blend-mode: overlay;
+    background-color: rgba(255, 180, 0, 0.7);
+    /* Tambahkan gambar background */
+}
+
+.tour-bg {
+    background-image: url('../img/tour.png');
+    /* Tambahkan gambar background */
+    background-size: cover;
+    /* Gambar akan menyesuaikan ukuran navigasi */
+}
+
+#hero-abdidaya {
+    background-image: url('img/herov2.png');
+}
+
+/* Flexbox untuk memastikan tabel berada di tengah */
+.table-detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; /* Sesuaikan padding */
+}
+
+/* Pengaturan tabel */
+.table {
+    width: 80%; /* Pastikan tabel mengambil seluruh lebar pada mobile */
+    background-color: #ffffff;
+    border-spacing: 0;
+    border-collapse: separate;
+}
+
+/* Header tabel */
+.table-header {
+    background-color: #0c356a;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Pengaturan padding di layar lebih kecil */
+.table-header th,
+.table-body td {
+    padding: 8px; /* Lebih kecil untuk mobile */
+    font-size: 0.9rem; /* Ukuran font lebih kecil */
+    border-right: 2px solid #ffffff;
+}
+
+.table-header .header-mid {
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+}
+
+/* Sudut melengkung di th pertama */
+.table-header th:first-child {
+    border-top-left-radius: 20px;
+}
+
+/* Sudut melengkung di th terakhir */
+.table-header th:last-child {
+    border-top-right-radius: 20px;
+    border-left: 2px solid #ffffff;
+    border-right: none;
+}
+
+/* Body tabel */
+.table-body td {
+    padding: 10px;
+    text-align: center;
+    border-top: 2px solid #0c356a;
+    border-bottom: 2px solid #0c356a;
+    border-left: 2px solid #0c356a;
+    border-right: 2px solid #0c356a;
+    font-size: 1rem;
+}
+
+/* Menjaga border tidak melampaui td pertama dan terakhir */
+.table-body td:first-child {
+    border-left: 2px solid #0c356a;
+}
+
+.table-body td:last-child {
+    border-right: 2px solid #0c356a;
+}
+
+/* Baris terakhir dengan sudut melengkung */
+.table-body tr:last-child td:first-child {
+    border-bottom-left-radius: 20px;
+}
+
+.table-body tr:last-child td:last-child {
+    border-bottom-right-radius: 20px;
+}
+
+/* Mengatur border sudut untuk td di baris terakhir */
+.table-body .last {
+    background-color: #0c356a;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: none;
+}
+
+.table-detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; /* Sesuaikan padding */
+}
+
+/* Pengaturan tabel */
+.table {
+    width: 100%; /* Pastikan tabel mengambil seluruh lebar pada mobile */
+    background-color: #ffffff;
+    border-spacing: 0;
+    border-collapse: separate;
+}
+
+/* Header tabel */
+.table-header {
+    background-color: #0c356a;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Pengaturan padding di layar lebih kecil */
+.table-header th,
+.table-body td {
+    padding: 8px; /* Lebih kecil untuk mobile */
+    font-size: 0.9rem; /* Ukuran font lebih kecil */
+    border-right: 2px solid #ffffff;
+}
+
+/* Media Query untuk tampilan mobile */
+@media (max-width: 768px) {
+    .table {
+        width: 100%; /* Pastikan tabel tetap full width di mobile */
+    }
+    .table-header th,
+    .table-body td {
+        font-size: 0.8rem; /* Kurangi ukuran font di mobile */
+        padding: 6px; /* Sesuaikan padding untuk mobile */
+    }
+    .table-body td {
+        font-size: 0.85rem;
+    }
+}
