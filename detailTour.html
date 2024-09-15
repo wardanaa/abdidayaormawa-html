@@ -6,6 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beranda | Abdidaya 2024</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <style>
+        .swiper-container {
+          position: relative; /* Tambahkan ini untuk memastikan tombol di dalam container */
+          width: 100%; /* Pastikan lebar slider 100% agar responsif */
+          height: auto;
+        }
+        .swiper-wrapper {
+          display: flex;
+        }
+        .swiper-slide {
+          width: 100%; /* Setiap slide memenuhi lebar layar */
+          text-align: center;
+        }
+        .swiper-button-next, .swiper-button-prev {
+          color: #ffffff; /* Ubah warna tombol jika diperlukan */
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          z-index: 10;
+        }
+        .swiper-button-next {
+          right: 10px; /* Tombol next di sisi kanan */
+        }
+        .swiper-button-prev {
+          left: 10px; /* Tombol prev di sisi kiri */
+        }
+      </style>
+      
 </head>
 
 <body>
@@ -60,25 +90,136 @@
     <!-- Homepage Akhir -->
 
 
-    <!-- About Awal -->
-    <section id="about" class="px-4 py-6 md:px-10 md:py-10">
-        <div class="bg-[#FFFFFF] rounded-md shadow-lg p-6">
+    <!-- Tour detail-->
+    <section id="about" class="px-4 py-6 md:px-10 md:py-10 swiper-container bg-[#efeeec]">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide bg-white rounded-md shadow-lg">
             <!-- Title -->
             <div id="about-title" class="text-center mb-8 mt-10">
-                <h1 class="font-bold text-3xl md:text-4xl text-[#0C356A] inline-block">
-                    TOUR PAKET
-                    <span class="block w-full h-[5px] bg-[#F8C035] mt-2 mx-auto"></span>
-                </h1>
+              <h1 class="font-bold text-3xl md:text-4xl text-[#0C356A] inline-block">
+                Jimbaran Dinner The Cuisine Resto
+                <span class="block w-full h-[5px] bg-[#F8C035] mt-2 mx-auto"></span>
+              </h1>
             </div>
-
+            <!-- Content -->
             <div id="tourcontent" class="p-5">
-
+              <!-- Tambahkan konten Paket 1 di sini -->
             </div>
+          </div>
+      
+          <!-- Slide 2 -->
+          <div class="swiper-slide bg-white rounded-md shadow-lg">
+            <!-- Title -->
+            <div id="about-title" class="text-center mb-8 mt-10">
+              <h1 class="font-bold text-3xl md:text-4xl text-[#0C356A] inline-block">
+                ATV & Kintamani Tour
+                <span class="block w-full h-[5px] bg-[#F8C035] mt-2 mx-auto"></span>
+              </h1>
+            </div>
+            <!-- Content -->
+            <div id="tourcontent" class="p-5">
+                <div class="flex flex-col md:flex-row">
+                    <div class="w-full md:basis-1/2">
+                        <img src="img/hotel-nirmala.png" alt="">
+                    </div>
+                    <div class="w-full md:basis-1/2">
+                        <div class="flex flex-col">
+                            <div class="bg-blue-500 p-6 text-white basis-1/2">Daftar</div>
+                            <div class="bg-blue-500 p-6 text-white basis-1/2">580.000/tandem</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+
+          <div class="swiper-slide bg-white rounded-md shadow-lg">
+            <!-- Title -->
+            <div id="about-title" class="text-center mb-8 mt-10">
+              <h1 class="font-bold text-3xl md:text-4xl text-[#0C356A] inline-block">
+                ATV & Kintamani Tour
+                <span class="block w-full h-[5px] bg-[#F8C035] mt-2 mx-auto"></span>
+              </h1>
+            </div>
+            <!-- Content -->
+            <div id="tourcontent" class="p-5">
+                <div class="flex flex-col md:flex-row">
+                    <div class="w-full md:basis-1/2">
+                        <img src="img/hotel-nirmala.png" alt="">
+                    </div>
+                    <div class="w-full md:basis-1/2">
+                        <div class="flex flex-col">
+                            <div class="bg-blue-500 p-6 text-white basis-1/2">Daftar</div>
+                            <div class="bg-blue-500 p-6 text-white basis-1/2">580.000/tandem</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide bg-white rounded-md shadow-lg">
+            <!-- Title -->
+            <div id="about-title" class="text-center mb-8 mt-10">
+              <h1 class="font-bold text-3xl md:text-4xl text-[#0C356A] inline-block">
+                Monkey Forest  & TEGALALANG
+                <span class="block w-full h-[5px] bg-[#F8C035] mt-2 mx-auto"></span>
+              </h1>
+            </div>
+            <!-- Content -->
+            <div id="tourcontent" class="p-5">
+                <div class="flex flex-col md:flex-row">
+                    <div class="w-full md:basis-1/2">
+                        <img src="img/hotel-nirmala.png" alt="">
+                    </div>
+                    <div class="w-full md:basis-1/2">
+                        <div class="flex flex-col">
+                            <div class="bg-blue-500 p-6 text-white basis-1/2">Daftar</div>
+                            <div class="bg-blue-500 p-6 text-white basis-1/2">580.000/tandem</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide bg-white rounded-md shadow-lg">
+            <!-- Title -->
+            <div id="about-title" class="text-center mb-8 mt-10">
+              <h1 class="font-bold text-3xl md:text-4xl text-[#0C356A] inline-block">
+                Monkey Forest  & TEGALALANG
+                <span class="block w-full h-[5px] bg-[#F8C035] mt-2 mx-auto"></span>
+              </h1>
+            </div>
+            <!-- Content -->
+            <div id="tourcontent" class="p-5">
+                <div class="flex flex-col md:flex-row">
+                    <div class="w-full md:basis-1/2">
+                        <img src="img/hotel-nirmala.png" alt="">
+                    </div>
+                    <div class="w-full md:basis-1/2">
+                        <div class="flex flex-col">
+                            <div class="bg-blue-500 p-6 text-white basis-1/2">Daftar</div>
+                            <div class="bg-blue-500 p-6 text-white basis-1/2">580.000/tandem</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
 
           
-            
+        
+
+
+      
+          <!-- Tambahkan lebih banyak slide jika perlu -->
         </div>
+      
+        <!-- Tombol Navigasi -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
     </section>
+      
     <!-- About Akhir -->
 
 
@@ -141,6 +282,29 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="JS/script.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+          loop: true, // Untuk membuat slider loop
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          slidesPerView: 1, // Pastikan hanya satu slide yang ditampilkan pada satu waktu
+          spaceBetween: 40, // Jarak antar slide
+          breakpoints: {
+            640: {
+              slidesPerView: 1, // Di layar kecil, tampilkan 1 slide per view
+            },
+            768: {
+              slidesPerView: 1, // Di tablet, tetap 1 slide
+            },
+            1024: {
+              slidesPerView: 1, // Di desktop, tetap 1 slide
+            },
+          },
+        });
+    </script>
+      
 </body>
 
 </html>
