@@ -128,6 +128,12 @@ body {
     background-attachment: fixed;
 }
 
+#homeTour {
+    background-image: url('../img/travelzoom.com_.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 .timeline-bg {
     background-image: url('../img/BG.png');
     /* Tambahkan gambar background */
