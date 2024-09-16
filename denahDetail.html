@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail-Denah Universitas Udayana</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <style>
+        #Denah {
+            background-image: url('img/bg-3logo.png');
+            /* Tambahkan gambar background */
+            background-size: cover;
+            /* Gambar akan menyesuaikan ukuran navigasi */
+            background-position: center;
+            /* Posisikan gambar di tengah */
+            background-repeat: no-repeat;
+            /* Tidak mengulangi gambar */
+            background-blend-mode: overlay;
+            /* Membuat gambar menyatu dengan warna latar */
+            background-color: rgb(228, 228, 228);
+            /* Kombinasi warna background untuk efek perpaduan */
+            transition: background-color 0.3s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header navbar tag -->
+    <header>
+        <nav id="navbar"
+            class="fixed top-0 left-0 w-full bg-transparent text-white shadow-lg z-50 border-b-8 border-[#F8C035]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-20">
+                    <!-- Logo di sebelah kiri -->
+                    <div class="header-logo">
+                        <a href=""><img src="img/tutWuriHandayani.png" alt="Logo" class="w-12 h-12"></a>
+                        <a href=""><img src="img/Logo-Unud.png" alt="Logo" class="w-12 h-12"></a>
+                        <a href=""><img src="img/blu.png" alt="Logo" class="w-12 h-12"></a>
+                        <a href=""><img src="img/abdidaya.png" alt="Logo" class="w-12 h-12"></a>
+                    </div>
+
+                    <!-- Tombol Menu untuk Mobile -->
+                    <div class="menu-toggle lg:hidden">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                    <!-- Link navigasi di sebelah kanan -->
+                    <div class="nav-links" id="nav">
+                        <a href="#homepage" class="px-3 py-2 rounded-md text-sm font-medium">Beranda</a>
+                        <a href="#timeline" class="px-3 py-2 rounded-md text-sm font-medium">Timeline</a>
+                        <a href="#udayana" class="px-3 py-2 rounded-md text-sm font-medium">Tentang Unud</a>
+                        <a href="#denah" class="px-3 py-2 rounded-md text-sm font-medium">Denah</a>
+                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium">Tour</a>
+                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium">Login</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Awal Denah -->
+    <section id="denah" class="mt-[5rem]">
+        <div class="content bg-[#FFFFFF] rounded-md shadow-lg p-6 h-full">
+            <div id="about-tittle" class="section-tittle text-center mb-8">
+                <h1 class="font-bold text-3xl md:text-4xl text-[#0C356A] flex flex-col items-center">DENAH KEGIATAN
+                    <span class="w-[30%] h-[5px] bg-[#F8C035] mt-2"></span>
+                </h1>
+            </div>
+
+            <!-- Flexbox untuk gambar Denah di tengah -->
+            <div class="flex justify-center mb-6">
+                <img src="img/Denah.png" alt="Denah Kegiatan" class="w-full max-w-sm md:max-w-lg">
+            </div>
+
+            <!-- Menampilkan keterangan lokasi dalam grid -->
+            <div class="flex flex-row justify-center">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <a href="#"
+                        class="bg-[#E59131] hover:bg-[#eba95e] active:bg-[#ca7719] text-white py-4 px-4 rounded-lg text-center transition-all duration-200 ease-in-out">1.
+                        Gedung Widya Sabha</a>
+                    <a href="#"
+                        class="bg-[#4749B8] hover:bg-[#6c6dc6] active:bg-[#393a93] text-white py-4 px-4 rounded-lg text-center transition-all duration-200 ease-in-out">2.
+                        Lapangan Rektorat</a>
+                    <a href="#"
+                        class="bg-[#22868B] hover:bg-[#2cadb4] active:bg-[#185e62] text-white py-4 px-4 rounded-lg text-center transition-all duration-200 ease-in-out">3.
+                        Gedung Rektorat</a>
+                    <a href="#"
+                        class="bg-[#4CA85A] hover:bg-[#6bbc77] active:bg-[#3c8547] text-white py-4 px-4 rounded-lg text-center transition-all duration-200 ease-in-out">4.
+                        Halaman Parkir Bus 1</a>
+                    <a href="#"
+                        class="bg-[#FBDF45] hover:bg-[#fce877] active:bg-[#fad613] text-white py-4 px-4 rounded-lg text-center transition-all duration-200 ease-in-out">5.
+                        Gedung Perpustakaan</a>
+                    <a href="#"
+                        class="bg-[#7495C8] hover:bg-[#99b1d6] active:bg-[#4f79ba] text-white py-4 px-4 rounded-lg text-center transition-all duration-200 ease-in-out">6.
+                        Gedung AS</a>
+                    <a href="#"
+                        class="bg-[#93BC27] hover:bg-[#add73f] active:bg-[#72921e] text-white py-4 px-4 rounded-lg text-center transition-all duration-200 ease-in-out">7.
+                        Lokasi UMKM</a>
+                    <a href="#"
+                        class="bg-[#FA7142] hover:bg-[#fb9674] active:bg-[#f94c10] text-white py-4 px-4 rounded-lg text-center transition-all duration-200 ease-in-out">8.
+                        Sekretariat Panitia</a>
+                    <a href="#"
+                        class="bg-[#E7D13A] hover:bg-[#eddc67] active:bg-[#d4bc1a] text-white py-4 px-4 rounded-lg text-center transition-all duration-200 ease-in-out">9.
+                        Tempat Wudhu</a>
+                    <a href="#"
+                        class="bg-[#70AD47] hover:bg-[#8bc067] active:bg-[#598938] text-white py-4 px-4 rounded-lg text-center transition-all duration-200 ease-in-out">10.
+                        Tenda Mushola</a>
+                    <a href="#"
+                        class="bg-[#7030A0] hover:bg-[#8b3ec5] active:bg-[#552479] text-white py-4 px-4 rounded-lg text-center transition-all duration-200 ease-in-out">11.
+                        Tenda Kewirausahaan</a>
+                    <a href="#"
+                        class="bg-[#92D050] hover:bg-[#abdb78] active:bg-[#79bb32]text-white py-4 px-4 rounded-lg text-center transition-all duration-200 ease-in-out">12.
+                        Halaman Parkir Bus 2</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Akhir Denah -->
+
+    <!-- Awal Detail Denah -->
+    <section class="detail-denah">
+        <div class="w-full flex flex-wrap justify-center">
+            <div id="widyasabha" class="mx-8 md:my-[2rem] my-2  md:w-2/5">
+                <div class="bg-[#FFFFFF] rounded-lg text-center">
+                    <h3 class="text-[#18285C] font-bold text-4xl mt-2 mb-2">1</h3>
+                    <img src="img/halaman-rektorat.png" alt="" class="w-[20rem] mx-auto">
+                    <h2 class="text-[#18285C] font-bold text-4xl mt-2 mb-4">Gedung Widya Sabha</h2>
+                    <p class="mt-2 pb-10 px-[5rem] font-semibold text-justify text-sm">Universitas Udayana akan
+                        memfasilitasi transportasi untuk peserta, narasumber, dan tamu, termasuk kunjungan wisata
+                        bagi mahasiswa dan 4 unit ambulans untuk kebutuhan medis.</p>
+                </div>
+            </div>
+            <div id="halaman-rektorat" class="mx-8 md:my-[2rem] my-2 md:w-2/5">
+                <div class="bg-[#FFFFFF] rounded-lg text-center">
+                    <h3 class="text-[#18285C] font-bold text-4xl mt-2 mb-2">2</h3>
+                    <img src="img/halaman-rektorat.png" alt="" class="w-[20rem] mx-auto">
+                    <h2 class="text-[#18285C] font-bold text-4xl mt-2 mb-4">Halaman Rektorat</h2>
+                    <p class="mt-2 pb-10 px-[5rem] font-semibold text-justify text-sm">Universitas Udayana akan
+                        memfasilitasi transportasi untuk peserta, narasumber, dan tamu, termasuk kunjungan wisata
+                        bagi mahasiswa dan 4 unit ambulans untuk kebutuhan medis.</p>
+                </div>
+            </div>
+            <div id="rektorat" class="mx-8 md:my-[2rem] my-2 md:w-2/5">
+                <div class="bg-[#FFFFFF] rounded-lg text-center">
+                    <h3 class="text-[#18285C] font-bold text-4xl mt-2 mb-2">3</h3>
+                    <img src="img/rektorat.png" alt="" class="w-[20rem] mx-auto">
+                    <h2 class="text-[#18285C] font-bold text-4xl mt-2 mb-4">Rektorat</h2>
+                    <p class="mt-2 pb-10 px-[5rem] font-semibold text-justify text-sm">Universitas Udayana akan
+                        memfasilitasi transportasi untuk peserta, narasumber, dan tamu, termasuk kunjungan wisata
+                        bagi mahasiswa dan 4 unit ambulans untuk kebutuhan medis.</p>
+                </div>
+            </div>
+            <div id="parkir-1" class="mx-8 md:my-[2rem] my-2 md:w-2/5">
+                <div class="bg-[#FFFFFF] rounded-lg text-center">
+                    <h3 class="text-[#18285C] font-bold text-4xl mt-2 mb-2">4</h3>
+                    <img src="img/parkir-bni.png" alt="" class="w-[20rem] mx-auto">
+                    <h2 class="text-[#18285C] font-bold text-4xl mt-2 mb-4">Halaman Parkir Bus-1</h2>
+                    <p class="mt-2 pb-10 px-[5rem] font-semibold text-justify text-sm">Universitas Udayana akan
+                        memfasilitasi transportasi untuk peserta, narasumber, dan tamu, termasuk kunjungan wisata
+                        bagi mahasiswa dan 4 unit ambulans untuk kebutuhan medis.</p>
+                </div>
+            </div>
+            <div id="perpustakaan" class="mx-8 md:my-[2rem] my-2 md:w-2/5">
+                <div class="bg-[#FFFFFF] rounded-lg text-center">
+                    <h3 class="text-[#18285C] font-bold text-4xl mt-2 mb-2">5</h3>
+                    <img src="img/halaman-rektorat.png" alt="" class="w-[20rem] mx-auto">
+                    <h2 class="text-[#18285C] font-bold text-4xl mt-2 mb-4">Gedung Perpustakaan</h2>
+                    <p class="mt-2 pb-10 px-[5rem] font-semibold text-justify text-sm">Universitas Udayana akan
+                        memfasilitasi transportasi untuk peserta, narasumber, dan tamu, termasuk kunjungan wisata
+                        bagi mahasiswa dan 4 unit ambulans untuk kebutuhan medis.</p>
+                </div>
+            </div>
+            <div id="as" class="mx-8 md:my-[2rem] my-2 md:w-2/5">
+                <div class="bg-[#FFFFFF] rounded-lg text-center">
+                    <h3 class="text-[#18285C] font-bold text-4xl mt-2 mb-2">6</h3>
+                    <img src="img/halaman-rektorat.png" alt="" class="w-[20rem] mx-auto">
+                    <h2 class="text-[#18285C] font-bold text-4xl mt-2 mb-4">Gedung AS</h2>
+                    <p class="mt-2 pb-10 px-[5rem] font-semibold text-justify text-sm">Universitas Udayana akan
+                        memfasilitasi transportasi untuk peserta, narasumber, dan tamu, termasuk kunjungan wisata
+                        bagi mahasiswa dan 4 unit ambulans untuk kebutuhan medis.</p>
+                </div>
+            </div>
+            <div id="lokasi-umkm" class="mx-8 md:my-[2rem] my-2 md:w-2/5">
+                <div class="bg-[#FFFFFF] rounded-lg text-center">
+                    <h3 class="text-[#18285C] font-bold text-4xl mt-2 mb-2">7</h3>
+                    <img src="img/halaman-rektorat.png" alt="" class="w-[20rem] mx-auto">
+                    <h2 class="text-[#18285C] font-bold text-4xl mt-2 mb-4">Lokasi UMKM</h2>
+                    <p class="mt-2 pb-10 px-[5rem] font-semibold text-justify text-sm">Universitas Udayana akan
+                        memfasilitasi transportasi untuk peserta, narasumber, dan tamu, termasuk kunjungan wisata
+                        bagi mahasiswa dan 4 unit ambulans untuk kebutuhan medis.</p>
+                </div>
+            </div>
+            <div id="kesekertariatan" class="mx-8 md:my-[2rem] my-2 md:w-2/5">
+                <div class="bg-[#FFFFFF] rounded-lg text-center">
+                    <h3 class="text-[#18285C] font-bold text-4xl mt-2 mb-2">8</h3>
+                    <img src="img/halaman-rektorat.png" alt="" class="w-[20rem] mx-auto">
+                    <h2 class="text-[#18285C] font-bold text-4xl mt-2 mb-4">Sekretariat Panitia</h2>
+                    <p class="mt-2 pb-10 px-[5rem] font-semibold text-justify text-sm">Universitas Udayana akan
+                        memfasilitasi transportasi untuk peserta, narasumber, dan tamu, termasuk kunjungan wisata
+                        bagi mahasiswa dan 4 unit ambulans untuk kebutuhan medis.</p>
+                </div>
+            </div>
+            <div id="tempat-wudhu" class="mx-8 md:my-[2rem] my-2 md:w-2/5">
+                <div class="bg-[#FFFFFF] rounded-lg text-center">
+                    <h3 class="text-[#18285C] font-bold text-4xl mt-2 mb-2">9</h3>
+                    <img src="img/halaman-rektorat.png" alt="" class="w-[20rem] mx-auto">
+                    <h2 class="text-[#18285C] font-bold text-4xl mt-2 mb-4">Tempat Wudhu</h2>
+                    <p class="mt-2 pb-10 px-[5rem] font-semibold text-justify text-sm">Universitas Udayana akan
+                        memfasilitasi transportasi untuk peserta, narasumber, dan tamu, termasuk kunjungan wisata
+                        bagi mahasiswa dan 4 unit ambulans untuk kebutuhan medis.</p>
+                </div>
+            </div>
+            <div id="tenda-mushola" class="mx-8 md:my-[2rem] my-2 md:w-2/5">
+                <div class="bg-[#FFFFFF] rounded-lg text-center">
+                    <h3 class="text-[#18285C] font-bold text-4xl mt-2 mb-2">10</h3>
+                    <img src="img/halaman-rektorat.png" alt="" class="w-[20rem] mx-auto">
+                    <h2 class="text-[#18285C] font-bold text-4xl mt-2 mb-4">Tenda Mushola</h2>
+                    <p class="mt-2 pb-10 px-[5rem] font-semibold text-justify text-sm">Universitas Udayana akan
+                        memfasilitasi transportasi untuk peserta, narasumber, dan tamu, termasuk kunjungan wisata
+                        bagi mahasiswa dan 4 unit ambulans untuk kebutuhan medis.</p>
+                </div>
+            </div>
+            <div id="kewirausahaan" class="mx-8 md:my-[2rem] my-2 md:w-2/5">
+                <div class="bg-[#FFFFFF] rounded-lg text-center">
+                    <h3 class="text-[#18285C] font-bold text-4xl mt-2 mb-2">11</h3>
+                    <img src="img/halaman-rektorat.png" alt="" class="w-[20rem] mx-auto">
+                    <h2 class="text-[#18285C] font-bold text-4xl mt-2 mb-4">Tenda Kewirausahaan</h2>
+                    <p class="mt-2 pb-10 px-[5rem] font-semibold text-justify text-sm">Universitas Udayana akan
+                        memfasilitasi transportasi untuk peserta, narasumber, dan tamu, termasuk kunjungan wisata
+                        bagi mahasiswa dan 4 unit ambulans untuk kebutuhan medis.</p>
+                </div>
+            </div>
+            <div id="parkir-2" class="mx-8 md:my-[2rem] my-2 md:w-2/5">
+                <div class="bg-[#FFFFFF] rounded-lg text-center">
+                    <h3 class="text-[#18285C] font-bold text-4xl mt-2 mb-2">12</h3>
+                    <img src="img/halaman-rektorat.png" alt="" class="w-[20rem] mx-auto">
+                    <h2 class="text-[#18285C] font-bold text-4xl mt-2 mb-4">Halaman Parkir Bus-2</h2>
+                    <p class="mt-2 pb-10 px-[5rem] font-semibold text-justify text-sm">Universitas Udayana akan
+                        memfasilitasi transportasi untuk peserta, narasumber, dan tamu, termasuk kunjungan wisata
+                        bagi mahasiswa dan 4 unit ambulans untuk kebutuhan medis.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Akhir Detail Denah -->
+
+    <!-- Logo Section -->
+    <section id="Logo">
+        <div class="content p-6 md:px-8">
+            <h2 class="text-2xl md:text-4xl font-bold text-[#18285C] mb-2 text-center">ABDIDAYA ORMAWA 2024</h2>
+            <h3 class="text-lg md:text-3xl text-[#F8C035] text-center">Diselenggarakan oleh:</h3>
+            <div class="flex flex-col md:flex-row justify-center items-center mt-10 gap-4">
+                <img src="img/tutWuriHandayani.png" alt="" class="w-24 md:w-28">
+                <img src="img/Logo-Unud.png" alt="" class="w-24 md:w-28">
+                <img src="img/blu.png" alt="" class="w-24 md:w-28">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <section class="bg-[#413C85] p-6 md:p-10">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                <!-- Logo Section -->
+                <div class="footer-nav mb-6 md:mb-0">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                        <img src="img/tutWuriHandayani.png" alt="" class="w-24 h-auto mx-auto hidden md:block">
+                        <img src="img/Logo-Unud.png" alt="" class="w-24 h-auto mx-auto hidden md:block">
+                        <img src="img/blu.png" alt="" class="w-24 h-auto mx-auto hidden md:block">
+                        <img src="img/abdidaya.png" alt="" class="w-24 h-auto mx-auto hidden md:block">
+                    </div>
+                    <h5 class="text-gray-400 text-center md:text-left">Abdidaya Ormawa 2024</h5>
+                </div>
+                <!-- Informasi Pilihan Section -->
+                <div class="footer-nav mb-6 md:mb-0">
+                    <h4 class="text-xl md:text-2xl font-semibold text-white mb-5">Informasi Pilihan</h4>
+                    <ul class="text-gray-400 text-sm md:text-base">
+                        <li>Sistem Informasi Terintegrasi (IMISSU)</li>
+                        <li>Info Tender</li>
+                        <li>SPI (Satuan Pengawasan Intern)</li>
+                        <li>Beasiswa Online</li>
+                        <li>SAKIP</li>
+                        <li>LPPM</li>
+                        <li>LPSE</li>
+                        <li>Vokasi UNUD</li>
+                    </ul>
+                </div>
+                <!-- Informasi Pilihan Section 2 -->
+                <div class="footer-nav mb-6 md:mb-0">
+                    <h4 class="text-xl md:text-2xl font-semibold text-white mb-5">Informasi Pilihan</h4>
+                    <ul class="text-gray-400 text-sm md:text-base">
+                        <li>e-Office</li>
+                        <li>Daftar Putar Udayana</li>
+                        <li>e-PUPNAS</li>
+                        <li>LPPM</li>
+                        <li>Knowledge Center</li>
+                        <li>Kalender Akademik</li>
+                    </ul>
+                </div>
+                <!-- Informasi Eksternal Section -->
+                <div class="footer-nav mb-6 md:mb-0">
+                    <h4 class="text-xl md:text-2xl font-semibold text-white mb-5">Informasi Eksternal</h4>
+                    <ul class="text-gray-400 text-sm md:text-base">
+                        <li>Program Kampus Merdeka</li>
+                        <li>FAQ Kampus Merdeka</li>
+                        <li>PDDIKTI</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
