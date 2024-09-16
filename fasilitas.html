@@ -58,7 +58,7 @@
     <!-- Hero Transporatasi Akhir -->
 
     <!-- Item Transporatasi Awal -->
-    <section class="px-6 py-6 md:px-10 md:py-10 bg-[#F2EDED]">
+    <section id="item-transportasi" class="px-6 py-6 md:px-10 md:py-10 bg-[#F2EDED]">
         <div class="fasilitas">
             <div class="bg-white rounded-lg p-6 md:p-10">
                 <div id="fasilitas-tittle" class="section-tittle text-center mb-6 md:mb-10">
@@ -135,7 +135,7 @@
     <!-- Hero Ruangan Akhir -->
 
     <!-- Item Ruangan Awal -->
-    <section class="px-6 py-6 md:px-10 md:py-10 bg-[#F2EDED]">
+    <section id="item-ruangan" class="px-6 py-6 md:px-10 md:py-10 bg-[#F2EDED]">
         <div class="fasilitas">
             <div class="bg-white rounded-lg p-6 md:p-10">
                 <div id="fasilitas-tittle" class="section-tittle text-center mb-6 md:mb-10">
@@ -212,7 +212,7 @@
     <!-- Hero Kesehatan Akhir -->
 
     <!-- Item Kesehatan Awal -->
-    <section class="px-6 py-6 md:px-10 md:py-10 bg-[#F2EDED]">
+    <section id="item-kesehatan" class="px-6 py-6 md:px-10 md:py-10 bg-[#F2EDED]">
         <div class="fasilitas">
             <div class="bg-white rounded-lg p-6 md:p-10">
                 <div id="fasilitas-tittle" class="section-tittle text-center mb-6 md:mb-10">
@@ -276,44 +276,43 @@
     <!-- Item Kesehatan Akhir -->
 
     <section id="fasilitas-hotel" class="bg-[#F2EDED]">
-        <div class="fasilitas p-10">
-            <div class="bg-[#fff] rounded-lg p-10">
-                <div id="fasilitas-tittle" class="section-tittle text-center mb-10">
-                    <h1 class="font-bold text-4xl text-[#0C356A] inline-block flex flex-col items-center">
+        <div class="fasilitas px-4 sm:px-10">
+            <div class="bg-[#fff] rounded-lg p-4 sm:p-10">
+                <div id="fasilitas-tittle" class="section-tittle text-center mb-6 sm:mb-10">
+                    <h1 class="font-bold text-2xl sm:text-4xl text-[#0C356A] inline-block flex flex-col items-center">
                         FASILITAS
-                        <span class="w-[20%] h-[5px] bg-[#F8C035] mt-2"></span>
+                        <span class="w-1/4 sm:w-[20%] h-[3px] sm:h-[5px] bg-[#F8C035] mt-2"></span>
                     </h1>
                 </div>
 
                 <!-- Slider main container -->
-                <div class="swiper mySwiper2">
+                <div class="swiper mySwiper2 h-[800px] md:h-[600px]">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
                         <div class="swiper-slide">
-
-                            <div class="flex flex-row flex-wrap">
-
-                                <div class="image p-4 w-2/5 my-auto">
-                                    <img src="img/hotel-nirmala.png" alt="" class="rounded-lg mx-auto " />
+                            <div class="flex flex-col sm:flex-row flex-wrap">
+                                <div class="image p-4 w-full sm:w-2/5 mb-4 sm:mb-0">
+                                    <img src="img/hotel-nirmala.png" alt=""
+                                        class="rounded-lg mx-auto w-full sm:w-auto h-auto sm:h-64 object-cover" />
                                 </div>
-
-                                <div class="deskripsi w-3/5 mt-5 px-5">
-                                    <h3 class="font-bold text-4xl text-[#18285C] mb-4 text-center">
-                                        HOTEL NIRMALA
+                                <div class="deskripsi w-full sm:w-3/5 mt-4 sm:mt-0 px-4 sm:px-5">
+                                    <h3
+                                        class="font-bold text-2xl sm:text-4xl text-[#18285C] mb-4 text-center md:text-start">
+                                        Bali Paragon
                                     </h3>
-                                    <div class="flex justify-between my-2">
+                                    <div class="flex flex-row justify-between my-2">
                                         <div class="price">
-                                            <h5 class="text-3xl font-bold">Rp. <span
-                                                    class="text-[#F8C035]">350.000</span>
-                                            </h5>
+                                            <h5 class="text-xl sm:text-3xl font-bold">Rp. <span
+                                                    class="text-[#F8C035]">350.000</span></h5>
                                         </div>
-                                        <div class="distance">
-                                            <h5 class="font-bold text-[#0C356A] text-2xl text-right">2.8 Km</h5>
+                                        <div class="distance mt-2 sm:mt-0">
+                                            <h5
+                                                class="font-bold text-[#0C356A] text-lg sm:text-2xl text-center sm:text-right">
+                                                2.8 Km</h5>
                                         </div>
-
                                     </div>
-                                    <p class="text-justify leading-relaxed font-medium text-lg">
+                                    <p class="text-justify leading-relaxed font-medium text-base sm:text-lg">
                                         Hotel santai di pusat Jimbaran ini berjarak 2.8 km dari Kampus
                                         Udayana dan 5 km dari taman Garuda Wisnu Kencana. Kamar
                                         sederhana dilengkapi TV layar datar, minibar, serta pembuat
@@ -322,43 +321,40 @@
                                         Fasilitas termasuk parkir bawah tanah, restoran terbuka, dan
                                         kolam renang infinity di atap.
                                     </p>
-
-                                    <div
-                                        class="btn-maps mt-5 bg-[#18285C] p-2 rounded-lg text-lg text-center w-1/2 mx-auto">
-                                        <a href="https://maps.app.goo.gl/PPRVnXHT11EkEq3E9" class="text-white ">Google
-                                            Maps
+                                    <!-- Button -->
+                                    <div class="flex justify-center my-5">
+                                        <a href="https://maps.app.goo.gl/ZYzJME9UwGr9yMJT7"
+                                            class="bg-[#0C356A] hover:bg-[#114c98] active:bg-[#071e3c] text-white p-2 rounded-lg text-lg w-1/2 text-center">
+                                            Google Maps
                                         </a>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
 
-                        <!-- Slides -->
                         <div class="swiper-slide">
-
-                            <div class="flex flex-row flex-wrap">
-
-                                <div class="image p-4 w-2/5 my-auto">
-                                    <img src="img/hotel-nirmala.png" alt="" class="rounded-lg mx-auto " />
+                            <div class="flex flex-col sm:flex-row flex-wrap">
+                                <div class="image p-4 w-full sm:w-2/5 mb-4 sm:mb-0">
+                                    <img src="img/hotel-nirmala.png" alt=""
+                                        class="rounded-lg mx-auto w-full sm:w-auto h-auto sm:h-64 object-cover" />
                                 </div>
-
-                                <div class="deskripsi w-3/5 mt-5 px-5">
-                                    <h3 class="font-bold text-4xl text-[#18285C] mb-4 text-center">
-                                        HOTEL NIRMALA
+                                <div class="deskripsi w-full sm:w-3/5 mt-4 sm:mt-0 px-4 sm:px-5">
+                                    <h3
+                                        class="font-bold text-2xl sm:text-4xl text-[#18285C] mb-4 text-center md:text-start">
+                                        Bali Paragon
                                     </h3>
-                                    <div class="flex justify-between my-2">
+                                    <div class="flex flex-row justify-between my-2">
                                         <div class="price">
-                                            <h5 class="text-3xl font-bold">Rp. <span
-                                                    class="text-[#F8C035]">350.000</span>
-                                            </h5>
+                                            <h5 class="text-xl sm:text-3xl font-bold">Rp. <span
+                                                    class="text-[#F8C035]">350.000</span></h5>
                                         </div>
-                                        <div class="distance">
-                                            <h5 class="font-bold text-[#0C356A] text-2xl text-right">2.8 Km</h5>
+                                        <div class="distance mt-2 sm:mt-0">
+                                            <h5
+                                                class="font-bold text-[#0C356A] text-lg sm:text-2xl text-center sm:text-right">
+                                                2.8 Km</h5>
                                         </div>
-
                                     </div>
-                                    <p class="text-justify leading-relaxed font-medium text-lg">
+                                    <p class="text-justify leading-relaxed font-medium text-base sm:text-lg">
                                         Hotel santai di pusat Jimbaran ini berjarak 2.8 km dari Kampus
                                         Udayana dan 5 km dari taman Garuda Wisnu Kencana. Kamar
                                         sederhana dilengkapi TV layar datar, minibar, serta pembuat
@@ -367,43 +363,41 @@
                                         Fasilitas termasuk parkir bawah tanah, restoran terbuka, dan
                                         kolam renang infinity di atap.
                                     </p>
-
-                                    <div
-                                        class="btn-maps mt-5 bg-[#18285C] p-2 rounded-lg text-lg text-center w-1/2 mx-auto">
-                                        <a href="https://maps.app.goo.gl/PPRVnXHT11EkEq3E9" class="text-white ">Google
-                                            Maps
+                                    <!-- Button -->
+                                    <div class="flex justify-center my-5">
+                                        <a href="https://maps.app.goo.gl/ZYzJME9UwGr9yMJT7"
+                                            class="bg-[#0C356A] hover:bg-[#114c98] active:bg-[#071e3c] text-white p-2 rounded-lg text-lg w-1/2 text-center">
+                                            Google Maps
                                         </a>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
 
-                        <!-- Slides -->
+
                         <div class="swiper-slide">
-
-                            <div class="flex flex-row flex-wrap">
-
-                                <div class="image p-4 w-2/5 my-auto">
-                                    <img src="img/hotel-nirmala.png" alt="" class="rounded-lg mx-auto " />
+                            <div class="flex flex-col sm:flex-row flex-wrap">
+                                <div class="image p-4 w-full sm:w-2/5 mb-4 sm:mb-0">
+                                    <img src="img/hotel-nirmala.png" alt=""
+                                        class="rounded-lg mx-auto w-full sm:w-auto h-auto sm:h-64 object-cover" />
                                 </div>
-
-                                <div class="deskripsi w-3/5 mt-5 px-5">
-                                    <h3 class="font-bold text-4xl text-[#18285C] mb-4 text-center">
-                                        HOTEL NIRMALA
+                                <div class="deskripsi w-full sm:w-3/5 mt-4 sm:mt-0 px-4 sm:px-5">
+                                    <h3
+                                        class="font-bold text-2xl sm:text-4xl text-[#18285C] mb-4 text-center md:text-start">
+                                        Bali Paragon
                                     </h3>
-                                    <div class="flex justify-between my-2">
+                                    <div class="flex flex-row justify-between my-2">
                                         <div class="price">
-                                            <h5 class="text-3xl font-bold">Rp. <span
-                                                    class="text-[#F8C035]">350.000</span>
-                                            </h5>
+                                            <h5 class="text-xl sm:text-3xl font-bold">Rp. <span
+                                                    class="text-[#F8C035]">350.000</span></h5>
                                         </div>
-                                        <div class="distance">
-                                            <h5 class="font-bold text-[#0C356A] text-2xl text-right">2.8 Km</h5>
+                                        <div class="distance mt-2 sm:mt-0">
+                                            <h5
+                                                class="font-bold text-[#0C356A] text-lg sm:text-2xl text-center sm:text-right">
+                                                2.8 Km</h5>
                                         </div>
-
                                     </div>
-                                    <p class="text-justify leading-relaxed font-medium text-lg">
+                                    <p class="text-justify leading-relaxed font-medium text-base sm:text-lg">
                                         Hotel santai di pusat Jimbaran ini berjarak 2.8 km dari Kampus
                                         Udayana dan 5 km dari taman Garuda Wisnu Kencana. Kamar
                                         sederhana dilengkapi TV layar datar, minibar, serta pembuat
@@ -412,43 +406,41 @@
                                         Fasilitas termasuk parkir bawah tanah, restoran terbuka, dan
                                         kolam renang infinity di atap.
                                     </p>
-
-                                    <div
-                                        class="btn-maps mt-5 bg-[#18285C] p-2 rounded-lg text-lg text-center w-1/2 mx-auto">
-                                        <a href="https://maps.app.goo.gl/PPRVnXHT11EkEq3E9" class="text-white ">Google
-                                            Maps
+                                    <!-- Button -->
+                                    <div class="flex justify-center my-5">
+                                        <a href="https://maps.app.goo.gl/ZYzJME9UwGr9yMJT7"
+                                            class="bg-[#0C356A] hover:bg-[#114c98] active:bg-[#071e3c] text-white p-2 rounded-lg text-lg w-1/2 text-center">
+                                            Google Maps
                                         </a>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
 
-                        <!-- Slides -->
+
                         <div class="swiper-slide">
-
-                            <div class="flex flex-row flex-wrap">
-
-                                <div class="image p-4 w-2/5 my-auto">
-                                    <img src="img/hotel-nirmala.png" alt="" class="rounded-lg mx-auto " />
+                            <div class="flex flex-col sm:flex-row flex-wrap">
+                                <div class="image p-4 w-full sm:w-2/5 mb-4 sm:mb-0">
+                                    <img src="img/hotel-nirmala.png" alt=""
+                                        class="rounded-lg mx-auto w-full sm:w-auto h-auto sm:h-64 object-cover" />
                                 </div>
-
-                                <div class="deskripsi w-3/5 mt-5 px-5">
-                                    <h3 class="font-bold text-4xl text-[#18285C] mb-4 text-center">
-                                        HOTEL NIRMALA
+                                <div class="deskripsi w-full sm:w-3/5 mt-4 sm:mt-0 px-4 sm:px-5">
+                                    <h3
+                                        class="font-bold text-2xl sm:text-4xl text-[#18285C] mb-4 text-center md:text-start">
+                                        Bali Paragon
                                     </h3>
-                                    <div class="flex justify-between my-2">
+                                    <div class="flex flex-row justify-between my-2">
                                         <div class="price">
-                                            <h5 class="text-3xl font-bold">Rp. <span
-                                                    class="text-[#F8C035]">350.000</span>
-                                            </h5>
+                                            <h5 class="text-xl sm:text-3xl font-bold">Rp. <span
+                                                    class="text-[#F8C035]">350.000</span></h5>
                                         </div>
-                                        <div class="distance">
-                                            <h5 class="font-bold text-[#0C356A] text-2xl text-right">2.8 Km</h5>
+                                        <div class="distance mt-2 sm:mt-0">
+                                            <h5
+                                                class="font-bold text-[#0C356A] text-lg sm:text-2xl text-center sm:text-right">
+                                                2.8 Km</h5>
                                         </div>
-
                                     </div>
-                                    <p class="text-justify leading-relaxed font-medium text-lg">
+                                    <p class="text-justify leading-relaxed font-medium text-base sm:text-lg">
                                         Hotel santai di pusat Jimbaran ini berjarak 2.8 km dari Kampus
                                         Udayana dan 5 km dari taman Garuda Wisnu Kencana. Kamar
                                         sederhana dilengkapi TV layar datar, minibar, serta pembuat
@@ -457,30 +449,119 @@
                                         Fasilitas termasuk parkir bawah tanah, restoran terbuka, dan
                                         kolam renang infinity di atap.
                                     </p>
-
-                                    <div
-                                        class="btn-maps mt-5 bg-[#18285C] p-2 rounded-lg text-lg text-center w-1/2 mx-auto">
-                                        <a href="https://maps.app.goo.gl/PPRVnXHT11EkEq3E9" class="text-white ">Google
-                                            Maps
+                                    <!-- Button -->
+                                    <div class="flex justify-center my-5">
+                                        <a href="https://maps.app.goo.gl/ZYzJME9UwGr9yMJT7"
+                                            class="bg-[#0C356A] hover:bg-[#114c98] active:bg-[#071e3c] text-white p-2 rounded-lg text-lg w-1/2 text-center">
+                                            Google Maps
                                         </a>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
+
+
+                        <div class="swiper-slide">
+                            <div class="flex flex-col sm:flex-row flex-wrap">
+                                <div class="image p-4 w-full sm:w-2/5 mb-4 sm:mb-0">
+                                    <img src="img/hotel-nirmala.png" alt=""
+                                        class="rounded-lg mx-auto w-full sm:w-auto h-auto sm:h-64 object-cover" />
+                                </div>
+                                <div class="deskripsi w-full sm:w-3/5 mt-4 sm:mt-0 px-4 sm:px-5">
+                                    <h3
+                                        class="font-bold text-2xl sm:text-4xl text-[#18285C] mb-4 text-center md:text-start">
+                                        Bali Paragon
+                                    </h3>
+                                    <div class="flex flex-row justify-between my-2">
+                                        <div class="price">
+                                            <h5 class="text-xl sm:text-3xl font-bold">Rp. <span
+                                                    class="text-[#F8C035]">350.000</span></h5>
+                                        </div>
+                                        <div class="distance mt-2 sm:mt-0">
+                                            <h5
+                                                class="font-bold text-[#0C356A] text-lg sm:text-2xl text-center sm:text-right">
+                                                2.8 Km</h5>
+                                        </div>
+                                    </div>
+                                    <p class="text-justify leading-relaxed font-medium text-base sm:text-lg">
+                                        Hotel santai di pusat Jimbaran ini berjarak 2.8 km dari Kampus
+                                        Udayana dan 5 km dari taman Garuda Wisnu Kencana. Kamar
+                                        sederhana dilengkapi TV layar datar, minibar, serta pembuat
+                                        teh/kopi, beberapa menawarkan pemandangan taman. Kamar yang
+                                        ditingkatkan memiliki balkon. Layanan kamar tersedia.
+                                        Fasilitas termasuk parkir bawah tanah, restoran terbuka, dan
+                                        kolam renang infinity di atap.
+                                    </p>
+                                    <!-- Button -->
+                                    <div class="flex justify-center my-5">
+                                        <a href="https://maps.app.goo.gl/ZYzJME9UwGr9yMJT7"
+                                            class="bg-[#0C356A] hover:bg-[#114c98] active:bg-[#071e3c] text-white p-2 rounded-lg text-lg w-1/2 text-center">
+                                            Google Maps
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide">
+                            <div class="flex flex-col sm:flex-row flex-wrap">
+                                <div class="image p-4 w-full sm:w-2/5 mb-4 sm:mb-0">
+                                    <img src="img/hotel-nirmala.png" alt=""
+                                        class="rounded-lg mx-auto w-full sm:w-auto h-auto sm:h-64 object-cover" />
+                                </div>
+                                <div class="deskripsi w-full sm:w-3/5 mt-4 sm:mt-0 px-4 sm:px-5">
+                                    <h3
+                                        class="font-bold text-2xl sm:text-4xl text-[#18285C] mb-4 text-center md:text-start">
+                                        Bali Paragon
+                                    </h3>
+                                    <div class="flex flex-row justify-between my-2">
+                                        <div class="price">
+                                            <h5 class="text-xl sm:text-3xl font-bold">Rp. <span
+                                                    class="text-[#F8C035]">350.000</span></h5>
+                                        </div>
+                                        <div class="distance mt-2 sm:mt-0">
+                                            <h5
+                                                class="font-bold text-[#0C356A] text-lg sm:text-2xl text-center sm:text-right">
+                                                2.8 Km</h5>
+                                        </div>
+                                    </div>
+                                    <p class="text-justify leading-relaxed font-medium text-base sm:text-lg">
+                                        Hotel santai di pusat Jimbaran ini berjarak 2.8 km dari Kampus
+                                        Udayana dan 5 km dari taman Garuda Wisnu Kencana. Kamar
+                                        sederhana dilengkapi TV layar datar, minibar, serta pembuat
+                                        teh/kopi, beberapa menawarkan pemandangan taman. Kamar yang
+                                        ditingkatkan memiliki balkon. Layanan kamar tersedia.
+                                        Fasilitas termasuk parkir bawah tanah, restoran terbuka, dan
+                                        kolam renang infinity di atap.
+                                    </p>
+                                    <!-- Button -->
+                                    <div class="flex justify-center my-5">
+                                        <a href="https://maps.app.goo.gl/ZYzJME9UwGr9yMJT7"
+                                            class="bg-[#0C356A] hover:bg-[#114c98] active:bg-[#071e3c] text-white p-2 rounded-lg text-lg w-1/2 text-center">
+                                            Google Maps
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Duplicate the above slide as needed -->
 
                     </div>
                     <!-- If we need pagination -->
                     <div class="swiper-pagination"></div>
 
                     <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev rotate-90"></div>
-                    <div class="swiper-button-next rotate-90"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
 
                 </div>
             </div>
         </div>
     </section>
+
 
     <!-- AkhirFasilitas -->
 

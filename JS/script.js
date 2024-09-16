@@ -18,3 +18,50 @@ window.addEventListener('scroll', function () {
 document.querySelector('.menu-toggle').addEventListener('click', function () {
     document.querySelector('.nav-links').classList.toggle('active')
 })
+
+const swiper1 = new Swiper('.mySwiper1', {
+    spaceBetween: 30,
+    centeredSlides: true,
+    loop: true,
+    autoplay: {
+        delay: 4000,
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+})
+
+const swiper2 = new Swiper('.mySwiper2', {
+    // Optional parameters
+    direction: 'horizontal', // Ubah ke horizontal untuk tampilan umum
+    loop: true,
+    slidesPerView: 1, // Tampilkan satu slide pada perangkat mobile
+
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    autoplay: {
+        delay: 4000, // 4 detik delay antara perpindahan slide
+    },
+
+    breakpoints: {
+        640: {
+            slidesPerView: 2, // Tampilkan dua slide pada perangkat dengan lebar 640px atau lebih
+            direction: 'vertical',
+        },
+    },
+})

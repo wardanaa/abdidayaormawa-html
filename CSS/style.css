@@ -280,3 +280,25 @@ body {
         font-size: 0.85rem;
     }
 }
+
+@media (min-width: 768px) {
+    #fasilitas-hotel .swiper-button-next {
+        position: absolute;
+        left: 10px;
+        /* Posisi dari kiri halaman */
+        z-index: 10;
+        /* Agar tombol berada di atas konten lain */
+    }
+
+    #fasilitas-hotel .swiper-button-prev {
+        top: 40%;
+        /* Atur posisi vertikal tombol prev */
+        transform: rotate(90deg);
+    }
+
+    #fasilitas-hotel .swiper-button-next {
+        top: 60%;
+        /* Atur posisi vertikal tombol next */
+        transform: rotate(90deg);
+    }
+}
