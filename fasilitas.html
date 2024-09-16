@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <!-- header navbar tag -->
+    <!-- Header Awal -->
     <header>
         <nav id="navbar"
             class="fixed top-0 left-0 w-full bg-transparent text-white shadow-lg z-50 border-b-8 border-[#F8C035]">
@@ -18,10 +18,10 @@
                 <div class="flex justify-between items-center h-20">
                     <!-- Logo di sebelah kiri -->
                     <div class="header-logo">
-                        <a href=""><img src="img/tutWuriHandayani.png" alt="Logo" class="w-12 h-12" /></a>
-                        <a href=""><img src="img/Logo-Unud.png" alt="Logo" class="w-12 h-12" /></a>
-                        <a href=""><img src="img/blu.png" alt="Logo" class="w-12 h-12" /></a>
-                        <a href=""><img src="img/abdidaya.png" alt="Logo" class="w-12 h-12" /></a>
+                        <a href=""><img src="img/tutWuriHandayani.png" alt="Logo" class="w-12 h-12"></a>
+                        <a href=""><img src="img/Logo-Unud.png" alt="Logo" class="w-12 h-12"></a>
+                        <a href=""><img src="img/blu.png" alt="Logo" class="w-12 h-12"></a>
+                        <a href=""><img src="img/abdidaya.png" alt="Logo" class="w-12 h-12"></a>
                     </div>
 
                     <!-- Tombol Menu untuk Mobile -->
@@ -32,18 +32,34 @@
                     </div>
 
                     <!-- Link navigasi di sebelah kanan -->
-                    <div class="nav-links" id="nav">
-                        <a href="#homepage" class="px-3 py-2 rounded-md text-sm font-medium">Beranda</a>
-                        <a href="#timeline" class="px-3 py-2 rounded-md text-sm font-medium">Timeline</a>
-                        <a href="#udayana" class="px-3 py-2 rounded-md text-sm font-medium">Tentang Unud</a>
-                        <a href="#denah" class="px-3 py-2 rounded-md text-sm font-medium">Denah</a>
-                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium">Tour</a>
-                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium">Login</a>
+                    <div class="nav-links relative" id="nav">
+                        <a href="index.html#homepage" class="px-3 py-2 rounded-md text-sm font-medium">Beranda</a>
+                        <a href="index.html#timeline" class="px-3 py-2 rounded-md text-sm font-medium">Timeline</a>
+
+                        <!-- Dropdown "Tentang" -->
+                        <div class="relative group content-center">
+                            <a href="" id="about-unud" class="px-3 py-2 text-sm font-medium cursor-pointer">Tentang</a>
+                            <!-- Submenu -->
+                            <div class="dropdown-menu">
+                                <a href="index.html#udayana"
+                                    class="block px-4 py-2 bg-[#F8C035] hover:bg-[#0C356A] text-white hover:font-bold mb-1">Udayana</a>
+                                <a href="index.html#about"
+                                    class="block px-4 py-2 bg-[#F8C035] hover:bg-[#0C356A] text-white hover:font-bold mb-1">Abdidaya</a>
+                                <a href="index.html#maskot"
+                                    class="block px-4 py-2 bg-[#F8C035] hover:bg-[#0C356A] text-white hover:font-bold mb-1">Maskot</a>
+                                <a href="index.html#fasilitas"
+                                    class="block px-4 py-2 bg-[#F8C035] hover:bg-[#0C356A] text-white hover:font-bold mb-1">Fasilitas</a>
+                            </div>
+                        </div>
+                        <a href="index.html#denah" class="px-3 py-2 rounded-md text-sm font-medium">Denah</a>
+                        <a href="index.html#tour" class="px-3 py-2 rounded-md text-sm font-medium">Tour</a>
                     </div>
+
                 </div>
             </div>
         </nav>
     </header>
+    <!-- Header Akhir -->
 
     <!-- Hero Transporatasi Awal -->
     <section id="hero-transportasi" class="bg-[#0C386A] min-h-[80vh] mt-20 flex items-center">
@@ -200,7 +216,7 @@
 
 
     <!-- Hero Kesehatan Awal -->
-    <section id="hero-ruangan" class="bg-[#0C386A] min-h-[80vh] flex items-center">
+    <section id="hero-kesehatan" class="bg-[#0C386A] min-h-[80vh] flex items-center">
         <div class="content p-6 mx-auto max-w-screen-lg">
             <div class="text-center">
                 <h1 class="text-5xl mx-auto my-auto font-bold text-[#F8C035]">
@@ -280,7 +296,7 @@
             <div class="bg-[#fff] rounded-lg p-4 sm:p-10">
                 <div id="fasilitas-tittle" class="section-tittle text-center mb-6 sm:mb-10">
                     <h1 class="font-bold text-2xl sm:text-4xl text-[#0C356A] inline-block flex flex-col items-center">
-                        FASILITAS
+                        DAFTAR HOTEL
                         <span class="w-1/4 sm:w-[20%] h-[3px] sm:h-[5px] bg-[#F8C035] mt-2"></span>
                     </h1>
                 </div>

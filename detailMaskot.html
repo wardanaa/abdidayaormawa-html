@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <!-- header navbar tag -->
+    <!-- Header Awal -->
     <header>
         <nav id="navbar"
             class="fixed top-0 left-0 w-full bg-transparent text-white shadow-lg z-50 border-b-8 border-[#F8C035]">
@@ -30,18 +30,34 @@
                     </div>
 
                     <!-- Link navigasi di sebelah kanan -->
-                    <div class="nav-links" id="nav">
-                        <a href="./index.html#homepage" class="px-3 py-2 rounded-md text-sm font-medium">Beranda</a>
-                        <a href="./index.html#timeline" class="px-3 py-2 rounded-md text-sm font-medium">Timeline</a>
-                        <a href="./index.html#udayana" class="px-3 py-2 rounded-md text-sm font-medium">Tentang Unud</a>
-                        <a href="./index.html#denah" class="px-3 py-2 rounded-md text-sm font-medium">Denah</a>
-                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium">Tour</a>
-                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium">Login</a>
+                    <div class="nav-links relative" id="nav">
+                        <a href="index.html#homepage" class="px-3 py-2 rounded-md text-sm font-medium">Beranda</a>
+                        <a href="index.html#timeline" class="px-3 py-2 rounded-md text-sm font-medium">Timeline</a>
+
+                        <!-- Dropdown "Tentang" -->
+                        <div class="relative group content-center">
+                            <a href="" id="about-unud" class="px-3 py-2 text-sm font-medium cursor-pointer">Tentang</a>
+                            <!-- Submenu -->
+                            <div class="dropdown-menu">
+                                <a href="index.html#udayana"
+                                    class="block px-4 py-2 bg-[#F8C035] hover:bg-[#0C356A] text-white hover:font-bold mb-1">Udayana</a>
+                                <a href="index.html#about"
+                                    class="block px-4 py-2 bg-[#F8C035] hover:bg-[#0C356A] text-white hover:font-bold mb-1">Abdidaya</a>
+                                <a href="index.html#maskot"
+                                    class="block px-4 py-2 bg-[#F8C035] hover:bg-[#0C356A] text-white hover:font-bold mb-1">Maskot</a>
+                                <a href="index.html#fasilitas"
+                                    class="block px-4 py-2 bg-[#F8C035] hover:bg-[#0C356A] text-white hover:font-bold mb-1">Fasilitas</a>
+                            </div>
+                        </div>
+                        <a href="index.html#denah" class="px-3 py-2 rounded-md text-sm font-medium">Denah</a>
+                        <a href="index.html#tour" class="px-3 py-2 rounded-md text-sm font-medium">Tour</a>
                     </div>
+
                 </div>
             </div>
         </nav>
     </header>
+    <!-- Header Akhir -->
 
 
     <!-- Homepage Section -->
@@ -169,6 +185,56 @@
     <!-- Maskot Abdidaya Akhir -->
 
 
+
+    <!-- Modal -->
+    <div id="audio-modal"
+        class="fixed inset-0 z-50 hidden bg-gray-900 bg-opacity-75 flex items-center justify-center opacity-0 transition-opacity duration-300">
+        <div
+            class="bg-white rounded-lg p-8 max-w-lg w-full relative transform scale-95 transition-transform duration-300">
+            <button id="close-modal" class="absolute top-2 right-2 text-2xl">&times;</button>
+            <h2 class="text-2xl font-bold mb-4">Lirik dan Audio Mars Abdidaya</h2>
+            <p class="mb-4 text-center text-gray-800">
+                <strong class="text-xl text-[#F8C035]">Udayana Abdidaya Ormawa 2024</strong><br>
+                <em class="text-lg text-gray-600">De Enka, 14 Juli 2024</em><br><br>
+
+                Ayo wujudkan mimpi raih prestasi gali potensi diri<br>
+                Intelektual muda sdm unggul penuh inovasi<br>
+                Ayo hai mahasiswa tunjukkan karyamu bersama ormawa<br>
+                Untuk abdikan diri membina desa membangun negeri<br>
+                Gugah berdayakan masyarakat<br><br>
+
+                <strong class="text-lg">Reff</strong><br>
+                Hilirisasi implementasi penelitian<br>
+                Berkompetisi untuk menggapai puncak prestasi<br>
+                Ini saatnya karya anak bangsa diapresiasi<br>
+                Gelegar acara Abdidaya Ormawa di Udayana<br>
+                Tegak tatap ke depan bergandeng tangan cintai negeri<br>
+                Mengasah kepekaan kreativitas berfikir kritis<br>
+                Tingkatkan kompetensi hingga ormawa jadi lebih bermakna<br>
+                Untuk curahkan daya bela negara cinta tanah air<br>
+                Menuju sejahtera Indonesia<br><br>
+
+                <strong class="text-lg">Music</strong><br><br>
+
+                <strong class="text-lg">Reff</strong><br>
+                Hilirisasi implementasi penelitian<br>
+                Berkompetisi untuk menggapai puncak prestasi<br>
+                Ini saatnya karya anak bangsa diapresiasi<br>
+                Gelegar acara Abdidaya Ormawa di Udayana<br>
+                Inilah saatnya karya anak bangsa diapresiasi<br>
+                Gelegar acara Abdidaya Ormawa di Udayana<br>
+                oooo Abdidaya Ormawa<br>
+                oooo Abdidaya Ormawa di Udayana.
+            </p>
+
+
+            <audio id="modal-audio" controls autoplay class="w-full">
+                <source src="audio/mars-abdidaya.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+
     <section id="logo-abdidaya" class="px-4 py-6 md:px-10 md:py-10">
         <div class="content bg-[#0C356A] rounded-md shadow-lg p-6 h-full">
             <div id="about-tittle" class="section-tittle text-center mb-6">
@@ -178,35 +244,35 @@
                 </h1>
             </div>
             <div class="content-detail">
-                <div class="flex flex-col md:flex-row md:space-x-4">
+                <div class="flex flex-col md:flex-row md:space-x-4 md:p-10">
                     <div class="flex-1 flex flex-col mb-6 md:mb-0">
                         <div class="mt-6 md:mt-12">
                             <h1 class="text-center font-bold text-2xl md:text-3xl text-white">Warna
                                 <span class="text-[#5DA223]">Hijau</span>
                             </h1>
-                            <div class="info text-justify my-2 text-white">
+                            <div class="info text-center my-2 text-white">
                                 Melambangkan suasana alam di desa dengan rasa cinta, damai dan ketenangan.
-                            </div>
-                        </div>
-                        <div class="mt-6 md:mt-12">
-                            <h1 class="text-center font-bold text-2xl md:text-3xl text-white">Warna
-                                <span class="text-[#F8C035]">Jingga</span>
-                            </h1>
-                            <div class="info text-justify my-2 text-white">
-                                Melambangkan rasa hangat dan semangat serta optimisme para pemuda dalam melakukan
-                                pemberdayaan desa.
                             </div>
                         </div>
                         <div class="mt-6 md:mt-12">
                             <h1 class="text-center font-bold text-2xl md:text-3xl text-white">Gambar
                                 <span class="text-[#5DA223]">Tangan</span>
                             </h1>
-                            <div class="info text-justify my-2 text-white">
+                            <div class="info text-center my-2 text-white">
                                 Melambangkan rangkulan tangan dari semangat berbagi.
                             </div>
                         </div>
+                        <div class="mt-6 md:mt-12">
+                            <h1 class="text-center font-bold text-2xl md:text-3xl text-white">Warna
+                                <span class="text-[#F8C035]">Jingga</span>
+                            </h1>
+                            <div class="info text-center my-2 text-white">
+                                Melambangkan rasa hangat dan semangat serta optimisme para pemuda dalam melakukan
+                                pemberdayaan desa.
+                            </div>
+                        </div>
                     </div>
-                    <div class="flex-1 grid place-items-center relative p-6 md:p-14">
+                    <div class="flex-1 grid place-items-center p-6">
                         <img src="img/abdidaya.png" alt="" class="max-w-full h-auto object-cover">
                     </div>
                     <div class="flex-1 flex flex-col mb-6 md:mb-0">
@@ -214,7 +280,7 @@
                             <h1 class="text-center font-bold text-2xl md:text-3xl text-white">Gambar
                                 <span class="text-[#5DA223]">Pucuk Daun</span>
                             </h1>
-                            <div class="info text-justify my-2 text-white">
+                            <div class="info text-center my-2 text-white">
                                 Melambangkan mahasiswa sebagai pemuda harapan bangsa dapat turut serta melakukan program
                                 pengabdian.
                             </div>
@@ -223,7 +289,7 @@
                             <h1 class="text-center font-bold text-2xl md:text-3xl text-white">Tulisan
                                 <span class="text-[#F8C035]">Abdidaya</span>
                             </h1>
-                            <div class="info text-justify my-2 text-white">
+                            <div class="info text-center my-2 text-white">
                                 Melambangkan identitas penyelenggaraan kegiatan.
                             </div>
                         </div>
@@ -231,15 +297,25 @@
                             <h1 class="text-center font-bold text-2xl md:text-3xl text-white">Gambar
                                 <span class="text-[#5DA223]">Manusia</span>
                             </h1>
-                            <div class="info text-justify my-2 text-white">
+                            <div class="info text-center my-2 text-white">
                                 Melambangkan masyarakat desa yang diberdayakan.
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- Button to Open Modal -->
+            <div class="flex justify-center mb-12">
+                <button id="open-modal"
+                    class="flex justify-center bg-[#F8C035] hover:bg-[#facf66] active:bg-[#f2af08] text-white py-4 px-4 rounded-full w-[312px] text-center text-2xl">
+                    Mars Abdidaya
+                </button>
+            </div>
+
         </div>
     </section>
+
+
 
     <!-- Logo Section -->
     <section id="Logo">

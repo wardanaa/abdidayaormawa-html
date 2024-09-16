@@ -1,560 +1,97 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- Modal -->
+<div id="audio-modal"
+    class="fixed inset-0 z-50 hidden bg-gray-900 bg-opacity-75 flex items-center justify-center opacity-0 transition-opacity duration-300">
+    <div class="bg-white rounded-lg p-8 max-w-lg w-full relative transform scale-95 transition-transform duration-300">
+        <button id="close-modal" class="absolute top-2 right-2 text-2xl">&times;</button>
+        <h2 class="text-2xl font-bold mb-4">Lirik dan Audio Mars Abdidaya</h2>
+        <p class="mb-4">
+            <!-- Ganti dengan lirik yang sesuai -->
+            Udayana Abdidaya Ormawa 2024
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fasilitas Universitas Udayana</title>
-    <link rel="stylesheet" href="CSS/style.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-</head>
+            De Enka, 14 Juli 2024
 
-<body>
-    <!-- header navbar tag -->
-    <header>
-        <nav id="navbar"
-            class="fixed top-0 left-0 w-full bg-transparent text-white shadow-lg z-50 border-b-8 border-[#F8C035]">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex justify-between items-center h-20">
-                    <!-- Logo di sebelah kiri -->
-                    <div class="header-logo">
-                        <a href=""><img src="img/tutWuriHandayani.png" alt="Logo" class="w-12 h-12" /></a>
-                        <a href=""><img src="img/Logo-Unud.png" alt="Logo" class="w-12 h-12" /></a>
-                        <a href=""><img src="img/blu.png" alt="Logo" class="w-12 h-12" /></a>
-                        <a href=""><img src="img/abdidaya.png" alt="Logo" class="w-12 h-12" /></a>
-                    </div>
+            Ayo wujudkan mimpi raih prestasi gali potensi diri
+            Intelektual muda sdm unggul penuh inovasi
+            Ayo hai mahasiswa tunjukkan karyamu bersama ormawa
+            Untuk abdikan diri membina desa membangun negeri
+            Gugah berdayakan masyarakat
+            Reff
+            Hilirisasi implementasi penelitian
+            Berkompetisi untuk menggapai puncak prestasi
+            Ini saatnya karya anak bangsa diapresiasi
+            Gelegar acara Abdidaya Ormawa di Udayana
+            Tegak tatap ke depan bergandeng tangan cintai negeri
+            Mengasah kepekaan kreativitas berfikir kritis
+            Tingkatkan kompetensi hingga ormawa jadi lebih bermakna
+            Untuk curahkan daya bela negara cinta tanah air
+            Menuju sejahtera Indonesia
+            Music
+            Reff
+            Hilirisasi implementasi penelitian
+            Berkompetisi untuk menggapai puncak prestasi
+            Ini saatnya karya anak bangsa diapresiasi
+            Gelegar acara Abdidaya Ormawa di Udayana
+            Inilah saatnya karya anak bangsa diapresiasi
+            Gelegar acara Abdidaya Ormawa di Udayana
+            oooo Abdidaya Ormawa
+            oooo Abdidaya Ormawa di Udayana.
+        </p>
+        <audio id="modal-audio" controls autoplay class="w-full">
+            <source src="audio/mars-abdidaya.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+</div>
 
-                    <!-- Tombol Menu untuk Mobile -->
-                    <div class="menu-toggle lg:hidden">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var openModalButton = document.getElementById('open-modal');
+        var closeModalButton = document.getElementById('close-modal');
+        var modal = document.getElementById('audio-modal');
+        var audio = document.getElementById('modal-audio');
 
-                    <!-- Link navigasi di sebelah kanan -->
-                    <div class="nav-links" id="nav">
-                        <a href="#homepage" class="px-3 py-2 rounded-md text-sm font-medium">Beranda</a>
-                        <a href="#timeline" class="px-3 py-2 rounded-md text-sm font-medium">Timeline</a>
-                        <a href="#udayana" class="px-3 py-2 rounded-md text-sm font-medium">Tentang Unud</a>
-                        <a href="#denah" class="px-3 py-2 rounded-md text-sm font-medium">Denah</a>
-                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium">Tour</a>
-                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium">Login</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
+        // Show modal with animation
+        openModalButton.addEventListener('click', function () {
+            modal.classList.remove('hidden');
+            setTimeout(function () {
+                modal.classList.add('opacity-100');
+                modal.querySelector('div').classList.add('scale-100');
+            }, 10);
+        });
 
-    <!-- Hero Transporatasi Awal -->
-    <section id="hero-transportasi" class="bg-[#0C386A] min-h-[80vh] mt-20 flex items-center">
-        <div class="content p-6 mx-auto max-w-screen-lg">
-            <div class="text-center">
-                <h1 class="text-5xl mx-auto my-auto font-bold text-[#F8C035]">
-                    TRANSPORTASI
-                </h1>
-            </div>
-        </div>
-    </section>
-    <!-- Hero Transporatasi Akhir -->
+        // Hide modal with animation and stop audio
+        closeModalButton.addEventListener('click', function () {
+            modal.classList.remove('opacity-100');
+            modal.querySelector('div').classList.remove('scale-100');
+            setTimeout(function () {
+                modal.classList.add('hidden');
+            }, 300);
+            audio.pause();
+            audio.currentTime = 0;
+        });
 
-    <!-- Item Transporatasi Awal -->
-    <section class="px-6 py-6 md:px-10 md:py-10 bg-[#F2EDED]">
-        <div class="fasilitas">
-            <div class="bg-white rounded-lg p-6 md:p-10">
-                <div id="fasilitas-tittle" class="section-tittle text-center mb-6 md:mb-10">
-                    <h1 class="font-bold text-2xl md:text-4xl text-[#0C356A] flex flex-col items-center">
-                        TRANSPORTASI
-                        <span class="w-[20%] h-[5px] bg-[#F8C035] mt-2"></span>
-                    </h1>
-                </div>
+        // Hide modal when clicking outside and stop audio
+        window.addEventListener('click', function (event) {
+            if (event.target === modal) {
+                modal.classList.remove('opacity-100');
+                modal.querySelector('div').classList.remove('scale-100');
+                setTimeout(function () {
+                    modal.classList.add('hidden');
+                }, 300);
+                audio.pause();
+                audio.currentTime = 0;
+            }
+        });
+    });
+</script>
 
-                <div class="bg-[#18285C] rounded-lg mb-5 mx-0 md:mx-16 p-6 md:p-10">
-                    <div class="swiper mySwiper1">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="bg-[#18285C] rounded-lg p-6 md:p-10">
-                                    <h2 class="text-white text-2xl md:text-3xl font-bold text-center mb-4">BUS</h2>
-                                    <img src="img/bus.png" alt="bus image" class="w-full md:w-96 mx-auto mb-4" />
-                                    <p class="text-white text-sm md:text-base text-justify font-semibold">
-                                        Universitas Udayana (Unud) akan memfasilitasi mobilitas peserta,
-                                        narasumber, dan tamu undangan selama acara berlangsung. Khusus
-                                        untuk peserta mahasiswa, akan disediakan kunjungan ke tempat
-                                        wisata. Unud juga menyediakan 4 unit ambulans untuk kebutuhan
-                                        medis peserta dan tamu.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="bg-[#18285C] rounded-lg p-6 md:p-10">
-                                    <h2 class="text-white text-2xl md:text-3xl font-bold text-center mb-4">MOBIL</h2>
-                                    <img src="img/bus.png" alt="mobil image" class="w-full md:w-96 mx-auto mb-4" />
-                                    <p class="text-white text-sm md:text-base text-justify font-semibold">
-                                        Universitas Udayana (Unud) akan memfasilitasi mobilitas peserta,
-                                        narasumber, dan tamu undangan selama acara berlangsung. Khusus
-                                        untuk peserta mahasiswa, akan disediakan kunjungan ke tempat
-                                        wisata. Unud juga menyediakan 4 unit ambulans untuk kebutuhan
-                                        medis peserta dan tamu.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="bg-[#18285C] rounded-lg p-6 md:p-10">
-                                    <h2 class="text-white text-2xl md:text-3xl font-bold text-center mb-4">MOTOR</h2>
-                                    <img src="img/bus.png" alt="motor image" class="w-full md:w-96 mx-auto mb-4" />
-                                    <p class="text-white text-sm md:text-base text-justify font-semibold">
-                                        Universitas Udayana (Unud) akan memfasilitasi mobilitas peserta,
-                                        narasumber, dan tamu undangan selama acara berlangsung. Khusus
-                                        untuk peserta mahasiswa, akan disediakan kunjungan ke tempat
-                                        wisata. Unud juga menyediakan 4 unit ambulans untuk kebutuhan
-                                        medis peserta dan tamu.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Item Transporatasi Akhir -->
+<style>
+    /* Add animation styles */
+    #audio-modal .scale-100 {
+        transform: scale(1);
+    }
 
-
-    <!-- Hero Ruangan Awal -->
-    <section id="hero-ruangan" class="bg-[#0C386A] min-h-[80vh] flex items-center">
-        <div class="content p-6 mx-auto max-w-screen-lg">
-            <div class="text-center">
-                <h1 class="text-5xl mx-auto my-auto font-bold text-[#F8C035]">
-                    RUANGAN
-                </h1>
-            </div>
-        </div>
-    </section>
-    <!-- Hero Ruangan Akhir -->
-
-    <!-- Item Ruangan Awal -->
-    <section class="px-6 py-6 md:px-10 md:py-10 bg-[#F2EDED]">
-        <div class="fasilitas">
-            <div class="bg-white rounded-lg p-6 md:p-10">
-                <div id="fasilitas-tittle" class="section-tittle text-center mb-6 md:mb-10">
-                    <h1 class="font-bold text-2xl md:text-4xl text-[#0C356A] flex flex-col items-center">
-                        RUANGAN
-                        <span class="w-[20%] h-[5px] bg-[#F8C035] mt-2"></span>
-                    </h1>
-                </div>
-
-                <div class="bg-[#18285C] rounded-lg mb-5 mx-0 md:mx-16 p-6 md:p-10">
-                    <div class="swiper mySwiper1">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="bg-[#18285C] rounded-lg p-6 md:p-10">
-                                    <h2 class="text-white text-2xl md:text-3xl font-bold text-center mb-4">BUS</h2>
-                                    <img src="img/bus.png" alt="bus image" class="w-full md:w-96 mx-auto mb-4" />
-                                    <p class="text-white text-sm md:text-base text-justify font-semibold">
-                                        Universitas Udayana (Unud) akan memfasilitasi mobilitas peserta,
-                                        narasumber, dan tamu undangan selama acara berlangsung. Khusus
-                                        untuk peserta mahasiswa, akan disediakan kunjungan ke tempat
-                                        wisata. Unud juga menyediakan 4 unit ambulans untuk kebutuhan
-                                        medis peserta dan tamu.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="bg-[#18285C] rounded-lg p-6 md:p-10">
-                                    <h2 class="text-white text-2xl md:text-3xl font-bold text-center mb-4">MOBIL</h2>
-                                    <img src="img/bus.png" alt="mobil image" class="w-full md:w-96 mx-auto mb-4" />
-                                    <p class="text-white text-sm md:text-base text-justify font-semibold">
-                                        Universitas Udayana (Unud) akan memfasilitasi mobilitas peserta,
-                                        narasumber, dan tamu undangan selama acara berlangsung. Khusus
-                                        untuk peserta mahasiswa, akan disediakan kunjungan ke tempat
-                                        wisata. Unud juga menyediakan 4 unit ambulans untuk kebutuhan
-                                        medis peserta dan tamu.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="bg-[#18285C] rounded-lg p-6 md:p-10">
-                                    <h2 class="text-white text-2xl md:text-3xl font-bold text-center mb-4">MOTOR</h2>
-                                    <img src="img/bus.png" alt="motor image" class="w-full md:w-96 mx-auto mb-4" />
-                                    <p class="text-white text-sm md:text-base text-justify font-semibold">
-                                        Universitas Udayana (Unud) akan memfasilitasi mobilitas peserta,
-                                        narasumber, dan tamu undangan selama acara berlangsung. Khusus
-                                        untuk peserta mahasiswa, akan disediakan kunjungan ke tempat
-                                        wisata. Unud juga menyediakan 4 unit ambulans untuk kebutuhan
-                                        medis peserta dan tamu.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Item Ruangan Akhir -->
-
-
-    <!-- Hero Kesehatan Awal -->
-    <section id="hero-ruangan" class="bg-[#0C386A] min-h-[80vh] flex items-center">
-        <div class="content p-6 mx-auto max-w-screen-lg">
-            <div class="text-center">
-                <h1 class="text-5xl mx-auto my-auto font-bold text-[#F8C035]">
-                    KESEHATAN
-                </h1>
-            </div>
-        </div>
-    </section>
-    <!-- Hero Kesehatan Akhir -->
-
-    <!-- Item Kesehatan Awal -->
-    <section class="px-6 py-6 md:px-10 md:py-10 bg-[#F2EDED]">
-        <div class="fasilitas">
-            <div class="bg-white rounded-lg p-6 md:p-10">
-                <div id="fasilitas-tittle" class="section-tittle text-center mb-6 md:mb-10">
-                    <h1 class="font-bold text-2xl md:text-4xl text-[#0C356A] flex flex-col items-center">
-                        KESEHATAN
-                        <span class="w-[20%] h-[5px] bg-[#F8C035] mt-2"></span>
-                    </h1>
-                </div>
-
-                <div class="bg-[#18285C] rounded-lg mb-5 mx-0 md:mx-16 p-6 md:p-10">
-                    <div class="swiper mySwiper1">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="bg-[#18285C] rounded-lg p-6 md:p-10">
-                                    <h2 class="text-white text-2xl md:text-3xl font-bold text-center mb-4">BUS</h2>
-                                    <img src="img/bus.png" alt="bus image" class="w-full md:w-96 mx-auto mb-4" />
-                                    <p class="text-white text-sm md:text-base text-justify font-semibold">
-                                        Universitas Udayana (Unud) akan memfasilitasi mobilitas peserta,
-                                        narasumber, dan tamu undangan selama acara berlangsung. Khusus
-                                        untuk peserta mahasiswa, akan disediakan kunjungan ke tempat
-                                        wisata. Unud juga menyediakan 4 unit ambulans untuk kebutuhan
-                                        medis peserta dan tamu.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="bg-[#18285C] rounded-lg p-6 md:p-10">
-                                    <h2 class="text-white text-2xl md:text-3xl font-bold text-center mb-4">MOBIL</h2>
-                                    <img src="img/bus.png" alt="mobil image" class="w-full md:w-96 mx-auto mb-4" />
-                                    <p class="text-white text-sm md:text-base text-justify font-semibold">
-                                        Universitas Udayana (Unud) akan memfasilitasi mobilitas peserta,
-                                        narasumber, dan tamu undangan selama acara berlangsung. Khusus
-                                        untuk peserta mahasiswa, akan disediakan kunjungan ke tempat
-                                        wisata. Unud juga menyediakan 4 unit ambulans untuk kebutuhan
-                                        medis peserta dan tamu.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="bg-[#18285C] rounded-lg p-6 md:p-10">
-                                    <h2 class="text-white text-2xl md:text-3xl font-bold text-center mb-4">MOTOR</h2>
-                                    <img src="img/bus.png" alt="motor image" class="w-full md:w-96 mx-auto mb-4" />
-                                    <p class="text-white text-sm md:text-base text-justify font-semibold">
-                                        Universitas Udayana (Unud) akan memfasilitasi mobilitas peserta,
-                                        narasumber, dan tamu undangan selama acara berlangsung. Khusus
-                                        untuk peserta mahasiswa, akan disediakan kunjungan ke tempat
-                                        wisata. Unud juga menyediakan 4 unit ambulans untuk kebutuhan
-                                        medis peserta dan tamu.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Item Kesehatan Akhir -->
-
-    <section id="fasilitas-hotel" class="bg-[#F2EDED]">
-        <div class="fasilitas p-10">
-            <div class="bg-[#fff] rounded-lg p-10">
-                <div id="fasilitas-tittle" class="section-tittle text-center mb-10">
-                    <h1 class="font-bold text-4xl text-[#0C356A] inline-block flex flex-col items-center">
-                        FASILITAS
-                        <span class="w-[20%] h-[5px] bg-[#F8C035] mt-2"></span>
-                    </h1>
-                </div>
-
-                <!-- Slider main container -->
-                <div class="swiper mySwiper2">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-
-                            <div class="flex flex-row flex-wrap">
-
-                                <div class="image p-4 w-2/5 my-auto">
-                                    <img src="img/hotel-nirmala.png" alt="" class="rounded-lg mx-auto " />
-                                </div>
-
-                                <div class="deskripsi w-3/5 mt-5 px-5">
-                                    <h3 class="font-bold text-4xl text-[#18285C] mb-4 text-center">
-                                        HOTEL NIRMALA
-                                    </h3>
-                                    <div class="flex justify-between my-2">
-                                        <div class="price">
-                                            <h5 class="text-3xl font-bold">Rp. <span
-                                                    class="text-[#F8C035]">350.000</span>
-                                            </h5>
-                                        </div>
-                                        <div class="distance">
-                                            <h5 class="font-bold text-[#0C356A] text-2xl text-right">2.8 Km</h5>
-                                        </div>
-
-                                    </div>
-                                    <p class="text-justify leading-relaxed font-medium text-lg">
-                                        Hotel santai di pusat Jimbaran ini berjarak 2.8 km dari Kampus
-                                        Udayana dan 5 km dari taman Garuda Wisnu Kencana. Kamar
-                                        sederhana dilengkapi TV layar datar, minibar, serta pembuat
-                                        teh/kopi, beberapa menawarkan pemandangan taman. Kamar yang
-                                        ditingkatkan memiliki balkon. Layanan kamar tersedia.
-                                        Fasilitas termasuk parkir bawah tanah, restoran terbuka, dan
-                                        kolam renang infinity di atap.
-                                    </p>
-
-                                    <div
-                                        class="btn-maps mt-5 bg-[#18285C] p-2 rounded-lg text-lg text-center w-1/2 mx-auto">
-                                        <a href="https://maps.app.goo.gl/PPRVnXHT11EkEq3E9" class="text-white ">Google
-                                            Maps
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-
-                            <div class="flex flex-row flex-wrap">
-
-                                <div class="image p-4 w-2/5 my-auto">
-                                    <img src="img/hotel-nirmala.png" alt="" class="rounded-lg mx-auto " />
-                                </div>
-
-                                <div class="deskripsi w-3/5 mt-5 px-5">
-                                    <h3 class="font-bold text-4xl text-[#18285C] mb-4 text-center">
-                                        HOTEL NIRMALA
-                                    </h3>
-                                    <div class="flex justify-between my-2">
-                                        <div class="price">
-                                            <h5 class="text-3xl font-bold">Rp. <span
-                                                    class="text-[#F8C035]">350.000</span>
-                                            </h5>
-                                        </div>
-                                        <div class="distance">
-                                            <h5 class="font-bold text-[#0C356A] text-2xl text-right">2.8 Km</h5>
-                                        </div>
-
-                                    </div>
-                                    <p class="text-justify leading-relaxed font-medium text-lg">
-                                        Hotel santai di pusat Jimbaran ini berjarak 2.8 km dari Kampus
-                                        Udayana dan 5 km dari taman Garuda Wisnu Kencana. Kamar
-                                        sederhana dilengkapi TV layar datar, minibar, serta pembuat
-                                        teh/kopi, beberapa menawarkan pemandangan taman. Kamar yang
-                                        ditingkatkan memiliki balkon. Layanan kamar tersedia.
-                                        Fasilitas termasuk parkir bawah tanah, restoran terbuka, dan
-                                        kolam renang infinity di atap.
-                                    </p>
-
-                                    <div
-                                        class="btn-maps mt-5 bg-[#18285C] p-2 rounded-lg text-lg text-center w-1/2 mx-auto">
-                                        <a href="https://maps.app.goo.gl/PPRVnXHT11EkEq3E9" class="text-white ">Google
-                                            Maps
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-
-                            <div class="flex flex-row flex-wrap">
-
-                                <div class="image p-4 w-2/5 my-auto">
-                                    <img src="img/hotel-nirmala.png" alt="" class="rounded-lg mx-auto " />
-                                </div>
-
-                                <div class="deskripsi w-3/5 mt-5 px-5">
-                                    <h3 class="font-bold text-4xl text-[#18285C] mb-4 text-center">
-                                        HOTEL NIRMALA
-                                    </h3>
-                                    <div class="flex justify-between my-2">
-                                        <div class="price">
-                                            <h5 class="text-3xl font-bold">Rp. <span
-                                                    class="text-[#F8C035]">350.000</span>
-                                            </h5>
-                                        </div>
-                                        <div class="distance">
-                                            <h5 class="font-bold text-[#0C356A] text-2xl text-right">2.8 Km</h5>
-                                        </div>
-
-                                    </div>
-                                    <p class="text-justify leading-relaxed font-medium text-lg">
-                                        Hotel santai di pusat Jimbaran ini berjarak 2.8 km dari Kampus
-                                        Udayana dan 5 km dari taman Garuda Wisnu Kencana. Kamar
-                                        sederhana dilengkapi TV layar datar, minibar, serta pembuat
-                                        teh/kopi, beberapa menawarkan pemandangan taman. Kamar yang
-                                        ditingkatkan memiliki balkon. Layanan kamar tersedia.
-                                        Fasilitas termasuk parkir bawah tanah, restoran terbuka, dan
-                                        kolam renang infinity di atap.
-                                    </p>
-
-                                    <div
-                                        class="btn-maps mt-5 bg-[#18285C] p-2 rounded-lg text-lg text-center w-1/2 mx-auto">
-                                        <a href="https://maps.app.goo.gl/PPRVnXHT11EkEq3E9" class="text-white ">Google
-                                            Maps
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-
-                            <div class="flex flex-row flex-wrap">
-
-                                <div class="image p-4 w-2/5 my-auto">
-                                    <img src="img/hotel-nirmala.png" alt="" class="rounded-lg mx-auto " />
-                                </div>
-
-                                <div class="deskripsi w-3/5 mt-5 px-5">
-                                    <h3 class="font-bold text-4xl text-[#18285C] mb-4 text-center">
-                                        HOTEL NIRMALA
-                                    </h3>
-                                    <div class="flex justify-between my-2">
-                                        <div class="price">
-                                            <h5 class="text-3xl font-bold">Rp. <span
-                                                    class="text-[#F8C035]">350.000</span>
-                                            </h5>
-                                        </div>
-                                        <div class="distance">
-                                            <h5 class="font-bold text-[#0C356A] text-2xl text-right">2.8 Km</h5>
-                                        </div>
-
-                                    </div>
-                                    <p class="text-justify leading-relaxed font-medium text-lg">
-                                        Hotel santai di pusat Jimbaran ini berjarak 2.8 km dari Kampus
-                                        Udayana dan 5 km dari taman Garuda Wisnu Kencana. Kamar
-                                        sederhana dilengkapi TV layar datar, minibar, serta pembuat
-                                        teh/kopi, beberapa menawarkan pemandangan taman. Kamar yang
-                                        ditingkatkan memiliki balkon. Layanan kamar tersedia.
-                                        Fasilitas termasuk parkir bawah tanah, restoran terbuka, dan
-                                        kolam renang infinity di atap.
-                                    </p>
-
-                                    <div
-                                        class="btn-maps mt-5 bg-[#18285C] p-2 rounded-lg text-lg text-center w-1/2 mx-auto">
-                                        <a href="https://maps.app.goo.gl/PPRVnXHT11EkEq3E9" class="text-white ">Google
-                                            Maps
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination"></div>
-
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev rotate-90"></div>
-                    <div class="swiper-button-next rotate-90"></div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- AkhirFasilitas -->
-
-    <!-- Logo Section -->
-    <section id="Logo">
-        <div class="content p-6 md:px-8">
-            <h2 class="text-2xl md:text-4xl font-bold text-[#18285C] mb-2 text-center">ABDIDAYA ORMAWA 2024</h2>
-            <h3 class="text-lg md:text-3xl text-[#F8C035] text-center">Diselenggarakan oleh:</h3>
-            <div class="flex flex-col md:flex-row justify-center items-center mt-10 gap-4">
-                <img src="img/tutWuriHandayani.png" alt="" class="w-24 md:w-28">
-                <img src="img/Logo-Unud.png" alt="" class="w-24 md:w-28">
-                <img src="img/blu.png" alt="" class="w-24 md:w-28">
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Footer -->
-    <footer>
-        <section class="bg-[#413C85] p-6 md:p-10">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
-                <!-- Logo Section -->
-                <div class="footer-nav mb-6 md:mb-0">
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-                        <img src="img/tutWuriHandayani.png" alt="" class="w-24 h-auto mx-auto hidden md:block">
-                        <img src="img/Logo-Unud.png" alt="" class="w-24 h-auto mx-auto hidden md:block">
-                        <img src="img/blu.png" alt="" class="w-24 h-auto mx-auto hidden md:block">
-                        <img src="img/abdidaya.png" alt="" class="w-24 h-auto mx-auto hidden md:block">
-                    </div>
-                    <h5 class="text-gray-400 text-center md:text-left">Abdidaya Ormawa 2024</h5>
-                </div>
-                <!-- Informasi Pilihan Section -->
-                <div class="footer-nav mb-6 md:mb-0">
-                    <h4 class="text-xl md:text-2xl font-semibold text-white mb-5">Informasi Pilihan</h4>
-                    <ul class="text-gray-400 text-sm md:text-base">
-                        <li>Sistem Informasi Terintegrasi (IMISSU)</li>
-                        <li>Info Tender</li>
-                        <li>SPI (Satuan Pengawasan Intern)</li>
-                        <li>Beasiswa Online</li>
-                        <li>SAKIP</li>
-                        <li>LPPM</li>
-                        <li>LPSE</li>
-                        <li>Vokasi UNUD</li>
-                    </ul>
-                </div>
-                <!-- Informasi Pilihan Section 2 -->
-                <div class="footer-nav mb-6 md:mb-0">
-                    <h4 class="text-xl md:text-2xl font-semibold text-white mb-5">Informasi Pilihan</h4>
-                    <ul class="text-gray-400 text-sm md:text-base">
-                        <li>e-Office</li>
-                        <li>Daftar Putar Udayana</li>
-                        <li>e-PUPNAS</li>
-                        <li>LPPM</li>
-                        <li>Knowledge Center</li>
-                        <li>Kalender Akademik</li>
-                    </ul>
-                </div>
-                <!-- Informasi Eksternal Section -->
-                <div class="footer-nav mb-6 md:mb-0">
-                    <h4 class="text-xl md:text-2xl font-semibold text-white mb-5">Informasi Eksternal</h4>
-                    <ul class="text-gray-400 text-sm md:text-base">
-                        <li>Program Kampus Merdeka</li>
-                        <li>FAQ Kampus Merdeka</li>
-                        <li>PDDIKTI</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-    </footer>
-
-
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="JS/script.js"></script>
-</body>
-
-</html>
+    #audio-modal div {
+        transform: scale(0.95);
+    }
+</style>

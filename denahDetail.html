@@ -6,27 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detail-Denah Universitas Udayana</title>
     <link rel="stylesheet" href="CSS/style.css">
-    <style>
-        #Denah {
-            background-image: url('img/bg-3logo.png');
-            /* Tambahkan gambar background */
-            background-size: cover;
-            /* Gambar akan menyesuaikan ukuran navigasi */
-            background-position: center;
-            /* Posisikan gambar di tengah */
-            background-repeat: no-repeat;
-            /* Tidak mengulangi gambar */
-            background-blend-mode: overlay;
-            /* Membuat gambar menyatu dengan warna latar */
-            background-color: rgb(228, 228, 228);
-            /* Kombinasi warna background untuk efek perpaduan */
-            transition: background-color 0.3s ease;
-        }
-    </style>
 </head>
 
 <body>
-    <!-- header navbar tag -->
+    <!-- Header Awal -->
     <header>
         <nav id="navbar"
             class="fixed top-0 left-0 w-full bg-transparent text-white shadow-lg z-50 border-b-8 border-[#F8C035]">
@@ -48,25 +31,41 @@
                     </div>
 
                     <!-- Link navigasi di sebelah kanan -->
-                    <div class="nav-links" id="nav">
-                        <a href="#homepage" class="px-3 py-2 rounded-md text-sm font-medium">Beranda</a>
-                        <a href="#timeline" class="px-3 py-2 rounded-md text-sm font-medium">Timeline</a>
-                        <a href="#udayana" class="px-3 py-2 rounded-md text-sm font-medium">Tentang Unud</a>
-                        <a href="#denah" class="px-3 py-2 rounded-md text-sm font-medium">Denah</a>
-                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium">Tour</a>
-                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium">Login</a>
+                    <div class="nav-links relative" id="nav">
+                        <a href="index.html#homepage" class="px-3 py-2 rounded-md text-sm font-medium">Beranda</a>
+                        <a href="index.html#timeline" class="px-3 py-2 rounded-md text-sm font-medium">Timeline</a>
+
+                        <!-- Dropdown "Tentang" -->
+                        <div class="relative group content-center">
+                            <a href="" id="about-unud" class="px-3 py-2 text-sm font-medium cursor-pointer">Tentang</a>
+                            <!-- Submenu -->
+                            <div class="dropdown-menu">
+                                <a href="index.html#udayana"
+                                    class="block px-4 py-2 bg-[#F8C035] hover:bg-[#0C356A] text-white hover:font-bold mb-1">Udayana</a>
+                                <a href="index.html#about"
+                                    class="block px-4 py-2 bg-[#F8C035] hover:bg-[#0C356A] text-white hover:font-bold mb-1">Abdidaya</a>
+                                <a href="index.html#maskot"
+                                    class="block px-4 py-2 bg-[#F8C035] hover:bg-[#0C356A] text-white hover:font-bold mb-1">Maskot</a>
+                                <a href="index.html#fasilitas"
+                                    class="block px-4 py-2 bg-[#F8C035] hover:bg-[#0C356A] text-white hover:font-bold mb-1">Fasilitas</a>
+                            </div>
+                        </div>
+                        <a href="index.html#denah" class="px-3 py-2 rounded-md text-sm font-medium">Denah</a>
+                        <a href="index.html#tour" class="px-3 py-2 rounded-md text-sm font-medium">Tour</a>
                     </div>
+
                 </div>
             </div>
         </nav>
     </header>
+    <!-- Header Akhir -->
 
 
     <!-- Awal Denah -->
     <section id="denah" class="mt-[5rem]">
-        <div class="content bg-[#FFFFFF] rounded-md shadow-lg p-6 h-full">
+        <div class="content bg-[#0C356A] rounded-md shadow-lg p-6 h-full">
             <div id="about-tittle" class="section-tittle text-center mb-8">
-                <h1 class="font-bold text-3xl md:text-4xl text-[#0C356A] flex flex-col items-center">DENAH KEGIATAN
+                <h1 class="font-bold text-3xl md:text-4xl text-[#FFFFFF] flex flex-col items-center">DENAH KEGIATAN
                     <span class="w-[30%] h-[5px] bg-[#F8C035] mt-2"></span>
                 </h1>
             </div>
@@ -92,7 +91,7 @@
                         class="bg-[#4CA85A] hover:bg-[#6bbc77] active:bg-[#3c8547] text-white py-4 px-4 rounded-lg text-center transition-all duration-200 ease-in-out">4.
                         Halaman Parkir Bus 1</a>
                     <a href="#"
-                        class="bg-[#FBDF45] hover:bg-[#fce877] active:bg-[#fad613] text-white py-4 px-4 rounded-lg text-center transition-all duration-200 ease-in-out">5.
+                        class="bg-[#FBDF45] hover:bg-[#fce877] active:bg-[#fad613] text-black py-4 px-4 rounded-lg text-center transition-all duration-200 ease-in-out">5.
                         Gedung Perpustakaan</a>
                     <a href="#"
                         class="bg-[#7495C8] hover:bg-[#99b1d6] active:bg-[#4f79ba] text-white py-4 px-4 rounded-lg text-center transition-all duration-200 ease-in-out">6.
@@ -104,7 +103,7 @@
                         class="bg-[#FA7142] hover:bg-[#fb9674] active:bg-[#f94c10] text-white py-4 px-4 rounded-lg text-center transition-all duration-200 ease-in-out">8.
                         Sekretariat Panitia</a>
                     <a href="#"
-                        class="bg-[#E7D13A] hover:bg-[#eddc67] active:bg-[#d4bc1a] text-white py-4 px-4 rounded-lg text-center transition-all duration-200 ease-in-out">9.
+                        class="bg-[#E7D13A] hover:bg-[#eddc67] active:bg-[#d4bc1a] text-black py-4 px-4 rounded-lg text-center transition-all duration-200 ease-in-out">9.
                         Tempat Wudhu</a>
                     <a href="#"
                         class="bg-[#70AD47] hover:bg-[#8bc067] active:bg-[#598938] text-white py-4 px-4 rounded-lg text-center transition-all duration-200 ease-in-out">10.

@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <!-- header navbar tag -->
+    <!-- Header Awal -->
     <header>
         <nav id="navbar"
             class="fixed top-0 left-0 w-full bg-transparent text-white shadow-lg z-50 border-b-8 border-[#F8C035]">
@@ -31,18 +31,35 @@
                     </div>
 
                     <!-- Link navigasi di sebelah kanan -->
-                    <div class="nav-links" id="nav">
+                    <div class="nav-links relative" id="nav">
                         <a href="#homepage" class="px-3 py-2 rounded-md text-sm font-medium">Beranda</a>
                         <a href="#timeline" class="px-3 py-2 rounded-md text-sm font-medium">Timeline</a>
-                        <a href="#udayana" class="px-3 py-2 rounded-md text-sm font-medium">Tentang Unud</a>
+
+                        <!-- Dropdown "Tentang" -->
+                        <div class="relative group content-center">
+                            <a href="" id="about-unud" class="px-3 py-2 text-sm font-medium cursor-pointer">Tentang</a>
+                            <!-- Submenu -->
+                            <div class="dropdown-menu">
+                                <a href="#udayana"
+                                    class="block px-4 py-2 bg-[#F8C035] hover:bg-[#0C356A] text-white hover:font-bold mb-1">Udayana</a>
+                                <a href="#about"
+                                    class="block px-4 py-2 bg-[#F8C035] hover:bg-[#0C356A] text-white hover:font-bold mb-1">Abdidaya</a>
+                                <a href="#maskot"
+                                    class="block px-4 py-2 bg-[#F8C035] hover:bg-[#0C356A] text-white hover:font-bold mb-1">Maskot</a>
+                                <a href="#fasilitas"
+                                    class="block px-4 py-2 bg-[#F8C035] hover:bg-[#0C356A] text-white hover:font-bold mb-1">Fasilitas</a>
+                            </div>
+                        </div>
                         <a href="#denah" class="px-3 py-2 rounded-md text-sm font-medium">Denah</a>
-                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium">Tour</a>
-                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium">Login</a>
+                        <a href="#tour" class="px-3 py-2 rounded-md text-sm font-medium">Tour</a>
                     </div>
+
                 </div>
             </div>
         </nav>
     </header>
+    <!-- Header Akhir -->
+
 
 
     <!-- Homepage Awal -->
@@ -185,8 +202,11 @@
                 </div>
                 <div class="col-span-3">
                     <div class="bg-white rounded-lg border-2 border-dashed border-blue-900 p-3 h-[26] mt-12">
-                        <h4 class="text-lg text-center font-bold pb-2">Hari ke 1</h4>
-                        <p class="text-sm font-semibold">Terdapat 5 kegiatan penting pada hari pertama yang dimulai dari
+                        <h4 class="text-lg text-center font-bold pb-2"> Hari ke 1</h4>
+                        <p class="text-sm font-semibold">Terdapat 5 kegiatan penting pada <a
+                                class="font-bold text-[#0C356A] underline underline-offset-4"
+                                href="Jadwal-1.html#roundown">hari pertama</a>
+                            yang dimulai dari
                             pukul 8 pagi hingga pukul 9 malam waktu Indonesia Tengah.</p>
                     </div>
                 </div>
@@ -198,7 +218,9 @@
                 <div class="col-span-3">
                     <div class="bg-white rounded-lg border-2 border-dashed border-blue-900 p-3 h-[26]">
                         <h4 class="text-lg text-center font-bold pb-2">Hari ke 2</h4>
-                        <p class="text-sm font-semibold">Terdapat 4 kegiatan penting pada hari kedua yang dimulai dari
+                        <p class="text-sm font-semibold">Terdapat 4 kegiatan penting pada <a
+                                class="font-bold text-[#0C356A] underline underline-offset-4"
+                                href="Jadwal-2.html#roundown">hari kedua</a> yang dimulai dari
                             pukul
                             8 pagi hingga pukul 9 malam waktu Indonesia Tengah.</p>
                     </div>
@@ -241,7 +263,9 @@
                 <div class="col-span-3">
                     <div class="bg-white rounded-lg border-2 border-dashed border-blue-900 p-3 h-[26] mt-12">
                         <h4 class="text-lg text-center font-bold pb-2">Hari ke 3</h4>
-                        <p class="text-sm font-semibold">terdapat 4 kegiatan penting yang ada pada hari ketiga yang
+                        <p class="text-sm font-semibold">terdapat 4 kegiatan penting yang ada pada <a
+                                class="font-bold text-[#0C356A] underline underline-offset-4"
+                                href="Jadwal-3.html#roundown">hari ketiga</a> yang
                             dimulai dari pukul 9 pagi hingga pukul 9 malam waktu
                             indonesia tengah</p>
                     </div>
@@ -254,7 +278,9 @@
                 <div class="col-span-3">
                     <div class="bg-white rounded-lg border-2 border-dashed border-blue-900 p-3 h-[26]">
                         <h4 class="text-lg text-center font-bold pb-2">Hari ke 4</h4>
-                        <p class="text-sm font-semibold">Pada hari terakhir ini, akan diadakan city tour ke beberapa
+                        <p class="text-sm font-semibold">Pada hari <a
+                                class="font-bold text-[#0C356A] underline underline-offset-4"
+                                href="Jadwal-4.html#roundown">hari terakhir</a>, akan diadakan city tour ke beberapa
                             tempat wisata yang ada di bali, khususnya yang ada di Kuta
                             Selatan, pastikan teman teman sudah mendaftar untuk mengikuti kegiatan city tour</p>
                     </div>
@@ -317,7 +343,9 @@
                         </div>
                         <div class="bg-white rounded-lg border-2 border-dashed border-blue-900 p-4 max-w-xs mx-auto">
                             <h4 class="text-lg font-bold pb-2 text-center">Hari ke 1</h4>
-                            <p class="text-sm font-semibold text-center">Terdapat 5 kegiatan penting pada hari pertama
+                            <p class="text-sm font-semibold text-center">Terdapat 5 kegiatan penting pada <a
+                                    class="font-bold text-[#0C356A] underline underline-offset-4"
+                                    href="Jadwal-1.html#roundown">hari pertama</a>
                                 yang
                                 dimulai dari pukul 8 pagi hingga pukul 9 malam waktu Indonesia Tengah.</p>
                         </div>
@@ -336,7 +364,9 @@
                         </div>
                         <div class="bg-white rounded-lg border-2 border-dashed border-blue-900 p-4 mx-auto max-w-md">
                             <h4 class="text-lg font-bold pb-2 text-center">Hari ke 2</h4>
-                            <p class="text-sm font-semibold text-center">Terdapat 4 kegiatan penting pada hari kedua
+                            <p class="text-sm font-semibold text-center">Terdapat 4 kegiatan penting pada <a
+                                    class="font-bold text-[#0C356A] underline underline-offset-4"
+                                    href="Jadwal-2.html#roundown">hari kedua</a>
                                 yang
                                 dimulai dari pukul 8 pagi hingga pukul 9 malam waktu Indonesia Tengah.</p>
                         </div>
@@ -355,8 +385,10 @@
                         </div>
                         <div class="bg-white rounded-lg border-2 border-dashed border-blue-900 p-4 mx-auto max-w-md">
                             <h4 class="text-lg font-bold pb-2 text-center">Hari ke 3</h4>
-                            <p class="text-sm font-semibold text-center">terdapat 4 kegiatan penting yang ada pada hari
-                                ketiga yang dimulai dari pukul 9 pagi hingga pukul 9 malam waktu
+                            <p class="text-sm font-semibold text-center">terdapat 4 kegiatan penting yang ada pada <a
+                                    class="font-bold text-[#0C356A] underline underline-offset-4"
+                                    href="Jadwal-3.html#roundown">hari ketiga</a> yang dimulai dari pukul 9 pagi hingga
+                                pukul 9 malam waktu
                                 indonesia tengah</p>
                         </div>
                     </div>
@@ -374,7 +406,9 @@
                         </div>
                         <div class="bg-white rounded-lg border-2 border-dashed border-blue-900 p-4 mx-auto max-w-md">
                             <h4 class="text-lg font-bold pb-2 text-center">Hari ke 4</h4>
-                            <p class="text-sm font-semibold text-center">Pada hari terakhir ini, akan diadakan city tour
+                            <p class="text-sm font-semibold text-center">Pada <a
+                                    class="font-bold text-[#0C356A] underline underline-offset-4"
+                                    href="Jadwal-4.html#roundown">hari terakhir</a> ini, akan diadakan city tour
                                 ke beberapa tempat wisata yang ada di bali, khususnya yang ada di Kuta
                                 Selatan, pastikan teman teman sudah mendaftar untuk mengikuti kegiatan city tour</p>
                         </div>
@@ -551,7 +585,8 @@
     <section id="fasilitas" class="px-5 md:px-10 py-5">
         <div class="content timeline-bg rounded-md shadow-lg p-6 h-full">
             <div id="about-tittle" class="section-tittle text-center mb-12 mt-2 ">
-                <h1 class="font-bold text-4xl text-white inline-block flex flex-col items-center"> FASILITAS
+                <h1 class="font-bold text-4xl text-white inline-block flex flex-col items-center"> FASILITAS &
+                    PENGINAPAN
                     <span class="w-[20%] h-[5px] bg-[#F8C035] mt-2"></span>
                 </h1>
             </div>
@@ -565,7 +600,7 @@
                         lengkap dan tim terlatih, serta layanan kesehatan 24 jam di RSPTN, UGD, poliklinik, dan
                         apotek selama acara.</p>
                     <div class="flex justify-center mt-5 mb-2">
-                        <a href="#"
+                        <a href="fasilitas.html#hero-kesehatan"
                             class="bg-[#0C356A] hover:bg-[#114c98] active:bg-[#071e3c] text-white py-4 px-4 rounded-full text-center mx-auto">
                             Selengkapnya
                         </a>
@@ -579,7 +614,7 @@
                         peserta, narasumber, dan tamu, termasuk kunjungan wisata bagi
                         mahasiswa dan 4 unit ambulans untuk kebutuhan medis.</p>
                     <div class="flex justify-center mt-5 mb-2">
-                        <a href="#"
+                        <a href="fasilitas.html#hero-transportasi"
                             class="bg-[#0C356A] hover:bg-[#114c98] active:bg-[#071e3c] text-white py-4 px-4 rounded-full text-center mx-auto">
                             Selengkapnya
                         </a>
@@ -593,7 +628,21 @@
                         Ormawa) adalah program penguatan kapasitas ormawa melalui
                         serangkaian proses pembinaan ormawa.</p>
                     <div class="flex justify-center mt-5 mb-2">
-                        <a href="#"
+                        <a href="fasilitas.html#hero-ruangan"
+                            class="bg-[#0C356A] hover:bg-[#114c98] active:bg-[#071e3c] text-white py-4 px-4 rounded-full text-center mx-auto">
+                            Selengkapnya
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex-1 bg-white rounded-lg py-4 px-8 border-solid border-4 border-[#0C356A]">
+                    <h3 class="mb-5 text-2xl font-bold text-[#0C356A]">Daftar <span class="text-[#F8C035]">Hotel</span>
+                    </h3>
+                    <p class="text-justify font-normal">Program Penguatan Kapasitas Organisasi Kemahasiswaan (PPK
+                        Ormawa) adalah program penguatan kapasitas ormawa melalui
+                        serangkaian proses pembinaan ormawa.</p>
+                    <div class="flex justify-center mt-5 mb-2">
+                        <a href="fasilitas.html#fasilitas-hotel"
                             class="bg-[#0C356A] hover:bg-[#114c98] active:bg-[#071e3c] text-white py-4 px-4 rounded-full text-center mx-auto">
                             Selengkapnya
                         </a>
@@ -634,7 +683,7 @@
                         class="bg-[#4CA85A] hover:bg-[#6bbc77] active:bg-[#3c8547] text-white py-4 px-4 rounded-lg text-center transition-all duration-200 ease-in-out">4.
                         Halaman Parkir Bus 1</a>
                     <a href="./denahDetail.html#perpustakaan"
-                        class="bg-[#FBDF45] hover:bg-[#fce877] active:bg-[#fad613] text-white py-4 px-4 rounded-lg text-center transition-all duration-200 ease-in-out">5.
+                        class="bg-[#FBDF45] hover:bg-[#fce877] active:bg-[#fad613] text-black py-4 px-4 rounded-lg text-center transition-all duration-200 ease-in-out">5.
                         Gedung Perpustakaan</a>
                     <a href="./denahDetail.html#as"
                         class="bg-[#7495C8] hover:bg-[#99b1d6] active:bg-[#4f79ba] text-white py-4 px-4 rounded-lg text-center transition-all duration-200 ease-in-out">6.
@@ -646,7 +695,7 @@
                         class="bg-[#FA7142] hover:bg-[#fb9674] active:bg-[#f94c10] text-white py-4 px-4 rounded-lg text-center transition-all duration-200 ease-in-out">8.
                         Sekretariat Panitia</a>
                     <a href="./denahDetail.html#tempat-wudhu"
-                        class="bg-[#E7D13A] hover:bg-[#eddc67] active:bg-[#d4bc1a] text-white py-4 px-4 rounded-lg text-center transition-all duration-200 ease-in-out">9.
+                        class="bg-[#E7D13A] hover:bg-[#eddc67] active:bg-[#d4bc1a] text-black py-4 px-4 rounded-lg text-center transition-all duration-200 ease-in-out">9.
                         Tempat Wudhu</a>
                     <a href="./denahDetail.html#tenda-mushola"
                         class="bg-[#70AD47] hover:bg-[#8bc067] active:bg-[#598938] text-white py-4 px-4 rounded-lg text-center transition-all duration-200 ease-in-out">10.
