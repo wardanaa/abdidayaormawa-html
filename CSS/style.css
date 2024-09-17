@@ -173,6 +173,12 @@ body {
     background-attachment: fixed;
 }
 
+#tanya-kami {
+    background-image: url('../img/hero.png');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 .timeline-bg {
     background-image: url('../img/BG.png');
     /* Tambahkan gambar background */
