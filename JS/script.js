@@ -73,6 +73,7 @@ document.querySelector('.menu-toggle').addEventListener('click', function () {
 const swiper1 = new Swiper('.mySwiper1', {
     spaceBetween: 30,
     centeredSlides: true,
+    grabCursor: false,
     loop: true,
     autoplay: {
         delay: 4000,
