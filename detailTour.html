@@ -2,466 +2,486 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beranda | Abdidaya 2024</title>
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <style>
-        .swiper-container {
-          position: relative; /* Tambahkan ini untuk memastikan tombol di dalam container */
-          width: 100%; /* Pastikan lebar slider 100% agar responsif */
-          height: auto;
-        }
-        .swiper-wrapper {
-          display: flex;
-        }
-        .swiper-slide {
-          width: 100%; /* Setiap slide memenuhi lebar layar */
-          text-align: center;
-        }
-        .swiper-button-next, .swiper-button-prev {
-          color: #ffffff; /* Ubah warna tombol jika diperlukan */
-          position: absolute;
-          top: 50%;
-          transform: translateY(-50%);
-          z-index: 10;
-        }
-        .swiper-button-next {
-          right: 10px; /* Tombol next di sisi kanan */
-          background-color: #60a5fa;
-          padding: 1rem;
-          border-radius: 50%;
-          top: 50%; /* Vertikal sejajar */
-          transform: translateY(-50%);
-        }
-        .swiper-button-prev {
-          left: 10px; /* Tombol prev di sisi kiri */
-          background-color: #60a5fa;
-          padding: 1rem;
-          border-radius: 50%;
-          top: 50%; /* Vertikal sejajar */
-          transform: translateY(-50%);
-        }
-
-        .swiper-button-next::after, .swiper-button-prev::after {
-            font-size: 20px; /* Ukuran ikon panah */
-          font-weight: bold;
-        }
-      </style>
-      
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beranda | Abdidaya 2024</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body>
-    <!-- header navbar tag -->
-    <header>
-        <nav id="navbar"
-            class="fixed top-0 left-0 w-full bg-transparent text-white shadow-lg z-50 border-b-8 border-[#F8C035]">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex justify-between items-center h-20">
-                    <!-- Logo di sebelah kiri -->
-                    <div class="header-logo">
-                        <a href=""><img src="img/tutWuriHandayani.png" alt="Logo" class="w-12 h-12"></a>
-                        <a href=""><img src="img/Logo-Unud.png" alt="Logo" class="w-12 h-12"></a>
-                        <a href=""><img src="img/blu.png" alt="Logo" class="w-12 h-12"></a>
-                        <a href=""><img src="img/abdidaya.png" alt="Logo" class="w-12 h-12"></a>
-                    </div>
+  <!-- Header Awal -->
+  <header>
+    <nav id="navbar"
+      class="fixed top-0 left-0 w-full bg-transparent text-white shadow-lg z-50 border-b-8 border-[#F8C035]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+          <!-- Logo di sebelah kiri -->
+          <div class="header-logo">
+            <a href=""><img src="img/tutWuriHandayani.png" alt="Logo" class="w-12 h-12"></a>
+            <a href=""><img src="img/Logo-Unud.png" alt="Logo" class="w-12 h-12"></a>
+            <a href=""><img src="img/blu.png" alt="Logo" class="w-12 h-12"></a>
+            <a href=""><img src="img/abdidaya.png" alt="Logo" class="w-12 h-12"></a>
+          </div>
 
-                    <!-- Tombol Menu untuk Mobile -->
-                    <div class="menu-toggle lg:hidden">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
+          <!-- Tombol Menu untuk Mobile -->
+          <div class="menu-toggle lg:hidden">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
 
-                    <!-- Link navigasi di sebelah kanan -->
-                    <div class="nav-links" id="nav">
-                        <a href="#homepage" class="px-3 py-2 rounded-md text-sm font-medium">Beranda</a>
-                        <a href="#timeline" class="px-3 py-2 rounded-md text-sm font-medium">Timeline</a>
-                        <a href="#udayana" class="px-3 py-2 rounded-md text-sm font-medium">Tentang Unud</a>
-                        <a href="#denah" class="px-3 py-2 rounded-md text-sm font-medium">Denah</a>
-                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium">Tour</a>
-                        <a href="#" class="px-3 py-2 rounded-md text-sm font-medium">Login</a>
-                    </div>
-                </div>
+          <!-- Link navigasi di sebelah kanan -->
+          <div class="nav-links relative" id="nav">
+            <a href="index.html#homepage" class="px-3 py-2 rounded-md text-sm font-medium">Beranda</a>
+            <a href="index.html#timeline" class="px-3 py-2 rounded-md text-sm font-medium">Timeline</a>
+
+            <!-- Dropdown "Tentang" -->
+            <div class="relative group content-center">
+              <a href="" id="about-unud" class="px-3 py-2 text-sm font-medium cursor-pointer">Tentang</a>
+              <!-- Submenu -->
+              <div class="dropdown-menu">
+                <a href="index.html#udayana"
+                  class="block px-4 py-2 bg-[#F8C035] hover:bg-[#0C356A] text-white hover:font-bold mb-1">Udayana</a>
+                <a href="index.html#about"
+                  class="block px-4 py-2 bg-[#F8C035] hover:bg-[#0C356A] text-white hover:font-bold mb-1">Abdidaya</a>
+                <a href="index.html#maskot"
+                  class="block px-4 py-2 bg-[#F8C035] hover:bg-[#0C356A] text-white hover:font-bold mb-1">Maskot</a>
+                <a href="index.html#fasilitas"
+                  class="block px-4 py-2 bg-[#F8C035] hover:bg-[#0C356A] text-white hover:font-bold mb-1">Fasilitas</a>
+              </div>
             </div>
-        </nav>
-    </header>
+            <a href="index.html#denah" class="px-3 py-2 rounded-md text-sm font-medium">Denah</a>
+            <a href="index.html#tour" class="px-3 py-2 rounded-md text-sm font-medium">Tour</a>
+            <a href="tanyaJawab.html#tanya-kami" class="px-3 py-2 rounded-md text-sm font-medium">Tanya
+              Kami</a>
+          </div>
 
-
-    <!-- Homepage Awal -->
-    <section id="homeTour" class="relative w-screen h-screen bg-blue-500 bg-cover bg-center">
-        <!-- Overlay -->
-        <div class="absolute inset-0 bg-black opacity-80"></div>
-
-        <!-- Content Homepage -->
-        <div class="relative z-10 flex flex-col md:flex-row justify-center items-center h-full px-4 md:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-12 w-full max-w-6xl mx-auto gap-4">
-                
-            </div>
         </div>
-    </section>
-    <!-- Homepage Akhir -->
+      </div>
+    </nav>
+  </header>
+  <!-- Header Akhir -->
 
+  <!-- Hero Tour Awal -->
+  <section id="hero-tour" class="tour-bg min-h-[80vh] mt-20 flex items-center bg-fixed">
+    <div class="content p-6 mx-auto max-w-screen-lg">
+      <div class="text-center">
+        <h1 class="text-3xl md:text-5xl mx-auto my-auto font-bold text-[#F8C035]">
+          Paket Tour Explore Bali 2024
+        </h1>
+        <h2 class="text-base md:text-2xl font-bold text-[#FFFFFF] mt-4">
+          Jelajahi keindahan Bali dan nikmati pengalaman wisata yang tak terlupakan
+        </h2>
+      </div>
+    </div>
+  </section>
+  <!-- Hero Tour Akhir -->
 
-    <!-- Tour detail-->
-    <section id="about" class="px-4 py-6 md:px-10 md:py-10 swiper-container bg-[#efeeec]">
+  <!-- Item Tour Awal -->
+  <section id="item-tour" class="px-4 pt-6 md:px-10 md:pt-10 bg-[#F2EDED]">
+    <div class="bg-white rounded-lg p-4 md:p-10">
+      <div id="tour-tittle" class="section-tittle text-center">
+        <h1 class="font-bold text-xl md:text-4xl text-[#0C356A] flex flex-col items-center">
+          PAKET TOUR
+          <span class="w-[20%] h-[5px] bg-[#F8C035] mt-2"></span>
+        </h1>
+      </div>
+      <div class="swiper mySwiper1">
         <div class="swiper-wrapper">
-          <!-- Slide 1 -->
-          <div class="swiper-slide bg-white rounded-md shadow-lg">
+
+          <div class="swiper-slide">
             <!-- Title -->
-            <div id="about-title" class="text-center md:mb-8 md:mt-10 mt-5">
-              <h1 class="font-bold text-3xl text-base md:text-4xl text-[#0C356A] inline-block">
+            <div id="paket-title" class="text-center my-5">
+              <h1 class="font-bold text-2xl md:text-4xl text-[#000000] inline-block">
                 Jimbaran dinner The Cuisine Resto
-                <span class="block w-full h-[2px]  md:h-[5px] bg-[#F8C035] mt-1 md:mt-2 mx-auto"></span>
               </h1>
             </div>
-            <!-- Content -->
-            <div id="tourcontent" class="p-5">
-                <div class="flex flex-col md:flex-row">
-                    <div class="w-full md:basis-1/2 flex flex-col md:pr-5 ">
-                        <div>
-                          <img src="img/tour/1.png" class="mb-3 w-full h-auto object-cover" alt="">
-                        </div>
-                    </div>
-                    <div class="w-full md:basis-1/2">
-                        <div class="flex flex-col">
-                            <div class="text-[#4CAF50] md:text-4xl text-lg text-bold font-bold">Rp 120.000/orang/net</div>
-                            <div class="text-sm md:text-sm md:text-xl text-bold mb-3 font-normal text-[#666666]">( Harga transport terpisah ) |  time : 18.00 - 21.30
-                            </div>
-                            <hr>
-                            <div class="flex flex-col text-sm md:text-xl text-bold mb-1 md:mb-3 font-medium justify-start text-start mt-2 md:mt-5">
-                              <div class="font-normal text-[#2C2C2C]">Welcome drink and  peanut, Soup jagung muda </div>
-                            </div>
-                            <div class="flex flex-col text-base text-sm md:text-xl text-bold mb-1 md:mb-3 font-medium justify-start text-start">
-                              <div>Main Course:</div>
-                              <div class="font-normal text-[#2C2C2C] md:text-xl text-sm"> 400 grm ikan bakar, 2 udang bakar,  2 satay  cumi, 2 kerang bakar, Nasi putih, Kangkung .</div>
-                            </div>
-                            <div class="flex flex-col text-sm md:text-xl text-bold mb-1 md:mb-3 font-medium justify-start text-start">
-                              <div>Desert :</div>
-                              <div class="font-normal text-[#2C2C2C]">Fruit platter</div>
-                            </div>
-                            <div class="flex flex-col text-sm md:text-xl text-bold mb-1 md:mb-3 font-medium justify-start text-start">
-                              <div>Drink :</div>
-                              <div class="font-normal text-[#2C2C2C] text-sm md:text-xl">Mineral Water</div>
-                            </div>
-                            
-                            <div class="mt-2 md:mt-5 bg-blue-500 p-2 md:p-5 text-white basis-1/2 rounded-md shadow-lg text-base  md:text-2xl font-semibold
-                            ">Daftar</div>
-                        </div>
-                    </div>
+            <div class="flex flex-col md:flex-row">
+
+              <div class="image w-full md:w-1/2 px-4 md:px-10">
+                <img src="img/tour/1.png" alt="" class="rounded-lg w-full object-cover" />
+              </div>
+
+              <div class="deskripsi w-full md:w-1/2 p-4 md:ps-5 flex flex-col">
+                <div class="text-[#4CAF50] text-lg md:text-4xl font-bold">
+                  Rp 120.000/orang/net
                 </div>
+                <div class="text-sm md:text-xl mb-3 font-bold text-[#666666]">
+                  ( Harga transport terpisah ) | time : 18.00 - 21.30
+                </div>
+                <hr class="my-2 md:my-5">
+                <h5 class="text-lg md:text-2xl text-[#2C2C2C] mt-2 md:mt-5 mb-1 md:mb-3">
+                  Welcome drink and peanut, Soup jagung muda
+                </h5>
+
+                <h5 class="text-lg md:text-3xl font-bold">Main Course</h5>
+                <div class="font-normal text-[#2C2C2C] text-sm md:text-2xl mb-1 md:mb-3">
+                  400 grm ikan bakar, 2 udang bakar, 2 satay cumi, 2 kerang bakar, Nasi putih, Kangkung.
+                </div>
+
+                <h5 class="text-lg md:text-3xl font-bold">Desert :</h5>
+                <div class="font-normal text-[#2C2C2C] text-sm md:text-2xl mb-1 md:mb-3">
+                  Fruit platter
+                </div>
+
+                <h5 class="text-lg md:text-3xl font-bold">Drink :</h5>
+                <div class="font-normal text-[#2C2C2C] text-sm md:text-2xl mb-1 md:mb-3">
+                  Mineral Water
+                </div>
+
+                <!-- Button -->
+                <div class="flex justify-center my-5">
+                  <a href="#"
+                    class="bg-[#0C356A] hover:bg-[#114c98] active:bg-[#071e3c] text-white p-2 rounded-lg text-lg w-full md:w-1/2 text-center">
+                    Daftar
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
-      
-          <!-- Slide 2 -->
-          <div class="swiper-slide bg-white rounded-md shadow-lg">
+
+          <div class="swiper-slide">
             <!-- Title -->
-            <div id="about-title" class="text-center md:mb-8 md:mt-10 mt-5">
-              <h1 class="font-bold text-base md:text-4xl text-[#0C356A] inline-block">
-                ATV & Kintamani Tour
-                <span class="block w-full h-[2px] md:h-[5px] bg-[#F8C035] mt-1 md:mt-2 mx-auto"></span>
+            <div id="paket-title" class="text-center my-5">
+              <h1 class="font-bold text-2xl md:text-4xl text-[#000000] inline-block">
+                Jimbaran dinner The Cuisine Resto
               </h1>
             </div>
-            <!-- Content -->
-            <div id="tourcontent" class="p-5">
-                <div class="flex flex-col md:flex-row">
-                    <div class="w-full md:basis-1/2 flex flex-col md:pr-5">
-                        <img src="img/tour/2.jpg" class="mb-3 w-full h-auto object-cover"  alt="">
-                    </div>
-                    <div class="w-full md:basis-1/2">
-                        <div class="flex flex-col">
-                            <div class="text-[#4CAF50] md:text-4xl text-lg text-bold font-bold">Rp 580.000/tandem</div>
-                            <div class=" ttext-sm md:text-sm md:text-xl text-bold mb-3 font-normal text-[#666666]">(tandem 1 motor berdua)</div>
-                            <hr>
-                            <div class="flex flex-col text-sm md:text-xl text-bold mb-1 md:mb-3 font-medium justify-start text-start mt-2 md:mt-5">
-                              <div class="font-normal text-[#2C2C2C]">Jemput di hotel menuju UBUD -> Bermain ATV (1 jam) -> makansiang di Kintamani sambil menikmati indahnya
-                                danau batur -> Kembali ke hotel </div>
-                            </div>
-                            <div class="flex flex-col text-sm md:text-xl text-bold mb-1 md:mb-3 font-medium justify-start text-start">
-                              <div>Track Area:</div>
-                              <div class="font-normal text-[#2C2C2C]"> Waterall, Rice Field, River, Fun-up down trail to High and Fun Action.</div>
-                            </div>
-                            <div class="flex flex-col text-sm md:text-xl text-bold mb-1 md:mb-3 font-medium justify-start text-start">
-                              <div>Inclusion :</div>
-                              <div class="font-normal text-[#2C2C2C]">Welcome Drink, Mineral Water, Insurance, Towel Shower, Amenities, Helmet, Boots</div>
-                            </div>
-                            
-                            <div class="mt-2 md:mt-5 bg-blue-500 p-2 md:p-5 text-white basis-1/2 rounded-md shadow-lg text-base  md:text-2xl font-semibold
-                            ">Daftar</div>
-                        </div>
-                    </div>
+            <div class="flex flex-col md:flex-row">
+
+              <div class="image w-full md:w-1/2 px-4 md:px-10">
+                <img src="img/tour/1.png" alt="" class="rounded-lg w-full object-cover" />
+              </div>
+
+              <div class="deskripsi w-full md:w-1/2 p-4 md:ps-5 flex flex-col">
+                <div class="text-[#4CAF50] text-lg md:text-4xl font-bold">
+                  Rp 120.000/orang/net
                 </div>
+                <div class="text-sm md:text-xl mb-3 font-bold text-[#666666]">
+                  ( Harga transport terpisah ) | time : 18.00 - 21.30
+                </div>
+                <hr class="my-2 md:my-5">
+                <h5 class="text-lg md:text-2xl text-[#2C2C2C] mt-2 md:mt-5 mb-1 md:mb-3">
+                  Welcome drink and peanut, Soup jagung muda
+                </h5>
+
+                <h5 class="text-lg md:text-3xl font-bold">Main Course</h5>
+                <div class="font-normal text-[#2C2C2C] text-sm md:text-2xl mb-1 md:mb-3">
+                  400 grm ikan bakar, 2 udang bakar, 2 satay cumi, 2 kerang bakar, Nasi putih, Kangkung.
+                </div>
+
+                <h5 class="text-lg md:text-3xl font-bold">Desert :</h5>
+                <div class="font-normal text-[#2C2C2C] text-sm md:text-2xl mb-1 md:mb-3">
+                  Fruit platter
+                </div>
+
+                <h5 class="text-lg md:text-3xl font-bold">Drink :</h5>
+                <div class="font-normal text-[#2C2C2C] text-sm md:text-2xl mb-1 md:mb-3">
+                  Mineral Water
+                </div>
+
+                <!-- Button -->
+                <div class="flex justify-center my-5">
+                  <a href="#"
+                    class="bg-[#0C356A] hover:bg-[#114c98] active:bg-[#071e3c] text-white p-2 rounded-lg text-lg w-full md:w-1/2 text-center">
+                    Daftar
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
 
-          <!-- Slide 3 -->
-          <div class="swiper-slide bg-white rounded-md shadow-lg">
+          <div class="swiper-slide">
             <!-- Title -->
-            <div id="about-title" class="text-center md:mb-8 md:mt-10 mt-5">
-              <h1 class="font-bold text-3xl text-base md:text-4xl text-[#0C356A] inline-block">
-                Monkey Forest  & TEGALALANG
-                <span class="block w-full h-[2px]  md:h-[5px] bg-[#F8C035] mt-1 md:mt-2 mx-auto"></span>
+            <div id="paket-title" class="text-center my-5">
+              <h1 class="font-bold text-2xl md:text-4xl text-[#000000] inline-block">
+                Jimbaran dinner The Cuisine Resto
               </h1>
             </div>
-            <!-- Content -->
-            <div id="tourcontent" class="p-5">
-                <div class="flex flex-col md:flex-row">
-                    <div class="w-full md:basis-1/2 flex flex-col md:pr-5">
-                        <img src="img/hotel-nirmala.png" class="mb-3 w-full h-auto object-cover">
-                    </div>
-                    <div class="w-full md:basis-1/2">
-                        <div class="flex flex-col">
-                            <div class="text-[#4CAF50] md:text-4xl text-lg text-bold font-bold">Rp 490.000/pax</div>
-                            <div class=" text-sm md:text-xl text-bold mb-3 font-normal text-[#666666]">Termasuk : Entrance fee, Guide, 
-                              Bus  AC, Guide  </div>
-                            <hr>
-                            <div class="flex flex-col text-sm md:text-xl text-bold mb-1 md:mb-3 font-medium justify-start text-start mt-2 md:mt-5">
-                              <div class="font-normal text-[#2C2C2C]"><span class="font-medium text-bold ">Time :</span> 8.30 - 20.30
-                              </div>
-                            </div>
-                            <div class="flex flex-col text-sm md:text-xl text-bold mb-1 md:mb-3 font-medium justify-start text-start mt-2 md:mt-5">
-                              <div>Alas Arum:</div>
-                              <div class="font-normal text-[#2C2C2C]"> Di jemput di hotel dan menuju Ubud
-                                untuk mengelilingi monkey forest, 
-                               selanjutnya menuju Tegalalang <span class="font-medium text-bold text-black "> -> </span>  Menikmati indahnya suasana rice 
-                               field berjalan di sepanjang sawah
-                                dengan cuaca yang sejuk selama 1,5 
-                               jam -> Makansiang bersama -> Menuju Hotel -> Menuju Krisna oleh oleh</div>
-                            </div>
-                            
-                            <div class="mt-2 md:mt-5 bg-blue-500 p-2 md:p-5 text-white basis-1/2 rounded-md shadow-lg text-base  md:text-2xl font-semibold
-                            ">Daftar</div>
-                        </div>
-                    </div>
+            <div class="flex flex-col md:flex-row">
+
+              <div class="image w-full md:w-1/2 px-4 md:px-10">
+                <img src="img/tour/1.png" alt="" class="rounded-lg w-full object-cover" />
+              </div>
+
+              <div class="deskripsi w-full md:w-1/2 p-4 md:ps-5 flex flex-col">
+                <div class="text-[#4CAF50] text-lg md:text-4xl font-bold">
+                  Rp 120.000/orang/net
                 </div>
+                <div class="text-sm md:text-xl mb-3 font-bold text-[#666666]">
+                  ( Harga transport terpisah ) | time : 18.00 - 21.30
+                </div>
+                <hr class="my-2 md:my-5">
+                <h5 class="text-lg md:text-2xl text-[#2C2C2C] mt-2 md:mt-5 mb-1 md:mb-3">
+                  Welcome drink and peanut, Soup jagung muda
+                </h5>
+
+                <h5 class="text-lg md:text-3xl font-bold">Main Course</h5>
+                <div class="font-normal text-[#2C2C2C] text-sm md:text-2xl mb-1 md:mb-3">
+                  400 grm ikan bakar, 2 udang bakar, 2 satay cumi, 2 kerang bakar, Nasi putih, Kangkung.
+                </div>
+
+                <h5 class="text-lg md:text-3xl font-bold">Desert :</h5>
+                <div class="font-normal text-[#2C2C2C] text-sm md:text-2xl mb-1 md:mb-3">
+                  Fruit platter
+                </div>
+
+                <h5 class="text-lg md:text-3xl font-bold">Drink :</h5>
+                <div class="font-normal text-[#2C2C2C] text-sm md:text-2xl mb-1 md:mb-3">
+                  Mineral Water
+                </div>
+
+                <!-- Button -->
+                <div class="flex justify-center my-5">
+                  <a href="#"
+                    class="bg-[#0C356A] hover:bg-[#114c98] active:bg-[#071e3c] text-white p-2 rounded-lg text-lg w-full md:w-1/2 text-center">
+                    Daftar
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
 
-          <!-- Slide 4-->
-          <div class="swiper-slide bg-white rounded-md shadow-lg">
+          <div class="swiper-slide">
             <!-- Title -->
-            <div id="about-title" class="text-center md:mb-8 md:mt-10 mt-5">
-              <h1 class="font-bold text-3xl text-base md:text-4xl text-[#0C356A] inline-block">
-                RAFTING , Ubud Puri Saren
-                <span class="block w-full h-[2px]  md:h-[5px] bg-[#F8C035] mt-1 md:mt-2 mx-auto"></span>
+            <div id="paket-title" class="text-center my-5">
+              <h1 class="font-bold text-2xl md:text-4xl text-[#000000] inline-block">
+                Jimbaran dinner The Cuisine Resto
               </h1>
             </div>
-            <!-- Content -->
-            <div id="tourcontent" class="p-5">
-                <div class="flex flex-col md:flex-row">
-                    <div class="w-full md:basis-1/2 md:pr-5">
-                        <img src="img/hotel-nirmala.png" class="mb-3 w-full h-auto object-cover">
-                    </div>
-                    <div class="w-full md:basis-1/2">
-                        <div class="flex flex-col">
-                            <div class="text-[#4CAF50] md:text-4xl text-lg text-bold font-bold mb-3">Rp 490.000/pax</div>
-                            <hr>
-                            <div class="flex flex-col text-sm md:text-xl text-bold mb-1 md:mb-3 font-medium justify-start text-start mt-2 md:mt-5">
-                              <div class="font-normal text-[#2C2C2C]"><span class="font-medium text-bold ">Time :</span> 8.30 - 20.30
-                              </div>
-                            </div>
+            <div class="flex flex-col md:flex-row">
 
-                            <div class="flex flex-col text-sm md:text-xl text-bold mb-1 md:mb-3 font-medium justify-start text-start mt-2 md:mt-5">
-                              <div>Track Area:</div>
-                              <div class="font-normal text-[#2C2C2C]"> Dijemput di hotel  jam  7 dan menuju Ubud, Menikmati indahnya perjalanan menuju
-                                starting  point rafting  dan rafting di sungai
-                                selama 2  jam, Makan siang bersama, Tour dilanjutkan ke Puri Saren ( kerajaan ubud ), Belanja oleh oleh di Krisna,  Kembali ke hotel.</div>
-                            </div>
-                            <div class="flex flex-col text-sm md:text-xl text-bold mb-1 md:mb-3 font-medium justify-start text-start mt-2 md:mt-5">
-                              <div>Inclusion :</div>
-                              <div class="font-normal text-[#2C2C2C]"> Bus, Lunch, Insurance, Mineral Water,   
-                                perlengkapan Rafting, guide rafting </div>
-                            </div>
+              <div class="image w-full md:w-1/2 px-4 md:px-10">
+                <img src="img/tour/1.png" alt="" class="rounded-lg w-full object-cover" />
+              </div>
 
-                            
-
-                            <div class="mt-2 md:mt-5 bg-blue-500 p-2 md:p-5 text-white basis-1/2 rounded-md shadow-lg text-base  md:text-2xl font-semibold
-                            ">Daftar</div>
-                        </div>
-                    </div>
+              <div class="deskripsi w-full md:w-1/2 p-4 md:ps-5 flex flex-col">
+                <div class="text-[#4CAF50] text-lg md:text-4xl font-bold">
+                  Rp 120.000/orang/net
                 </div>
+                <div class="text-sm md:text-xl mb-3 font-bold text-[#666666]">
+                  ( Harga transport terpisah ) | time : 18.00 - 21.30
+                </div>
+                <hr class="my-2 md:my-5">
+                <h5 class="text-lg md:text-2xl text-[#2C2C2C] mt-2 md:mt-5 mb-1 md:mb-3">
+                  Welcome drink and peanut, Soup jagung muda
+                </h5>
+
+                <h5 class="text-lg md:text-3xl font-bold">Main Course</h5>
+                <div class="font-normal text-[#2C2C2C] text-sm md:text-2xl mb-1 md:mb-3">
+                  400 grm ikan bakar, 2 udang bakar, 2 satay cumi, 2 kerang bakar, Nasi putih, Kangkung.
+                </div>
+
+                <h5 class="text-lg md:text-3xl font-bold">Desert :</h5>
+                <div class="font-normal text-[#2C2C2C] text-sm md:text-2xl mb-1 md:mb-3">
+                  Fruit platter
+                </div>
+
+                <h5 class="text-lg md:text-3xl font-bold">Drink :</h5>
+                <div class="font-normal text-[#2C2C2C] text-sm md:text-2xl mb-1 md:mb-3">
+                  Mineral Water
+                </div>
+
+                <!-- Button -->
+                <div class="flex justify-center my-5">
+                  <a href="#"
+                    class="bg-[#0C356A] hover:bg-[#114c98] active:bg-[#071e3c] text-white p-2 rounded-lg text-lg w-full md:w-1/2 text-center">
+                    Daftar
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
 
-          <!-- Slide 5 -->
-          <div class="swiper-slide bg-white rounded-md shadow-lg">
+          <div class="swiper-slide">
             <!-- Title -->
-            <div id="about-title" class="text-center md:mb-8 md:mt-10 mt-5">
-              <h1 class="font-bold text-3xl text-base md:text-4xl text-[#0C356A] inline-block">
-                Bedugul & Tanah Lot
-                <span class="block w-full h-[2px]  md:h-[5px] bg-[#F8C035] mt-1 md:mt-2 mx-auto"></span>
+            <div id="paket-title" class="text-center my-5">
+              <h1 class="font-bold text-2xl md:text-4xl text-[#000000] inline-block">
+                Jimbaran dinner The Cuisine Resto
               </h1>
             </div>
-            <!-- Content -->
-            <div id="tourcontent" class="p-5">
-                <div class="flex flex-col md:flex-row">
-                    <div class="w-full md:basis-1/2 md:pr-5">
-                        <img src="img/hotel-nirmala.png" class="mb-3 w-full h-auto object-cover md:pr-5">
-                    </div>
-                    <div class="w-full md:basis-1/2">
-                        <div class="flex flex-col">
-                            <div class="text-[#4CAF50] md:text-4xl text-lg text-bold font-bold mb-3">Rp 490.000/Orang</div>
-                            
-                            <hr>
-                            <div class="flex flex-col text-sm md:text-xl text-bold mb-1 md:mb-3 font-medium justify-start text-start mt-2 md:mt-5">
-                              <div class="font-normal text-[#2C2C2C]"><span class="font-medium text-bold ">Time :</span> 8.30 - 20.30
-                              </div>
-                            </div>
-                            <div class="flex flex-col text-sm md:text-xl text-bold mb-1 md:mb-3 font-medium justify-start text-start mt-2 md:mt-5">
-                              <div>Track Area:</div>
-                              <div class="font-normal text-[#2C2C2C]"> Jemput di hotel menuju Bedugul, Berjalan sepanjang Danau Beratan, makan siang Buffee lunch  , Menuju tanah lot, Berkeliling di tanah lot, dinner di local restaurant  Menuju Krisna oleh oleh.</div>
-                            </div>
-                            <div class="flex flex-col text-sm md:text-xl text-bold mb-1 md:mb-3 font-medium justify-start text-start mt-2 md:mt-5">
-                              <div>Termasuk Tambahan :</div>
-                              <div class="font-normal text-[#2C2C2C]"> Bus pariwisata, Aqua, Guide, entrance fee</div>
-                            </div>
-                            
-                            <div class="mt-2 md:mt-5 bg-blue-500 p-2 md:p-5 text-white basis-1/2 rounded-md shadow-lg text-base  md:text-2xl font-semibold
-                            ">Daftar</div>
-                        </div>
-                    </div>
+            <div class="flex flex-col md:flex-row">
+
+              <div class="image w-full md:w-1/2 px-4 md:px-10">
+                <img src="img/tour/1.png" alt="" class="rounded-lg w-full object-cover" />
+              </div>
+
+              <div class="deskripsi w-full md:w-1/2 p-4 md:ps-5 flex flex-col">
+                <div class="text-[#4CAF50] text-lg md:text-4xl font-bold">
+                  Rp 120.000/orang/net
                 </div>
-            </div>
-          </div>
-          
-          <!-- Slide 6 -->
-          <div class="swiper-slide bg-white rounded-md shadow-lg">
-            <!-- Title -->
-            <div id="about-title" class="text-center md:mb-8 md:mt-10 mt-5">
-              <h1 class="font-bold text-3xl text-base md:text-4xl text-[#0C356A] inline-block">
-                Water sport & GWK
-                <span class="block w-full h-[2px]  md:h-[5px] bg-[#F8C035] mt-1 md:mt-2 mx-auto"></span>
-              </h1>
-            </div>
-            <!-- Content -->
-            <div id="tourcontent" class="p-5">
-                <div class="flex flex-col md:flex-row">
-                    <div class="w-full md:basis-1/2 flex flex-col md:pr-5">
-                        <div class="">
-                          <img src="img/tour/1.png" class="mb-3 w-full h-auto object-cover">
-                        </div>
-                    </div>
-                    <div class="w-full md:basis-1/2">
-                        <div class="flex flex-col">
-                            <div class="text-[#4CAF50] md:text-4xl text-lg text-bold font-bold mb-3">Rp 590.000/Orang</div>
-                            <hr>
-                            <div class="flex flex-col text-sm md:text-xl text-bold mb-1 md:mb-3 font-medium justify-start text-start mt-2 md:mt-5">
-                              <div class="font-normal text-[#2C2C2C]"><span class="font-medium text-bold ">Time :</span> 8.30 - 20.30
-                              </div>
-                            </div>
-                            <div class="flex flex-col text-sm md:text-xl text-bold mb-1 md:mb-3 font-medium justify-start text-start mt-2 md:mt-5">
-                              <div>Track Area:</div>
-                              <div class="font-normal text-[#2C2C2C]"> Jemput di Hotel menuju Pantai tanjung benoa untuk
-                                bermain ( banana Boat, Donat Boat dan Jestki),  Menuju Krisna oleh oleh (2-3 jam), Menonton tarian Bali di GWK dan tour berjalan di GWK, Eearly dinner  di lokal restaurant  dan kembali ke hotel.</div>
-                            </div>
-                            
-                            <div class="flex flex-col text-sm md:text-xl text-bold mb-1 md:mb-3 font-medium justify-start text-start mt-2 md:mt-5">
-                              <div>Inclusion :</div>
-                              <div class="font-normal text-[#2C2C2C]">Welcome Drink, Mineral Water, Insurance, Towel, Shower Amenities,</div>
-                            </div>
-                            
-                            <div class="mt-2 md:mt-5 bg-blue-500 p-2 md:p-5 text-white basis-1/2 rounded-md shadow-lg text-base  md:text-2xl font-semibold
-                            ">Daftar</div>
-                        </div>
-                    </div>
+                <div class="text-sm md:text-xl mb-3 font-bold text-[#666666]">
+                  ( Harga transport terpisah ) | time : 18.00 - 21.30
                 </div>
+                <hr class="my-2 md:my-5">
+                <h5 class="text-lg md:text-2xl text-[#2C2C2C] mt-2 md:mt-5 mb-1 md:mb-3">
+                  Welcome drink and peanut, Soup jagung muda
+                </h5>
+
+                <h5 class="text-lg md:text-3xl font-bold">Main Course</h5>
+                <div class="font-normal text-[#2C2C2C] text-sm md:text-2xl mb-1 md:mb-3">
+                  400 grm ikan bakar, 2 udang bakar, 2 satay cumi, 2 kerang bakar, Nasi putih, Kangkung.
+                </div>
+
+                <h5 class="text-lg md:text-3xl font-bold">Desert :</h5>
+                <div class="font-normal text-[#2C2C2C] text-sm md:text-2xl mb-1 md:mb-3">
+                  Fruit platter
+                </div>
+
+                <h5 class="text-lg md:text-3xl font-bold">Drink :</h5>
+                <div class="font-normal text-[#2C2C2C] text-sm md:text-2xl mb-1 md:mb-3">
+                  Mineral Water
+                </div>
+
+                <!-- Button -->
+                <div class="flex justify-center my-5">
+                  <a href="#"
+                    class="bg-[#0C356A] hover:bg-[#114c98] active:bg-[#071e3c] text-white p-2 rounded-lg text-lg w-full md:w-1/2 text-center">
+                    Daftar
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
 
+          <div class="swiper-slide">
+            <!-- Title -->
+            <div id="paket-title" class="text-center my-5">
+              <h1 class="font-bold text-2xl md:text-4xl text-[#000000] inline-block">
+                Jimbaran dinner The Cuisine Resto
+              </h1>
+            </div>
+            <div class="flex flex-col md:flex-row">
+
+              <div class="image w-full md:w-1/2 px-4 md:px-10">
+                <img src="img/tour/1.png" alt="" class="rounded-lg w-full object-cover" />
+              </div>
+
+              <div class="deskripsi w-full md:w-1/2 p-4 md:ps-5 flex flex-col">
+                <div class="text-[#4CAF50] text-lg md:text-4xl font-bold">
+                  Rp 120.000/orang/net
+                </div>
+                <div class="text-sm md:text-xl mb-3 font-bold text-[#666666]">
+                  ( Harga transport terpisah ) | time : 18.00 - 21.30
+                </div>
+                <hr class="my-2 md:my-5">
+                <h5 class="text-lg md:text-2xl text-[#2C2C2C] mt-2 md:mt-5 mb-1 md:mb-3">
+                  Welcome drink and peanut, Soup jagung muda
+                </h5>
+
+                <h5 class="text-lg md:text-3xl font-bold">Main Course</h5>
+                <div class="font-normal text-[#2C2C2C] text-sm md:text-2xl mb-1 md:mb-3">
+                  400 grm ikan bakar, 2 udang bakar, 2 satay cumi, 2 kerang bakar, Nasi putih, Kangkung.
+                </div>
+
+                <h5 class="text-lg md:text-3xl font-bold">Desert :</h5>
+                <div class="font-normal text-[#2C2C2C] text-sm md:text-2xl mb-1 md:mb-3">
+                  Fruit platter
+                </div>
+
+                <h5 class="text-lg md:text-3xl font-bold">Drink :</h5>
+                <div class="font-normal text-[#2C2C2C] text-sm md:text-2xl mb-1 md:mb-3">
+                  Mineral Water
+                </div>
+
+                <!-- Button -->
+                <div class="flex justify-center my-5">
+                  <a href="#"
+                    class="bg-[#0C356A] hover:bg-[#114c98] active:bg-[#071e3c] text-white p-2 rounded-lg text-lg w-full md:w-1/2 text-center">
+                    Daftar
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tambahan Swiper Slide lainnya -->
         </div>
-      
-        <!-- Tombol Navigasi -->
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+  <!-- Item Tour Akhir -->
+
+
+
+
+
+  <!-- Logo Section -->
+  <section id="Logo">
+    <div class="content p-6 md:px-8">
+      <h2 class="text-2xl md:text-4xl font-bold text-[#18285C] mb-2 text-center">ABDIDAYA ORMAWA 2024</h2>
+      <h3 class="text-lg md:text-3xl text-[#F8C035] text-center">Diselenggarakan oleh:</h3>
+      <div class="flex flex-col md:flex-row justify-center items-center mt-10 gap-4">
+        <img src="img/tutWuriHandayani.png" alt="" class="w-24 md:w-28">
+        <img src="img/Logo-Unud.png" alt="" class="w-24 md:w-28">
+        <img src="img/blu.png" alt="" class="w-24 md:w-28">
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer>
+    <section class="bg-[#413C85] p-6 md:p-10">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+        <!-- Logo Section -->
+        <div class="footer-nav mb-6 md:mb-0">
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+            <img src="img/tutWuriHandayani.png" alt="" class="w-24 h-auto mx-auto hidden md:block">
+            <img src="img/Logo-Unud.png" alt="" class="w-24 h-auto mx-auto hidden md:block">
+            <img src="img/blu.png" alt="" class="w-24 h-auto mx-auto hidden md:block">
+            <img src="img/abdidaya.png" alt="" class="w-24 h-auto mx-auto hidden md:block">
+          </div>
+          <h5 class="text-gray-400 text-center md:text-left">Abdidaya Ormawa 2024</h5>
+        </div>
+        <!-- Informasi Pilihan Section -->
+        <div class="footer-nav mb-6 md:mb-0">
+          <h4 class="text-xl md:text-2xl font-semibold text-white mb-5">Informasi Pilihan</h4>
+          <ul class="text-gray-400 text-sm md:text-base">
+            <li>Sistem Informasi Terintegrasi (IMISSU)</li>
+            <li>Info Tender</li>
+            <li>SPI (Satuan Pengawasan Intern)</li>
+            <li>Beasiswa Online</li>
+            <li>SAKIP</li>
+            <li>LPPM</li>
+            <li>LPSE</li>
+            <li>Vokasi UNUD</li>
+          </ul>
+        </div>
+        <!-- Informasi Pilihan Section 2 -->
+        <div class="footer-nav mb-6 md:mb-0">
+          <h4 class="text-xl md:text-2xl font-semibold text-white mb-5">Informasi Pilihan</h4>
+          <ul class="text-gray-400 text-sm md:text-base">
+            <li>e-Office</li>
+            <li>Daftar Putar Udayana</li>
+            <li>e-PUPNAS</li>
+            <li>LPPM</li>
+            <li>Knowledge Center</li>
+            <li>Kalender Akademik</li>
+          </ul>
+        </div>
+        <!-- Informasi Eksternal Section -->
+        <div class="footer-nav mb-6 md:mb-0">
+          <h4 class="text-xl md:text-2xl font-semibold text-white mb-5">Informasi Eksternal</h4>
+          <ul class="text-gray-400 text-sm md:text-base">
+            <li>Program Kampus Merdeka</li>
+            <li>FAQ Kampus Merdeka</li>
+            <li>PDDIKTI</li>
+          </ul>
+        </div>
+      </div>
     </section>
-      
-    <!-- About Akhir -->
+  </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="JS/script.js"></script>
 
-    
-  
-
-
-    <!-- Footer -->
-    <footer>
-        <section class="bg-[#413C85] p-6 md:p-10">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
-                <!-- Logo Section -->
-                <div class="footer-nav mb-6 md:mb-0">
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-                        <img src="img/tutWuriHandayani.png" alt="" class="w-24 h-auto mx-auto hidden md:block">
-                        <img src="img/Logo-Unud.png" alt="" class="w-24 h-auto mx-auto hidden md:block">
-                        <img src="img/blu.png" alt="" class="w-24 h-auto mx-auto hidden md:block">
-                        <img src="img/abdidaya.png" alt="" class="w-24 h-auto mx-auto hidden md:block">
-                    </div>
-                    <h5 class="text-gray-400 text-center md:text-left">Abdidaya Ormawa 2024</h5>
-                </div>
-                <!-- Informasi Pilihan Section -->
-                <div class="footer-nav mb-6 md:mb-0">
-                    <h4 class="text-xl md:text-2xl font-semibold text-white mb-5">Informasi Pilihan</h4>
-                    <ul class="text-gray-400 text-sm md:text-base">
-                        <li>Sistem Informasi Terintegrasi (IMISSU)</li>
-                        <li>Info Tender</li>
-                        <li>SPI (Satuan Pengawasan Intern)</li>
-                        <li>Beasiswa Online</li>
-                        <li>SAKIP</li>
-                        <li>LPPM</li>
-                        <li>LPSE</li>
-                        <li>Vokasi UNUD</li>
-                    </ul>
-                </div>
-                <!-- Informasi Pilihan Section 2 -->
-                <div class="footer-nav mb-6 md:mb-0">
-                    <h4 class="text-xl md:text-2xl font-semibold text-white mb-5">Informasi Pilihan</h4>
-                    <ul class="text-gray-400 text-sm md:text-base">
-                        <li>e-Office</li>
-                        <li>Daftar Putar Udayana</li>
-                        <li>e-PUPNAS</li>
-                        <li>LPPM</li>
-                        <li>Knowledge Center</li>
-                        <li>Kalender Akademik</li>
-                    </ul>
-                </div>
-                <!-- Informasi Eksternal Section -->
-                <div class="footer-nav mb-6 md:mb-0">
-                    <h4 class="text-xl md:text-2xl font-semibold text-white mb-5">Informasi Eksternal</h4>
-                    <ul class="text-gray-400 text-sm md:text-base">
-                        <li>Program Kampus Merdeka</li>
-                        <li>FAQ Kampus Merdeka</li>
-                        <li>PDDIKTI</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-    </footer>
-
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="JS/script.js"></script>
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-          loop: true, // Untuk membuat slider loop
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
-          slidesPerView: 1, // Pastikan hanya satu slide yang ditampilkan pada satu waktu
-          spaceBetween: 40, // Jarak antar slide
-          breakpoints: {
-            640: {
-              slidesPerView: 1, // Di layar kecil, tampilkan 1 slide per view
-            },
-            768: {
-              slidesPerView: 1, // Di tablet, tetap 1 slide
-            },
-            1024: {
-              slidesPerView: 1, // Di desktop, tetap 1 slide
-            },
-          },
-        });
-    </script>
-      
 </body>
 
 </html>
