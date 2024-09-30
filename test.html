@@ -18,11 +18,9 @@
                     <!-- Logo di sebelah kiri -->
                     <div class="header-logo">
                         <a href=""><img src="img/tutWuriHandayani.png" alt="Logo" class="w-12 h-12"></a>
-                        <a href=""><img src="img/Logo-Belmawa.jpg" alt="Logo" class="w-21 h-12"></a>
                         <a href=""><img src="img/Logo-Unud.png" alt="Logo" class="w-12 h-12"></a>
                         <a href=""><img src="img/blu.png" alt="Logo" class="w-12 h-12"></a>
                         <a href=""><img src="img/abdidaya-edit.png" alt="Logo" class="w-12 h-12"></a>
-                        <a href=""><img src="img/Logo-Kampus-Merdeka.png" alt="Logo" class="w-12 h-12"></a>
                     </div>
 
                     <!-- Tombol Menu untuk Mobile -->
@@ -65,37 +63,69 @@
     <!-- Header Akhir -->
 
     <!-- Homepage Awal -->
-    <section id="homepage" class="md:p-10 p-5 mt-20 min-h-screen">
+    <section id="homepage" class="p-10 mt-10">
+
         <!-- Content Homepage -->
-        <div class="h-full px-2 md:px-8 ">
-            <div class="flex md:flex-row flex-col">
+        <div class="h-full px-4 md:px-8">
+            <div class="flex md:flex-row">
                 <!-- Kolom 1: Gambar -->
-                <div class="md:w-1/2 items-end hidden md:block mb-6 md:mb-0">
+                <div class="w-1/2 items-end hidden md:block md:col-span-3 mb-6 md:mb-0">
                     <img src="img/maskot perempuan.png" alt="Gambar" class="w-48 md:w-80 h-auto">
                 </div>
                 <!-- Kolom 2: Ucapan Selamat Datang -->
-                <div class="text-white text-center px-4 md:px-0 mt-5 md:mt-10">
-                    <h3 class="text-2xl md:text-3xl font-bold mb-2">Selamat Datang</h3> <!-- Ukuran diubah -->
-                    <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Peserta Abdidaya Ormawa 2024</h1>
-                    <!-- Font weight diubah -->
-                    <h1 class="text-3xl md:text-4xl font-bold mb-4">Dengan Tema</h1> <!-- Ukuran diubah -->
-                    <h2 class="text-lg md:text-xl font-normal leading-relaxed">Penguatan Kapasitas Organisasi
-                        Kemahasiswaan
-                        dan soft skills Mahasiswa sebagai Agen Transformasi Pembangunan Bangsa
+                <div
+                    class="flex flex-col justify-center items-center text-white text-center md:text-left md:col-span-6 px-4 md:px-0">
+                    <h3 class="text-lg md:text-xl font-medium mb-2">Selamat Datang</h3>
+                    <h1 class="text-2xl md:text-4xl font-bold mb-4">Peserta Abdidaya Ormawa 2024</h1>
+                    <h1 class="text-2xl md:text-2xl font-bold mb-4 text-center">TEMA</h1>
+                    <h2 class="text-lg md:text-xl font-normal text-center">Penguatan Kapasitas Organisasi Kemahasiswaan
+                        dan soft
+                        skills Mahasiswa sebagai Agen Transformasi Pembangunan Bangsa
                         Berlandaskan Inovasi Teknologi dan Kemitraan demi Mewujudkan Indonesia Maju</h2>
-                    <!-- Ukuran dan leading diubah -->
                 </div>
                 <!-- Kolom 3: Gambar yang Sama -->
-                <div class="md:w-1/2 items-end mb-6 md:mb-0">
-                    <div class="flex justify-center">
-                        <img src="img/maskot perempuan.png" alt="Gambar" class="w-48 md:hidden h-auto">
-                        <img src="img/Maskot laki-laki.png" alt="Gambar" class="w-48 md:w-80 h-auto">
-                    </div>
+                <div class="w-1/2 items-end md:col-span-3 mb-6 md:mb-0">
+                    <img src="img/maskot perempuan.png" alt="Gambar" class="w-48 md:hidden h-auto">
+                    <img src="img/Maskot laki-laki.png" alt="Gambar" class="w-48 md:w-80 h-auto">
                 </div>
             </div>
         </div>
     </section>
     <!-- Homepage Akhir -->
+
+    <!-- Homepage Awal -->
+    <section id="homepage" class="relative w-screen h-screen bg-blue-500 bg-cover bg-center">
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+
+        <!-- Content Homepage -->
+        <div class="relative z-10 flex flex-col md:flex-row justify-center items-center h-full px-4 md:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-12 w-full max-w-6xl mx-auto gap-4">
+                <!-- Kolom 1: Gambar -->
+                <div class="flex justify-center items-end hidden md:block md:col-span-3 mb-6 md:mb-0">
+                    <img src="img/maskot perempuan.png" alt="Gambar" class="w-48 md:w-auto h-auto">
+                </div>
+                <!-- Kolom 2: Ucapan Selamat Datang -->
+                <div
+                    class="flex flex-col justify-center items-center text-white text-center md:text-left md:col-span-6 px-4 md:px-0">
+                    <h3 class="text-lg md:text-xl font-medium mb-2">Selamat Datang</h3>
+                    <h1 class="text-2xl md:text-4xl font-bold mb-4">Peserta Abdidaya Ormawa 2024</h1>
+                    <h1 class="text-2xl md:text-2xl font-bold mb-4 text-center">TEMA</h1>
+                    <h2 class="text-lg md:text-xl font-normal text-center">Penguatan Kapasitas Organisasi Kemahasiswaan
+                        dan soft
+                        skills Mahasiswa sebagai Agen Transformasi Pembangunan Bangsa
+                        Berlandaskan Inovasi Teknologi dan Kemitraan demi Mewujudkan Indonesia Maju</h2>
+                </div>
+                <!-- Kolom 3: Gambar yang Sama -->
+                <div class="flex justify-center items-end md:col-span-3 mb-6 md:mb-0">
+                    <img src="img/maskot perempuan.png" alt="Gambar" class="w-48 md:hidden h-auto">
+                    <img src="img/Maskot laki-laki.png" alt="Gambar" class="w-48 md:w-auto h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Homepage Akhir -->
+
 
 
 
@@ -625,6 +655,20 @@
                     </div>
                 </div>
 
+                <div
+                    class="flex-1 bg-white rounded-lg px-4 py-2 md:py-4 md:px-8 border-solid border-4 border-[#0C356A]">
+                    <h3 class="mb-5 text-2xl font-bold text-[#0C356A]">Fasilitas <span
+                            class="text-[#F8C035]">Ruangan</span></h3>
+                    <p class="text-justify font-normal md:text-base text-sm">nud menyediakan Udayana International
+                        Convention Center (UICC) dengan kapasitas 300 orang serta Auditorium Widya Sabha
+                        berkapasitas 3.500 orang, lengkap dengan AC, ruang meeting, dan fasilitas lainnya.</p>
+                    <div class="flex justify-center mt-5 mb-2">
+                        <a href="fasilitas.html#hero-ruangan"
+                            class="bg-[#0C356A] hover:bg-[#114c98] active:bg-[#071e3c] text-white p-3 md:py-4 md:px-4 rounded-full text-center mx-auto">
+                            Selengkapnya
+                        </a>
+                    </div>
+                </div>
 
                 <div
                     class="flex-1 bg-white rounded-lg px-4 py-2 md:py-4 md:px-8 border-solid border-4 border-[#0C356A]">
@@ -719,19 +763,7 @@
                 <img src="img/blu.png" alt="" class="w-24 md:w-28">
             </div>
         </div>
-        <!-- Sponsor Section -->
-        <section id="Sponsor">
-            <div class="content p-6 md:px-8">
-                <h3 class="text-lg md:text-3xl text-[#F8C035] text-center">Disponsori oleh:</h3>
-                <div class="flex flex-col md:flex-row justify-center items-center mt-10 gap-4">
-                    <img src="img/sponsor.png" alt="" class="w-24 md:w-28">
-                    <img src="img/sponsor.png" alt="" class="w-24 md:w-28">
-                    <img src="img/sponsor.png" alt="" class="w-24 md:w-28">
-                </div>
-            </div>
-        </section>
     </section>
-
 
 
     <!-- Footer -->
