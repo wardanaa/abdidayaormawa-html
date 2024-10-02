@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Masokt | Abdidaya 2024</title>
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 
@@ -17,9 +18,11 @@
                     <!-- Logo di sebelah kiri -->
                     <div class="header-logo">
                         <a href=""><img src="img/tutWuriHandayani.png" alt="Logo" class="w-12 h-12"></a>
+                        <a href=""><img src="img/Logo-Belmawa.png" alt="Logo" class="w-21 h-12"></a>
                         <a href=""><img src="img/Logo-Unud.png" alt="Logo" class="w-12 h-12"></a>
                         <a href=""><img src="img/blu.png" alt="Logo" class="w-12 h-12"></a>
-                        <a href=""><img src="img/abdidaya.png" alt="Logo" class="w-12 h-12"></a>
+                        <a href=""><img src="img/abdidaya-edit-1.png" alt="Logo" class="w-12 h-12"></a>
+                        <a href=""><img src="img/Logo-Kampus-Merdeka.png" alt="Logo" class="w-12 h-12"></a>
                     </div>
 
                     <!-- Tombol Menu untuk Mobile -->
@@ -50,6 +53,7 @@
                             </div>
                         </div>
                         <a href="index.html#denah" class="px-3 py-2 rounded-md text-sm font-medium">Denah</a>
+                        <a href="galeri.html#hero-galeri" class="px-3 py-2 rounded-md text-sm font-medium">Galeri</a>
                         <a href="index.html#tour" class="px-3 py-2 rounded-md text-sm font-medium">Tour</a>
                         <a href="tanyaJawab.html#tanya-kami" class="px-3 py-2 rounded-md text-sm font-medium">Tanya
                             Kami</a>
@@ -230,10 +234,11 @@
             </p>
 
 
-            <audio id="modal-audio" controls autoplay class="w-full">
+            <audio id="modal-audio" controls class="w-full">
                 <source src="audio/mars-abdidaya.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
+
             <div class="flex justify-center">
                 <div class="qr-code">
                     <img src="img/qr-code.png" alt="qr-code" class="mx-auto">
@@ -334,11 +339,46 @@
                 <img src="img/tutWuriHandayani.png" alt="" class="w-24 md:w-28">
                 <img src="img/Logo-Unud.png" alt="" class="w-24 md:w-28">
                 <img src="img/blu.png" alt="" class="w-24 md:w-28">
+
             </div>
         </div>
+        <!-- Sponsor Section -->
+        <section id="Sponsor">
+            <div class="content p-6 md:px-8">
+                <h3 class="text-lg md:text-3xl text-[#F8C035] text-center">Disponsori oleh:</h3>
+                <div class="flex flex-col md:flex-row justify-center items-center mt-10">
+                    <div class="item mx-5">
+                        <img src="img/sponsor.png" alt="" class="w-24 md:w-28 mx-auto">
+                        <h1 class="font-bold text-xl  md:text-2xl text-[#0C356A] inline-block text-center">
+                            <a href="#">SPONSOR A</a>
+                        </h1>
+                    </div>
+
+                    <div class="item mx-5">
+                        <img src="img/sponsor.png" alt="" class="w-24 md:w-28 mx-auto">
+                        <h1 class="font-bold text-xl  md:text-2xl text-[#0C356A] inline-block text-center">
+                            <a href="#">SPONSOR B</a>
+                        </h1>
+                    </div>
+
+                    <div class="item mx-5">
+                        <img src="img/sponsor.png" alt="" class="w-24 md:w-28 mx-auto">
+                        <h1 class="font-bold text-xl  md:text-2xl text-[#0C356A] inline-block text-center">
+                            <a href="#">SPONSOR C</a>
+                        </h1>
+                    </div>
+
+                    <div class="item mx-5">
+                        <img src="img/sponsor.png" alt="" class="w-24 md:w-28 mx-auto">
+                        <h1 class="font-bold text-xl  md:text-2xl text-[#0C356A] inline-block text-center">
+                            <a href="#">SPONSOR D</a>
+                        </h1>
+                    </div>
+
+                </div>
+            </div>
+        </section>
     </section>
-
-
 
     <!-- Footer -->
     <footer>
@@ -350,7 +390,7 @@
                         <img src="img/tutWuriHandayani.png" alt="" class="w-24 h-auto mx-auto hidden md:block">
                         <img src="img/Logo-Unud.png" alt="" class="w-24 h-auto mx-auto hidden md:block">
                         <img src="img/blu.png" alt="" class="w-24 h-auto mx-auto hidden md:block">
-                        <img src="img/abdidaya.png" alt="" class="w-24 h-auto mx-auto hidden md:block">
+                        <img src="img/abdidaya-edit-1.png" alt="" class="w-24 h-auto mx-auto hidden md:block">
                     </div>
                     <h5 class="text-gray-400 text-center md:text-left">Abdidaya Ormawa 2024</h5>
                 </div>
@@ -395,6 +435,58 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="JS/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var openModalButton = document.getElementById('open-modal')
+            var closeModalButton = document.getElementById('close-modal')
+            var modal = document.getElementById('audio-modal')
+            var audio = document.getElementById('modal-audio')
+
+            console.log('openModalButton:', openModalButton)
+            console.log('closeModalButton:', closeModalButton)
+            console.log('modal:', modal)
+            console.log('audio:', audio)
+
+            if (!openModalButton || !closeModalButton || !modal || !audio) {
+                console.error('One or more elements are not found.')
+                return
+            }
+
+            // Show modal with animation
+            openModalButton.addEventListener('click', function () {
+                console.log('Open button clicked')
+                modal.classList.add('opacity-100') // Tambahkan kelas opacity-100 untuk menampilkan modal
+                modal.querySelector('div').classList.add('scale-100')
+                audio.play() // Pastikan audio mulai bermain ketika modal terbuka
+            })
+
+            // Hide modal with animation and stop audio
+            closeModalButton.addEventListener('click', function () {
+                console.log('Close button clicked')
+                modal.classList.remove('opacity-100')
+                modal.querySelector('div').classList.remove('scale-100')
+                setTimeout(function () {
+                    modal.classList.remove('flex') // Hapus kelas flex setelah animasi selesai
+                }, 300)
+                audio.pause()
+                audio.currentTime = 0
+            })
+
+            // Hide modal when clicking outside and stop audio
+            window.addEventListener('click', function (event) {
+                if (event.target === modal) {
+                    console.log('Clicked outside modal')
+                    modal.classList.remove('opacity-100')
+                    modal.querySelector('div').classList.remove('scale-100')
+                    setTimeout(function () {
+                        modal.classList.remove('flex') // Hapus kelas flex setelah animasi selesai
+                    }, 300)
+                    audio.pause()
+                    audio.currentTime = 0
+                }
+            })
+        })
+    </script>
 </body>
 
 </html>
