@@ -24,9 +24,9 @@ const swiper1 = new Swiper('.mySwiper1', {
     centeredSlides: true,
     grabCursor: false,
     loop: true,
-    autoplay: {
-        delay: 4000,
-    },
+    // autoplay: {
+    //     delay: 4000,
+    // },
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -55,9 +55,9 @@ const swiper2 = new Swiper('.mySwiper2', {
         prevEl: '.swiper-button-prev',
     },
 
-    autoplay: {
-        delay: 4000, // 4 detik delay antara perpindahan slide
-    },
+    // autoplay: {
+    //     delay: 4000, // 4 detik delay antara perpindahan slide
+    // },
 
     breakpoints: {
         640: {

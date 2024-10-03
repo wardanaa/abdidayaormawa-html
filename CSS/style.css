@@ -120,7 +120,7 @@ body {
 }
 
 /* Mobile Styles */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .header-logo img {
         width: 2.5rem;
         height: 2.5rem;
@@ -318,7 +318,7 @@ body {
 }
 
 /* Media Query untuk tampilan mobile */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .table {
         width: 100%; /* Pastikan tabel tetap full width di mobile */
     }
@@ -332,7 +332,7 @@ body {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1380px) {
     #fasilitas-hotel .swiper-button-next {
         position: absolute;
         left: 10px;
