@@ -55,12 +55,12 @@ const swiper2 = new Swiper('.mySwiper2', {
         prevEl: '.swiper-button-prev',
     },
 
-    autoplay: {
-        delay: 4000, // 4 detik delay antara perpindahan slide
-    },
+    // autoplay: {
+    //     delay: 4000, // 4 detik delay antara perpindahan slide
+    // },
 
     breakpoints: {
-        640: {
+        1280: {
             slidesPerView: 2, // Tampilkan dua slide pada perangkat dengan lebar 640px atau lebih
             direction: 'vertical',
         },
