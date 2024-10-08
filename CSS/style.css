@@ -332,7 +332,7 @@ body {
     }
 }
 
-@media (min-width: 1380px) {
+@media (min-width: 1280px) {
     #fasilitas-hotel .swiper-button-next {
         position: absolute;
         left: 10px;
@@ -342,13 +342,13 @@ body {
     }
 
     #fasilitas-hotel .swiper-button-prev {
-        top: 40%;
+        top: 43%;
         /* Atur posisi vertikal tombol prev */
         transform: rotate(90deg);
     }
 
     #fasilitas-hotel .swiper-button-next {
-        top: 60%;
+        top: 48%;
         /* Atur posisi vertikal tombol next */
         transform: rotate(90deg);
     }
